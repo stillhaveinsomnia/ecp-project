@@ -1,0 +1,605 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-05-05 13:30+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ta\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: components/screens/DirectConversationScreen.tsx:257
+msgid "{selectedCount} selected"
+msgstr "தேர்ந்தெடுக்கப்பட்ட எண்ணிக்கை {selectedCount}"
+
+#: components/screens/AccountScreen.tsx:183
+msgid "Account ID"
+msgstr "கணக்கு ID"
+
+#: components/screens/AccountScreen.tsx:145
+#: components/screens/AccountScreen.tsx:151
+#: components/screens/ImportAccountScreen.tsx:80
+msgid "Account name"
+msgstr "கணக்கு பெயர்"
+
+#: components/screens/ProfileScreen.tsx:242
+msgid "Account settings"
+msgstr "கணக்கு அமைப்புகள்"
+
+#: components/screens/ContactListScreen.tsx:236
+msgid "Add contact to list"
+msgstr "தொடர்பு விவரங்களை பட்டியலில் சேர்க்க"
+
+#: components/screens/ContactScreen.tsx:330
+msgid "Add to contact list"
+msgstr "தொடர்பு பட்டியலில் சேர்"
+
+#: components/screens/ContactListsScreen.tsx:40
+msgid "All messages"
+msgstr "அனைத்து செய்திகளும்"
+
+#: components/screens/DirectConversationScreen.tsx:309
+msgid "Answer"
+msgstr "பதில்"
+
+#: components/screens/ExportAccountScreen.tsx:83
+msgid "Anyone who is able to import the secret will have full access to the account forever!"
+msgstr "ரகசியத்தை இறக்குமதி செய்யக்கூடியவர்களுக்கு கணக்கிற்கு எப்போதும் முழு அணுகல் இருக்கும்!"
+
+#: components/ui/MessageCompose.tsx:125
+msgid "Attach file"
+msgstr "கோப்பு இணைக்கவும்"
+
+#: components/screens/DeviceSettingsScreen.tsx:93
+#: components/screens/ProfileDeepLinkScreen.tsx:36
+msgid "Back"
+msgstr "திரும்பு"
+
+#: components/screens/ExportAccountScreen.tsx:38
+msgid "Back to account screen"
+msgstr "கணக்கு திரைக்கு திரும்பு"
+
+#: components/screens/ImportAccountScreen.tsx:34
+msgid "Back to account selection"
+msgstr "கணக்கு தேர்வுக்கு திரும்பு"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:36
+msgid "Back to contact"
+msgstr "தொடர்பு கொள்ள மீண்டும்"
+
+#: components/screens/ContactListScreen.tsx:84
+msgid "Back to contact lists"
+msgstr "தொடர்புப் பட்டியல்களுக்குத் திரும்பு"
+
+#: components/screens/ContactScreen.tsx:104
+msgid "Back to direct messages"
+msgstr "நேரடி செய்திகளுக்கு திரும்பு"
+
+#: components/screens/ProfileScreen.tsx:203
+msgid "Biography"
+msgstr "சுயவிவரம்"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:45
+#: components/screens/ContactScreen.tsx:118
+msgid "Changes history"
+msgstr "மாற்றிய விவரம்"
+
+#: components/ui/DateTimeInput.tsx:96
+msgid "Clear date"
+msgstr "தேதியை அழி"
+
+#: components/ui/MessageCompose.tsx:166
+msgid "Collapse editor"
+msgstr "எடிட்டரை சுருக்கு"
+
+#: components/screens/WorkInProgressScreen.tsx:34
+msgid "Coming soon"
+msgstr "விரைவில் தொடங்கப்படும்"
+
+#: components/screens/ExportAccountScreen.tsx:68
+msgid "Confirm export"
+msgstr "ஏற்றுமதியை உறுதிப்படுத்தவும்"
+
+#: components/screens/ImportAccountScreen.tsx:68
+msgid "Confirm import"
+msgstr "இறக்குமதியை உறுதிப்படுத்தவும்"
+
+#: components/screens/ContactScreen.tsx:251
+msgid "Connected devices"
+msgstr "இணைக்கப்பட்ட சாதனங்கள்"
+
+#: components/screens/ContactScreen.tsx:206
+#: components/screens/ProfileDeepLinkScreen.tsx:46
+msgid "Contact account id"
+msgstr "தொடர்பு கணக்கு ID"
+
+#: components/screens/ContactListScreen.tsx:156
+msgid "Contact list name"
+msgstr "தொடர்பு பட்டியலில் உள்ள பெயர்களின் பெயர்"
+
+#: components/screens/DirectMessagesScreen.tsx:125
+msgid "Contact lists"
+msgstr "தொடர்புப் பெயர்களின் பட்டியல்"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:67
+#: components/screens/ContactScreen.tsx:230
+msgid "Contact name"
+msgstr "தொடர்பு பெயர்"
+
+#: components/screens/DirectConversationScreen.tsx:288
+msgid "Copied to clipboard"
+msgstr "நகலெடுக்கப்பட்டது"
+
+#: components/screens/AccountScreen.tsx:196
+msgid "Copy account id to clipboard"
+msgstr "கணக்கு IDஐ கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#: components/screens/AccountScreen.tsx:227
+msgid "Copy device id to clipboard"
+msgstr "சாதன IDஐ கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#: components/screens/DirectConversationScreen.tsx:294
+msgid "Copy text"
+msgstr "உரையை நகலெடுக்க"
+
+#: components/screens/AccountScreen.tsx:104
+msgid "Create account"
+msgstr "கணக்கை உருவாக்கவும்"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Create article"
+msgstr "கட்டுரை உருவாக்கவும்"
+
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:184
+msgid "Create contact"
+msgstr "தொடர்பை உருவாக்கவும்"
+
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactListsScreen.tsx:54
+msgid "Create contact list"
+msgstr "தொடர்புப் பட்டியலை உருவாக்கு"
+
+#: components/screens/SelectAccountScreen.tsx:60
+msgid "Create new account"
+msgstr "புதிய கணக்கை உருவாக்கவும்"
+
+#: components/screens/ArticlesScreen.tsx:27
+msgid "Create new article"
+msgstr "புதிய கட்டுரை உருவாக்கவும்"
+
+#: components/screens/DirectMessagesScreen.tsx:86
+msgid "Create new contact"
+msgstr "புதிய தொடர்பை உருவாக்கவும்"
+
+#: components/screens/GroupMessagesScreen.tsx:27
+msgid "Create new group"
+msgstr "புதிய குழுவை உருவாக்கவும்"
+
+#: components/screens/DeviceSettingsScreen.tsx:141
+msgid "Dark"
+msgstr "இருண்ட"
+
+#: components/screens/DirectConversationScreen.tsx:329
+#: components/ui/MessageCompose.tsx:278
+msgid "Delete"
+msgstr "நீக்கு"
+
+#: components/screens/EditArticleScreen.tsx:83
+msgid "Delete article"
+msgstr "கட்டுரையை நீக்கவும்"
+
+#: components/screens/ContactScreen.tsx:138
+#: components/screens/GroupScreen.tsx:79
+msgid "Delete contact"
+msgstr "தொடர்பை நீக்கவும்"
+
+#: components/screens/ContactListScreen.tsx:104
+msgid "Delete contact list"
+msgstr "தொடர்புப் பட்டியலை நீக்கவும்"
+
+#: components/screens/AccountScreen.tsx:214
+msgid "Device ID"
+msgstr "சாதன ID"
+
+#: components/screens/DeviceSettingsScreen.tsx:96
+msgid "Device Settings"
+msgstr "சாதன அமைப்புகள்"
+
+#: components/screens/ContactScreen.tsx:361
+#: components/screens/ProfileScreen.tsx:228
+#: components/ui/BottomTabNavigation.tsx:31
+msgid "Direct messages"
+msgstr "நேரடி செய்திகள்"
+
+#: components/screens/AccountScreen.tsx:74
+#: components/screens/ContactListScreen.tsx:118
+#: components/screens/ContactScreen.tsx:152
+#: components/screens/EditArticleScreen.tsx:95
+#: components/screens/GroupScreen.tsx:91
+#: components/screens/ProfileScreen.tsx:168
+#: components/ui/MessageCompose.tsx:178
+msgid "Discard changes"
+msgstr "மாற்றங்களை நிராகரி"
+
+#: components/screens/ArticlesScreen.tsx:57
+msgid "Edit article"
+msgstr "கட்டுரையை திருத்தவும்"
+
+#: components/screens/ProfileScreen.tsx:237
+msgid "Edit contact"
+msgstr "தொடர்பை திருத்தவும்"
+
+#: components/ui/DateTimeInput.tsx:80
+msgid "Edit date"
+msgstr "தேதியை திருத்தவும்"
+
+#: components/ui/DateTimeInput.tsx:88
+msgid "Edit time"
+msgstr "நேரத்தை திருத்தவும்"
+
+#: components/screens/ContactListScreen.tsx:162
+msgid "Enter a name for this contact list"
+msgstr "இந்த தொடர்புப் பட்டியலுக்கு ஒரு பெயரை உள்ளிடவும்"
+
+#: components/screens/EditArticleScreen.tsx:138
+msgid "Event"
+msgstr "நிகழ்வு"
+
+#: components/ui/BottomTabNavigation.tsx:55
+msgid "Events"
+msgstr "நிகழ்வுகள்"
+
+#: components/ui/MessageCompose.tsx:166
+msgid "Expand editor"
+msgstr "விரிவான எடிட்டர்"
+
+#: components/screens/AccountScreen.tsx:239
+#: components/screens/ExportAccountScreen.tsx:47
+msgid "Export account"
+msgstr "கணக்கை ஏற்றுமதி செய்யவும்"
+
+#: components/screens/ImportAccountScreen.tsx:92
+msgid "Export password"
+msgstr "ஏற்றுமதி கடவுச்சொல்"
+
+#: components/screens/ImportAccountScreen.tsx:107
+msgid "Exported account secret"
+msgstr "ஏற்றுமதி செய்யப்பட்ட கணக்கு ரகசியம்"
+
+#: components/screens/ExportAccountScreen.tsx:60
+#: components/screens/ExportAccountScreen.tsx:62
+msgid "Exported account secret copied to clipboard"
+msgstr "ஏற்றுமதி செய்யப்பட்ட கணக்கு ரகசியம் கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது"
+
+#: components/screens/DirectConversationScreen.tsx:302
+msgid "Forward"
+msgstr "அனுப்பு"
+
+#: components/screens/EditArticleScreen.tsx:55
+msgid "Go to articles"
+msgstr "கட்டுரைகளுக்கு செல்லவும்"
+
+#: components/screens/GroupScreen.tsx:60
+msgid "Go to conversation"
+msgstr "உரையாடலுக்கு செல்லவும்"
+
+#: components/screens/DirectConversationScreen.tsx:225
+#: components/screens/GroupConversationScreen.tsx:49
+msgid "Go to messages"
+msgstr "செய்திகளுக்கு செல்லவும்"
+
+#: components/screens/GroupScreen.tsx:135
+msgid "Group id"
+msgstr "குழு ID"
+
+#: components/ui/BottomTabNavigation.tsx:37
+msgid "Group messages"
+msgstr "குழு செய்திகள்"
+
+#: components/screens/GroupScreen.tsx:157
+msgid "Group name"
+msgstr "குழு பெயர்"
+
+#: components/screens/ImportAccountScreen.tsx:37
+#: components/screens/SelectAccountScreen.tsx:54
+msgid "Import account"
+msgstr "கணக்கை இறக்குமதி செய்யவும்"
+
+#: components/screens/ImportAccountScreen.tsx:61
+msgid "Invalid account secret or password"
+msgstr "தவறான கணக்கு ரகசியம் அல்லது கடவுச்சொல்"
+
+#: components/screens/ContactScreen.tsx:268
+msgid "It takes two. Add each other as contacts to start chatting!"
+msgstr "இரண்டு நபர்கள் தேவை. அரட்டைப் பழக்கத்தைத் தொடங்க, ஒருவரை ஒருவர் தொடர்புகளாகச் சேர்க்கவும்!"
+
+#: components/screens/DirectConversationScreen.tsx:564
+msgid "Jump to date"
+msgstr "தேதியைத் தேர்ந்தெடுக்க"
+
+#: components/screens/DeviceSettingsScreen.tsx:101
+msgid "Language"
+msgstr "மொழி"
+
+#: components/screens/DeviceSettingsScreen.tsx:139
+msgid "Light"
+msgstr "வெளிர்"
+
+#: components/screens/ProfileScreen.tsx:198
+msgid "Location"
+msgstr "இடம்"
+
+#: components/screens/DirectConversationScreen.tsx:662
+msgid "Mark as read"
+msgstr "படிக்கப்பட்டதாக குறிக்கவும்"
+
+#: components/screens/ContactScreen.tsx:284
+msgid "Member of contact lists"
+msgstr "தொடர்பு பட்டியலில் உள்ள உறுப்பினர்"
+
+#: components/screens/ContactListScreen.tsx:187
+msgid "Members"
+msgstr "உறுப்பினர்கள்"
+
+#: components/screens/SelectAccountScreen.tsx:47
+msgid "ECP"
+msgstr "ECP"
+
+#: components/screens/DirectConversationScreen.tsx:277
+msgid "Modify"
+msgstr "மாற்றவும்"
+
+#: components/ui/MessageCompose.tsx:262
+msgid "Modify message"
+msgstr "செய்தியை மாற்றவும்"
+
+#: components/ui/BottomTabNavigation.tsx:49
+msgid "Multimedia"
+msgstr "மல்டிமீடியா"
+
+#: components/screens/EditArticleScreen.tsx:63
+msgid "New article"
+msgstr "புதிய கட்டுரை"
+
+#: components/ui/MessageCompose.tsx:200
+msgid "New draft"
+msgstr "புதிய வரைவு"
+
+#: components/screens/DirectConversationScreen.tsx:691
+#: components/screens/DirectConversationScreen.tsx:776
+msgid "Next occurrence"
+msgstr "அடுத்த நிகழ்வு"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:103
+#: components/screens/SelectAccountScreen.tsx:100
+msgid "No accounts on this device"
+msgstr "இந்த சாதனத்தில் கணக்குகள் இல்லை"
+
+#: components/screens/ArticlesScreen.tsx:86
+msgid "No articles"
+msgstr "கட்டுரைகள் இல்லை"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:100
+msgid "No changes yet"
+msgstr "எப்போதுமே மாற்றங்கள் இல்லை"
+
+#: components/screens/ContactScreen.tsx:258
+msgid "No connected devices"
+msgstr "இணைக்கப்பட்ட சாதனங்கள் எதுவும் இல்லை"
+
+#: components/screens/ContactListsScreen.tsx:135
+#: components/screens/ContactScreen.tsx:344
+msgid "No contact lists"
+msgstr "தொடர்புப் பட்டியல்கள் எதுவும் இல்லை"
+
+#: components/screens/ContactListScreen.tsx:251
+msgid "No contacts"
+msgstr "எந்த தொடர்புகளும் இல்லை"
+
+#: components/screens/DirectConversationScreen.tsx:502
+#: components/screens/DirectMessagesScreen.tsx:218
+#: components/screens/GroupConversationScreen.tsx:103
+#: components/screens/GroupMessagesScreen.tsx:56
+#: components/ui/JumpToDateCalendar.tsx:143
+msgid "No messages"
+msgstr "செய்திகள் இல்லை"
+
+#: components/screens/ContactListScreen.tsx:251
+#: components/screens/ContactListsScreen.tsx:126
+#: components/screens/ContactScreen.tsx:343
+#: components/screens/DirectMessagesScreen.tsx:214
+msgid "No results found"
+msgstr "எந்த முடிவுகளும் கிடைக்கவில்லை"
+
+#: components/screens/ContactScreen.tsx:223
+msgid "Not a valid account id"
+msgstr "செல்லுபடியாகும் கணக்கு ID இல்லை"
+
+#: components/screens/GroupScreen.tsx:150
+msgid "Not a valid group id"
+msgstr "செல்லுபடியாகும் குழு ID இல்லை"
+
+#: components/screens/ExportAccountScreen.tsx:102
+msgid "NOTE: every export has it's own password!"
+msgstr "குறிப்பு: ஒவ்வொரு ஏற்றுமதிக்கும் அதன் சொந்த கடவுச்சொல் உள்ளது!"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:39
+msgid "Open profile"
+msgstr "சுயவிவரத்தை திறக்கவும்"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:55
+msgid "Open with account"
+msgstr "கணக்குடன் திறக்கவும்"
+
+#: components/screens/ExportAccountScreen.tsx:88
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: components/screens/ImportAccountScreen.tsx:117
+msgid "Paste here exported account secret"
+msgstr "ஏற்றுமதி செய்யப்பட்ட கணக்கு ரகசியத்தை இங்கே ஒட்டவும்"
+
+#: components/screens/ContactScreen.tsx:218
+msgid "Paste the account id your contact shared with you"
+msgstr "உங்கள் தொடர்பு உங்களுடன் பகிர்ந்த கணக்கு IDஐ ஒட்டவும்"
+
+#: components/ui/BottomTabNavigation.tsx:61
+msgid "Places"
+msgstr "இடங்கள்"
+
+#: components/screens/DirectConversationScreen.tsx:627
+#: components/screens/DirectConversationScreen.tsx:750
+msgid "Previous occurrence"
+msgstr "முந்தைய நிகழ்வு"
+
+#: components/screens/AccountScreen.tsx:263
+#: components/screens/ContactScreen.tsx:371
+#: components/ui/BottomTabNavigation.tsx:71
+msgid "Profile"
+msgstr "சுயவிவரம்"
+
+#: components/screens/ProfileScreen.tsx:146
+msgid "Profile ID copied to clipboard"
+msgstr "சுயவிவர ID கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது"
+
+#: components/ui/MessageCompose.tsx:86
+msgid "Remove"
+msgstr "அகற்று"
+
+#: components/screens/AccountScreen.tsx:253
+msgid "Remove account from this device"
+msgstr "இந்த சாதனத்திலிருந்து கணக்கை அகற்றவும்"
+
+#: components/screens/ContactListScreen.tsx:235
+msgid "Remove contact from list"
+msgstr "தொடர்பு நபரை பட்டியலில் இருந்து நீக்கவும்"
+
+#: components/screens/ContactScreen.tsx:329
+msgid "Remove from contact list"
+msgstr "தொடர்பு பட்டியலில் இருந்து நீக்கு"
+
+#: components/screens/AccountScreen.tsx:104
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:184
+msgid "Save changes"
+msgstr "மாற்றங்களை சேமிக்கவும்"
+
+#: components/ui/MessageCompose.tsx:221
+msgid "Save draft"
+msgstr "வரைவை சேமிக்கவும்"
+
+#: components/screens/ContactListsScreen.tsx:79
+#: components/screens/DirectConversationScreen.tsx:604
+#: components/screens/DirectMessagesScreen.tsx:111
+#: components/ui/Select.tsx:146
+msgid "Search"
+msgstr "தேடு"
+
+#: components/screens/ContactListsScreen.tsx:48
+#: components/screens/ContactScreen.tsx:291
+msgid "Search contact lists"
+msgstr "தொடர்பு பட்டியல்களைத் தேடு"
+
+#: components/screens/ContactListScreen.tsx:193
+#: components/screens/DirectMessagesScreen.tsx:80
+msgid "Search contacts"
+msgstr "தொடர்புகளைத் தேடு"
+
+#: components/ui/MessageCompose.tsx:242
+msgid "Send message"
+msgstr "செய்தி அனுப்பவும்"
+
+#: components/screens/SelectAccountScreen.tsx:33
+msgid "Settings"
+msgstr "அமைப்புகள்"
+
+#: components/screens/ProfileScreen.tsx:153
+msgid "Share profile"
+msgstr "சுயவிவரத்தை பகிரவும்"
+
+#: components/ui/CoordsInput.tsx:45
+msgid "Show on map"
+msgstr "வரைபடத்தில் காட்டு"
+
+#: components/screens/ProfileScreen.tsx:97
+msgid "Show QR code"
+msgstr "QR குறியீட்டை காட்டு"
+
+#: components/screens/ContactListsScreen.tsx:67
+#: components/screens/DirectMessagesScreen.tsx:99
+msgid "Stop searching"
+msgstr "தேடலை நிறுத்து"
+
+#: components/screens/DirectConversationScreen.tsx:255
+msgid "Stop selecting"
+msgstr "தேர்ந்தெடுப்பதை நிறுத்து"
+
+#: components/screens/DeviceSettingsScreen.tsx:121
+msgid "System default"
+msgstr "இயல்பு நிலை"
+
+#: components/screens/DeviceSettingsScreen.tsx:116
+msgid "System default ({languageName})"
+msgstr "கணினி இயல்புநிலை ({languageName})"
+
+#: components/screens/DeviceSettingsScreen.tsx:147
+msgid "System default ({themeName})"
+msgstr "கணினி இயல்புநிலை ({themeName})"
+
+#: components/screens/AccountScreen.tsx:138
+msgid "Tap to change"
+msgstr "மாற்ற தட்டவும்"
+
+#: components/screens/ImportAccountScreen.tsx:102
+msgid "The one you typed in during export"
+msgstr "ஏற்றுமதியின் போது நீங்கள் தட்டச்சு செய்தது"
+
+#: components/screens/DeviceSettingsScreen.tsx:126
+msgid "Theme"
+msgstr "தீம்"
+
+#: components/screens/ContactScreen.tsx:236
+msgid "This name is only visible to you"
+msgstr "இந்த பெயர் உங்களுக்கு மட்டுமே தெரியும்"
+
+#: components/screens/AccountScreen.tsx:165
+#: components/screens/ImportAccountScreen.tsx:87
+msgid "This name is only visible to you on this device"
+msgstr "இந்த பெயர் இந்த சாதனத்தில் உங்களுக்கு மட்டுமே தெரியும்"
+
+#: components/screens/AccountScreen.tsx:137
+msgid "This will your avatar forever, choose wisely"
+msgstr "இது உங்கள் அவதாரமாக என்றும் இருக்கும், புத்திசாலித்தனமாக தேர்ந்தெடுங்கள்"
+
+#: components/screens/DirectConversationScreen.tsx:712
+msgid "Unread messages"
+msgstr "படிக்காத செய்திகள்"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Update article"
+msgstr "கட்டுரையை புதுப்பிக்கவும்"
+
+#: components/screens/AccountScreen.tsx:61
+msgid "Use another account"
+msgstr "வேறு கணக்கை பயன்படுத்தவும்"
+
+#: components/screens/ExportAccountScreen.tsx:98
+msgid "Will be needed to import later"
+msgstr "பின்னர் இறக்குமதி செய்ய தேவைப்படும்"
+
+#: components/ui/MessageCompose.tsx:141
+msgid "Write a message"
+msgstr "ஒரு செய்தி எழுதுங்கள்"
+
+#: components/screens/ExportAccountScreen.tsx:80
+msgid "You can send or store this exported text to import the account on other devices"
+msgstr "மற்ற சாதனங்களில் கணக்கை இறக்குமதி செய்ய இந்த ஏற்றுமதி செய்யப்பட்ட உரையை அனுப்பலாம் அல்லது சேமிக்கலாம்"

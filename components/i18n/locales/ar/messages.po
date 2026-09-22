@@ -1,0 +1,605 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-05-05 13:30+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ar\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: components/screens/DirectConversationScreen.tsx:257
+msgid "{selectedCount} selected"
+msgstr "تم تحديد {selectedCount}"
+
+#: components/screens/AccountScreen.tsx:183
+msgid "Account ID"
+msgstr "معرّف الحساب"
+
+#: components/screens/AccountScreen.tsx:145
+#: components/screens/AccountScreen.tsx:151
+#: components/screens/ImportAccountScreen.tsx:80
+msgid "Account name"
+msgstr "اسم الحساب"
+
+#: components/screens/ProfileScreen.tsx:242
+msgid "Account settings"
+msgstr "إعدادات الحساب"
+
+#: components/screens/ContactListScreen.tsx:236
+msgid "Add contact to list"
+msgstr "إضافة جهة الاتصال إلى القائمة"
+
+#: components/screens/ContactScreen.tsx:330
+msgid "Add to contact list"
+msgstr "إضافة إلى قائمة جهات الاتصال"
+
+#: components/screens/ContactListsScreen.tsx:40
+msgid "All messages"
+msgstr "جميع الرسائل"
+
+#: components/screens/DirectConversationScreen.tsx:309
+msgid "Answer"
+msgstr "إجابة"
+
+#: components/screens/ExportAccountScreen.tsx:83
+msgid "Anyone who is able to import the secret will have full access to the account forever!"
+msgstr "أي شخص يتمكن من استيراد السر سيحصل على وصول كامل إلى الحساب إلى الأبد!"
+
+#: components/ui/MessageCompose.tsx:125
+msgid "Attach file"
+msgstr "إرفاق ملف"
+
+#: components/screens/DeviceSettingsScreen.tsx:93
+#: components/screens/ProfileDeepLinkScreen.tsx:36
+msgid "Back"
+msgstr "رجوع"
+
+#: components/screens/ExportAccountScreen.tsx:38
+msgid "Back to account screen"
+msgstr "العودة إلى شاشة الحساب"
+
+#: components/screens/ImportAccountScreen.tsx:34
+msgid "Back to account selection"
+msgstr "العودة إلى اختيار الحساب"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:36
+msgid "Back to contact"
+msgstr "الرجوع إلى جهات الاتصال"
+
+#: components/screens/ContactListScreen.tsx:84
+msgid "Back to contact lists"
+msgstr "العودة إلى قوائم الاتصال"
+
+#: components/screens/ContactScreen.tsx:104
+msgid "Back to direct messages"
+msgstr "العودة إلى الرسائل المباشرة"
+
+#: components/screens/ProfileScreen.tsx:203
+msgid "Biography"
+msgstr "السيرة الذاتية"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:45
+#: components/screens/ContactScreen.tsx:118
+msgid "Changes history"
+msgstr "سجل التغييرات"
+
+#: components/ui/DateTimeInput.tsx:96
+msgid "Clear date"
+msgstr "مسح التاريخ"
+
+#: components/ui/MessageCompose.tsx:166
+msgid "Collapse editor"
+msgstr "طيّ المحرر"
+
+#: components/screens/WorkInProgressScreen.tsx:34
+msgid "Coming soon"
+msgstr "سيأتي قريبًا"
+
+#: components/screens/ExportAccountScreen.tsx:68
+msgid "Confirm export"
+msgstr "تأكيد التصدير"
+
+#: components/screens/ImportAccountScreen.tsx:68
+msgid "Confirm import"
+msgstr "تأكيد الاستيراد"
+
+#: components/screens/ContactScreen.tsx:251
+msgid "Connected devices"
+msgstr "الأجهزة المتصلة"
+
+#: components/screens/ContactScreen.tsx:206
+#: components/screens/ProfileDeepLinkScreen.tsx:46
+msgid "Contact account id"
+msgstr "معرّف حساب جهة الاتصال"
+
+#: components/screens/ContactListScreen.tsx:156
+msgid "Contact list name"
+msgstr "اسم قائمة جهات الاتصال"
+
+#: components/screens/DirectMessagesScreen.tsx:125
+msgid "Contact lists"
+msgstr "قوائم جهات الاتصال"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:67
+#: components/screens/ContactScreen.tsx:230
+msgid "Contact name"
+msgstr "اسم جهة الاتصال"
+
+#: components/screens/DirectConversationScreen.tsx:288
+msgid "Copied to clipboard"
+msgstr "نسخ إلى الحافظة"
+
+#: components/screens/AccountScreen.tsx:196
+msgid "Copy account id to clipboard"
+msgstr "نسخ معرّف الحساب إلى الحافظة"
+
+#: components/screens/AccountScreen.tsx:227
+msgid "Copy device id to clipboard"
+msgstr "نسخ معرّف الجهاز إلى الحافظة"
+
+#: components/screens/DirectConversationScreen.tsx:294
+msgid "Copy text"
+msgstr "نسخ النص"
+
+#: components/screens/AccountScreen.tsx:104
+msgid "Create account"
+msgstr "إنشاء حساب"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Create article"
+msgstr "إنشاء مقال"
+
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:184
+msgid "Create contact"
+msgstr "إنشاء جهة اتصال"
+
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactListsScreen.tsx:54
+msgid "Create contact list"
+msgstr "إنشاء قائمة جهات الاتصال"
+
+#: components/screens/SelectAccountScreen.tsx:60
+msgid "Create new account"
+msgstr "إنشاء حساب جديد"
+
+#: components/screens/ArticlesScreen.tsx:27
+msgid "Create new article"
+msgstr "إنشاء مقال جديد"
+
+#: components/screens/DirectMessagesScreen.tsx:86
+msgid "Create new contact"
+msgstr "إنشاء جهة اتصال جديدة"
+
+#: components/screens/GroupMessagesScreen.tsx:27
+msgid "Create new group"
+msgstr "إنشاء مجموعة جديدة"
+
+#: components/screens/DeviceSettingsScreen.tsx:141
+msgid "Dark"
+msgstr "داكن"
+
+#: components/screens/DirectConversationScreen.tsx:329
+#: components/ui/MessageCompose.tsx:278
+msgid "Delete"
+msgstr "حذف"
+
+#: components/screens/EditArticleScreen.tsx:83
+msgid "Delete article"
+msgstr "حذف المقال"
+
+#: components/screens/ContactScreen.tsx:138
+#: components/screens/GroupScreen.tsx:79
+msgid "Delete contact"
+msgstr "حذف جهة الاتصال"
+
+#: components/screens/ContactListScreen.tsx:104
+msgid "Delete contact list"
+msgstr "حذف قائمة جهات الاتصال"
+
+#: components/screens/AccountScreen.tsx:214
+msgid "Device ID"
+msgstr "معرّف الجهاز"
+
+#: components/screens/DeviceSettingsScreen.tsx:96
+msgid "Device Settings"
+msgstr "إعدادات الجهاز"
+
+#: components/screens/ContactScreen.tsx:361
+#: components/screens/ProfileScreen.tsx:228
+#: components/ui/BottomTabNavigation.tsx:31
+msgid "Direct messages"
+msgstr "الرسائل المباشرة"
+
+#: components/screens/AccountScreen.tsx:74
+#: components/screens/ContactListScreen.tsx:118
+#: components/screens/ContactScreen.tsx:152
+#: components/screens/EditArticleScreen.tsx:95
+#: components/screens/GroupScreen.tsx:91
+#: components/screens/ProfileScreen.tsx:168
+#: components/ui/MessageCompose.tsx:178
+msgid "Discard changes"
+msgstr "تجاهل التغييرات"
+
+#: components/screens/ArticlesScreen.tsx:57
+msgid "Edit article"
+msgstr "تعديل المقال"
+
+#: components/screens/ProfileScreen.tsx:237
+msgid "Edit contact"
+msgstr "تعديل جهة الاتصال"
+
+#: components/ui/DateTimeInput.tsx:80
+msgid "Edit date"
+msgstr "تعديل التاريخ"
+
+#: components/ui/DateTimeInput.tsx:88
+msgid "Edit time"
+msgstr "تعديل الوقت"
+
+#: components/screens/ContactListScreen.tsx:162
+msgid "Enter a name for this contact list"
+msgstr "أدخل اسمًا لهذه القائمة"
+
+#: components/screens/EditArticleScreen.tsx:138
+msgid "Event"
+msgstr "حدث"
+
+#: components/ui/BottomTabNavigation.tsx:55
+msgid "Events"
+msgstr "الأحداث"
+
+#: components/ui/MessageCompose.tsx:166
+msgid "Expand editor"
+msgstr "توسيع المحرر"
+
+#: components/screens/AccountScreen.tsx:239
+#: components/screens/ExportAccountScreen.tsx:47
+msgid "Export account"
+msgstr "تصدير الحساب"
+
+#: components/screens/ImportAccountScreen.tsx:92
+msgid "Export password"
+msgstr "كلمة مرور التصدير"
+
+#: components/screens/ImportAccountScreen.tsx:107
+msgid "Exported account secret"
+msgstr "سر الحساب المُصدَّر"
+
+#: components/screens/ExportAccountScreen.tsx:60
+#: components/screens/ExportAccountScreen.tsx:62
+msgid "Exported account secret copied to clipboard"
+msgstr "تم نسخ سر الحساب المُصدَّر إلى الحافظة"
+
+#: components/screens/DirectConversationScreen.tsx:302
+msgid "Forward"
+msgstr "إرسال"
+
+#: components/screens/EditArticleScreen.tsx:55
+msgid "Go to articles"
+msgstr "الذهاب إلى المقالات"
+
+#: components/screens/GroupScreen.tsx:60
+msgid "Go to conversation"
+msgstr "الذهاب إلى المحادثة"
+
+#: components/screens/DirectConversationScreen.tsx:225
+#: components/screens/GroupConversationScreen.tsx:49
+msgid "Go to messages"
+msgstr "الذهاب إلى الرسائل"
+
+#: components/screens/GroupScreen.tsx:135
+msgid "Group id"
+msgstr "معرّف المجموعة"
+
+#: components/ui/BottomTabNavigation.tsx:37
+msgid "Group messages"
+msgstr "رسائل المجموعة"
+
+#: components/screens/GroupScreen.tsx:157
+msgid "Group name"
+msgstr "اسم المجموعة"
+
+#: components/screens/ImportAccountScreen.tsx:37
+#: components/screens/SelectAccountScreen.tsx:54
+msgid "Import account"
+msgstr "استيراد الحساب"
+
+#: components/screens/ImportAccountScreen.tsx:61
+msgid "Invalid account secret or password"
+msgstr "سر الحساب أو كلمة المرور غير صالحة"
+
+#: components/screens/ContactScreen.tsx:268
+msgid "It takes two. Add each other as contacts to start chatting!"
+msgstr "يتطلب الأمر شخصين. أضفوا بعضكما البعض كجهات اتصال لبدء الدردشة!"
+
+#: components/screens/DirectConversationScreen.tsx:564
+msgid "Jump to date"
+msgstr "انتقل إلى التاريخ"
+
+#: components/screens/DeviceSettingsScreen.tsx:101
+msgid "Language"
+msgstr "اللغة"
+
+#: components/screens/DeviceSettingsScreen.tsx:139
+msgid "Light"
+msgstr "فاتح"
+
+#: components/screens/ProfileScreen.tsx:198
+msgid "Location"
+msgstr "الموقع"
+
+#: components/screens/DirectConversationScreen.tsx:662
+msgid "Mark as read"
+msgstr "تحديد كمقروء"
+
+#: components/screens/ContactScreen.tsx:284
+msgid "Member of contact lists"
+msgstr "عضو في قوائم الاتصال"
+
+#: components/screens/ContactListScreen.tsx:187
+msgid "Members"
+msgstr "الأعضاء"
+
+#: components/screens/SelectAccountScreen.tsx:47
+msgid "ECP"
+msgstr "ECP"
+
+#: components/screens/DirectConversationScreen.tsx:277
+msgid "Modify"
+msgstr "عدّل"
+
+#: components/ui/MessageCompose.tsx:262
+msgid "Modify message"
+msgstr "تعديل الرسالة"
+
+#: components/ui/BottomTabNavigation.tsx:49
+msgid "Multimedia"
+msgstr "وسائط متعددة"
+
+#: components/screens/EditArticleScreen.tsx:63
+msgid "New article"
+msgstr "مقال جديد"
+
+#: components/ui/MessageCompose.tsx:200
+msgid "New draft"
+msgstr "مسودة جديدة"
+
+#: components/screens/DirectConversationScreen.tsx:691
+#: components/screens/DirectConversationScreen.tsx:776
+msgid "Next occurrence"
+msgstr "التكرار التالي"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:103
+#: components/screens/SelectAccountScreen.tsx:100
+msgid "No accounts on this device"
+msgstr "لا توجد حسابات على هذا الجهاز"
+
+#: components/screens/ArticlesScreen.tsx:86
+msgid "No articles"
+msgstr "لا توجد مقالات"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:100
+msgid "No changes yet"
+msgstr "لم يتم إجراء أي تغييرات حتى الآن"
+
+#: components/screens/ContactScreen.tsx:258
+msgid "No connected devices"
+msgstr "لا توجد أجهزة متصلة"
+
+#: components/screens/ContactListsScreen.tsx:135
+#: components/screens/ContactScreen.tsx:344
+msgid "No contact lists"
+msgstr "قائمة جهات الاتصال غير متوفرة"
+
+#: components/screens/ContactListScreen.tsx:251
+msgid "No contacts"
+msgstr "لا يوجد جهات اتصال"
+
+#: components/screens/DirectConversationScreen.tsx:502
+#: components/screens/DirectMessagesScreen.tsx:218
+#: components/screens/GroupConversationScreen.tsx:103
+#: components/screens/GroupMessagesScreen.tsx:56
+#: components/ui/JumpToDateCalendar.tsx:143
+msgid "No messages"
+msgstr "لا توجد رسائل"
+
+#: components/screens/ContactListScreen.tsx:251
+#: components/screens/ContactListsScreen.tsx:126
+#: components/screens/ContactScreen.tsx:343
+#: components/screens/DirectMessagesScreen.tsx:214
+msgid "No results found"
+msgstr "لم يتم العثور على أي نتائج"
+
+#: components/screens/ContactScreen.tsx:223
+msgid "Not a valid account id"
+msgstr "معرّف حساب غير صالح"
+
+#: components/screens/GroupScreen.tsx:150
+msgid "Not a valid group id"
+msgstr "معرّف مجموعة غير صالح"
+
+#: components/screens/ExportAccountScreen.tsx:102
+msgid "NOTE: every export has it's own password!"
+msgstr "ملاحظة: كل عملية تصدير لها كلمة مرور خاصة بها!"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:39
+msgid "Open profile"
+msgstr "فتح الملف الشخصي"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:55
+msgid "Open with account"
+msgstr "فتح باستخدام الحساب"
+
+#: components/screens/ExportAccountScreen.tsx:88
+msgid "Password"
+msgstr "كلمة المرور"
+
+#: components/screens/ImportAccountScreen.tsx:117
+msgid "Paste here exported account secret"
+msgstr "الصق هنا سر الحساب المُصدَّر"
+
+#: components/screens/ContactScreen.tsx:218
+msgid "Paste the account id your contact shared with you"
+msgstr "الصق معرّف الحساب الذي شاركه معك جهة الاتصال"
+
+#: components/ui/BottomTabNavigation.tsx:61
+msgid "Places"
+msgstr "الأماكن"
+
+#: components/screens/DirectConversationScreen.tsx:627
+#: components/screens/DirectConversationScreen.tsx:750
+msgid "Previous occurrence"
+msgstr "التكرار السابق"
+
+#: components/screens/AccountScreen.tsx:263
+#: components/screens/ContactScreen.tsx:371
+#: components/ui/BottomTabNavigation.tsx:71
+msgid "Profile"
+msgstr "الملف الشخصي"
+
+#: components/screens/ProfileScreen.tsx:146
+msgid "Profile ID copied to clipboard"
+msgstr "تم نسخ معرّف الملف الشخصي إلى الحافظة"
+
+#: components/ui/MessageCompose.tsx:86
+msgid "Remove"
+msgstr "إزالة"
+
+#: components/screens/AccountScreen.tsx:253
+msgid "Remove account from this device"
+msgstr "إزالة الحساب من هذا الجهاز"
+
+#: components/screens/ContactListScreen.tsx:235
+msgid "Remove contact from list"
+msgstr "إزالة جهة الاتصال من القائمة"
+
+#: components/screens/ContactScreen.tsx:329
+msgid "Remove from contact list"
+msgstr "إزالة من قائمة الاتصال"
+
+#: components/screens/AccountScreen.tsx:104
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:184
+msgid "Save changes"
+msgstr "حفظ التغييرات"
+
+#: components/ui/MessageCompose.tsx:221
+msgid "Save draft"
+msgstr "حفظ المسودة"
+
+#: components/screens/ContactListsScreen.tsx:79
+#: components/screens/DirectConversationScreen.tsx:604
+#: components/screens/DirectMessagesScreen.tsx:111
+#: components/ui/Select.tsx:146
+msgid "Search"
+msgstr "بحث"
+
+#: components/screens/ContactListsScreen.tsx:48
+#: components/screens/ContactScreen.tsx:291
+msgid "Search contact lists"
+msgstr "بحث في قوائم جهات الاتصال"
+
+#: components/screens/ContactListScreen.tsx:193
+#: components/screens/DirectMessagesScreen.tsx:80
+msgid "Search contacts"
+msgstr "بحث عن جهات الاتصال"
+
+#: components/ui/MessageCompose.tsx:242
+msgid "Send message"
+msgstr "إرسال الرسالة"
+
+#: components/screens/SelectAccountScreen.tsx:33
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: components/screens/ProfileScreen.tsx:153
+msgid "Share profile"
+msgstr "مشاركة الملف الشخصي"
+
+#: components/ui/CoordsInput.tsx:45
+msgid "Show on map"
+msgstr "عرض على الخريطة"
+
+#: components/screens/ProfileScreen.tsx:97
+msgid "Show QR code"
+msgstr "عرض رمز QR"
+
+#: components/screens/ContactListsScreen.tsx:67
+#: components/screens/DirectMessagesScreen.tsx:99
+msgid "Stop searching"
+msgstr "توقف عن البحث"
+
+#: components/screens/DirectConversationScreen.tsx:255
+msgid "Stop selecting"
+msgstr "توقف عن الاختيار"
+
+#: components/screens/DeviceSettingsScreen.tsx:121
+msgid "System default"
+msgstr "الإعدادات الافتراضية للنظام"
+
+#: components/screens/DeviceSettingsScreen.tsx:116
+msgid "System default ({languageName})"
+msgstr "افتراضي النظام ({languageName})"
+
+#: components/screens/DeviceSettingsScreen.tsx:147
+msgid "System default ({themeName})"
+msgstr "افتراضي النظام ({themeName})"
+
+#: components/screens/AccountScreen.tsx:138
+msgid "Tap to change"
+msgstr "اضغط للتغيير"
+
+#: components/screens/ImportAccountScreen.tsx:102
+msgid "The one you typed in during export"
+msgstr "التي كتبتها أثناء التصدير"
+
+#: components/screens/DeviceSettingsScreen.tsx:126
+msgid "Theme"
+msgstr "المظهر"
+
+#: components/screens/ContactScreen.tsx:236
+msgid "This name is only visible to you"
+msgstr "هذا الاسم مرئي لك فقط"
+
+#: components/screens/AccountScreen.tsx:165
+#: components/screens/ImportAccountScreen.tsx:87
+msgid "This name is only visible to you on this device"
+msgstr "هذا الاسم مرئي لك فقط على هذا الجهاز"
+
+#: components/screens/AccountScreen.tsx:137
+msgid "This will your avatar forever, choose wisely"
+msgstr "سيكون هذا صورتك الرمزية إلى الأبد، اختر بحكمة"
+
+#: components/screens/DirectConversationScreen.tsx:712
+msgid "Unread messages"
+msgstr "الرسائل غير المقروءة"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Update article"
+msgstr "تحديث المقال"
+
+#: components/screens/AccountScreen.tsx:61
+msgid "Use another account"
+msgstr "استخدام حساب آخر"
+
+#: components/screens/ExportAccountScreen.tsx:98
+msgid "Will be needed to import later"
+msgstr "ستكون مطلوبة للاستيراد لاحقاً"
+
+#: components/ui/MessageCompose.tsx:141
+msgid "Write a message"
+msgstr "اكتب رسالة"
+
+#: components/screens/ExportAccountScreen.tsx:80
+msgid "You can send or store this exported text to import the account on other devices"
+msgstr "يمكنك إرسال أو تخزين هذا النص المُصدَّر لاستيراد الحساب على أجهزة أخرى"

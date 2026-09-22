@@ -1,0 +1,605 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-05-05 13:30+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: components/screens/DirectConversationScreen.tsx:257
+msgid "{selectedCount} selected"
+msgstr "{selectedCount} seleccionado"
+
+#: components/screens/AccountScreen.tsx:183
+msgid "Account ID"
+msgstr "ID de cuenta"
+
+#: components/screens/AccountScreen.tsx:145
+#: components/screens/AccountScreen.tsx:151
+#: components/screens/ImportAccountScreen.tsx:80
+msgid "Account name"
+msgstr "Nombre de cuenta"
+
+#: components/screens/ProfileScreen.tsx:242
+msgid "Account settings"
+msgstr "Configuración de cuenta"
+
+#: components/screens/ContactListScreen.tsx:236
+msgid "Add contact to list"
+msgstr "Añadir contacto a la lista"
+
+#: components/screens/ContactScreen.tsx:330
+msgid "Add to contact list"
+msgstr "Añadir a la lista de contactos"
+
+#: components/screens/ContactListsScreen.tsx:40
+msgid "All messages"
+msgstr "Todos los mensajes"
+
+#: components/screens/DirectConversationScreen.tsx:309
+msgid "Answer"
+msgstr "Respuesta"
+
+#: components/screens/ExportAccountScreen.tsx:83
+msgid "Anyone who is able to import the secret will have full access to the account forever!"
+msgstr "¡Cualquiera que pueda importar el secreto tendrá acceso completo a la cuenta para siempre!"
+
+#: components/ui/MessageCompose.tsx:125
+msgid "Attach file"
+msgstr "Adjuntar archivo"
+
+#: components/screens/DeviceSettingsScreen.tsx:93
+#: components/screens/ProfileDeepLinkScreen.tsx:36
+msgid "Back"
+msgstr "Volver"
+
+#: components/screens/ExportAccountScreen.tsx:38
+msgid "Back to account screen"
+msgstr "Volver a la pantalla de cuenta"
+
+#: components/screens/ImportAccountScreen.tsx:34
+msgid "Back to account selection"
+msgstr "Volver a la selección de cuenta"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:36
+msgid "Back to contact"
+msgstr "Regresar a la sección de contacto"
+
+#: components/screens/ContactListScreen.tsx:84
+msgid "Back to contact lists"
+msgstr "Volver a las listas de contactos"
+
+#: components/screens/ContactScreen.tsx:104
+msgid "Back to direct messages"
+msgstr "Volver a mensajes directos"
+
+#: components/screens/ProfileScreen.tsx:203
+msgid "Biography"
+msgstr "Biografía"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:45
+#: components/screens/ContactScreen.tsx:118
+msgid "Changes history"
+msgstr "Historial de cambios"
+
+#: components/ui/DateTimeInput.tsx:96
+msgid "Clear date"
+msgstr "Borrar fecha"
+
+#: components/ui/MessageCompose.tsx:166
+msgid "Collapse editor"
+msgstr "Colapsar el editor"
+
+#: components/screens/WorkInProgressScreen.tsx:34
+msgid "Coming soon"
+msgstr "Próximamente"
+
+#: components/screens/ExportAccountScreen.tsx:68
+msgid "Confirm export"
+msgstr "Confirmar exportación"
+
+#: components/screens/ImportAccountScreen.tsx:68
+msgid "Confirm import"
+msgstr "Confirmar importación"
+
+#: components/screens/ContactScreen.tsx:251
+msgid "Connected devices"
+msgstr "Dispositivos conectados"
+
+#: components/screens/ContactScreen.tsx:206
+#: components/screens/ProfileDeepLinkScreen.tsx:46
+msgid "Contact account id"
+msgstr "ID de cuenta del contacto"
+
+#: components/screens/ContactListScreen.tsx:156
+msgid "Contact list name"
+msgstr "Nombre de la lista de contactos"
+
+#: components/screens/DirectMessagesScreen.tsx:125
+msgid "Contact lists"
+msgstr "Listas de contactos"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:67
+#: components/screens/ContactScreen.tsx:230
+msgid "Contact name"
+msgstr "Nombre del contacto"
+
+#: components/screens/DirectConversationScreen.tsx:288
+msgid "Copied to clipboard"
+msgstr "Copiado al portapapeles"
+
+#: components/screens/AccountScreen.tsx:196
+msgid "Copy account id to clipboard"
+msgstr "Copiar ID de cuenta al portapapeles"
+
+#: components/screens/AccountScreen.tsx:227
+msgid "Copy device id to clipboard"
+msgstr "Copiar ID de dispositivo al portapapeles"
+
+#: components/screens/DirectConversationScreen.tsx:294
+msgid "Copy text"
+msgstr "Copiar texto"
+
+#: components/screens/AccountScreen.tsx:104
+msgid "Create account"
+msgstr "Crear cuenta"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Create article"
+msgstr "Crear artículo"
+
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:184
+msgid "Create contact"
+msgstr "Crear contacto"
+
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactListsScreen.tsx:54
+msgid "Create contact list"
+msgstr "Crear lista de contactos"
+
+#: components/screens/SelectAccountScreen.tsx:60
+msgid "Create new account"
+msgstr "Crear nueva cuenta"
+
+#: components/screens/ArticlesScreen.tsx:27
+msgid "Create new article"
+msgstr "Crear nuevo artículo"
+
+#: components/screens/DirectMessagesScreen.tsx:86
+msgid "Create new contact"
+msgstr "Crear nuevo contacto"
+
+#: components/screens/GroupMessagesScreen.tsx:27
+msgid "Create new group"
+msgstr "Crear nuevo grupo"
+
+#: components/screens/DeviceSettingsScreen.tsx:141
+msgid "Dark"
+msgstr "Oscuro"
+
+#: components/screens/DirectConversationScreen.tsx:329
+#: components/ui/MessageCompose.tsx:278
+msgid "Delete"
+msgstr "Eliminar"
+
+#: components/screens/EditArticleScreen.tsx:83
+msgid "Delete article"
+msgstr "Eliminar artículo"
+
+#: components/screens/ContactScreen.tsx:138
+#: components/screens/GroupScreen.tsx:79
+msgid "Delete contact"
+msgstr "Eliminar contacto"
+
+#: components/screens/ContactListScreen.tsx:104
+msgid "Delete contact list"
+msgstr "Eliminar lista de contactos"
+
+#: components/screens/AccountScreen.tsx:214
+msgid "Device ID"
+msgstr "ID de dispositivo"
+
+#: components/screens/DeviceSettingsScreen.tsx:96
+msgid "Device Settings"
+msgstr "Configuración del dispositivo"
+
+#: components/screens/ContactScreen.tsx:361
+#: components/screens/ProfileScreen.tsx:228
+#: components/ui/BottomTabNavigation.tsx:31
+msgid "Direct messages"
+msgstr "Mensajes directos"
+
+#: components/screens/AccountScreen.tsx:74
+#: components/screens/ContactListScreen.tsx:118
+#: components/screens/ContactScreen.tsx:152
+#: components/screens/EditArticleScreen.tsx:95
+#: components/screens/GroupScreen.tsx:91
+#: components/screens/ProfileScreen.tsx:168
+#: components/ui/MessageCompose.tsx:178
+msgid "Discard changes"
+msgstr "Descartar cambios"
+
+#: components/screens/ArticlesScreen.tsx:57
+msgid "Edit article"
+msgstr "Editar artículo"
+
+#: components/screens/ProfileScreen.tsx:237
+msgid "Edit contact"
+msgstr "Editar contacto"
+
+#: components/ui/DateTimeInput.tsx:80
+msgid "Edit date"
+msgstr "Editar fecha"
+
+#: components/ui/DateTimeInput.tsx:88
+msgid "Edit time"
+msgstr "Editar hora"
+
+#: components/screens/ContactListScreen.tsx:162
+msgid "Enter a name for this contact list"
+msgstr "Introduzca un nombre para esta lista de contactos"
+
+#: components/screens/EditArticleScreen.tsx:138
+msgid "Event"
+msgstr "Evento"
+
+#: components/ui/BottomTabNavigation.tsx:55
+msgid "Events"
+msgstr "Eventos"
+
+#: components/ui/MessageCompose.tsx:166
+msgid "Expand editor"
+msgstr "Ampliar el editor"
+
+#: components/screens/AccountScreen.tsx:239
+#: components/screens/ExportAccountScreen.tsx:47
+msgid "Export account"
+msgstr "Exportar cuenta"
+
+#: components/screens/ImportAccountScreen.tsx:92
+msgid "Export password"
+msgstr "Contraseña de exportación"
+
+#: components/screens/ImportAccountScreen.tsx:107
+msgid "Exported account secret"
+msgstr "Secreto de cuenta exportado"
+
+#: components/screens/ExportAccountScreen.tsx:60
+#: components/screens/ExportAccountScreen.tsx:62
+msgid "Exported account secret copied to clipboard"
+msgstr "Secreto de cuenta exportado copiado al portapapeles"
+
+#: components/screens/DirectConversationScreen.tsx:302
+msgid "Forward"
+msgstr "Enviar"
+
+#: components/screens/EditArticleScreen.tsx:55
+msgid "Go to articles"
+msgstr "Ir a artículos"
+
+#: components/screens/GroupScreen.tsx:60
+msgid "Go to conversation"
+msgstr "Ir a la conversación"
+
+#: components/screens/DirectConversationScreen.tsx:225
+#: components/screens/GroupConversationScreen.tsx:49
+msgid "Go to messages"
+msgstr "Ir a mensajes"
+
+#: components/screens/GroupScreen.tsx:135
+msgid "Group id"
+msgstr "ID de grupo"
+
+#: components/ui/BottomTabNavigation.tsx:37
+msgid "Group messages"
+msgstr "Mensajes de grupo"
+
+#: components/screens/GroupScreen.tsx:157
+msgid "Group name"
+msgstr "Nombre del grupo"
+
+#: components/screens/ImportAccountScreen.tsx:37
+#: components/screens/SelectAccountScreen.tsx:54
+msgid "Import account"
+msgstr "Importar cuenta"
+
+#: components/screens/ImportAccountScreen.tsx:61
+msgid "Invalid account secret or password"
+msgstr "Secreto de cuenta o contraseña no válidos"
+
+#: components/screens/ContactScreen.tsx:268
+msgid "It takes two. Add each other as contacts to start chatting!"
+msgstr "Se necesitan dos. Añade a cada uno como contacto para empezar a chatear"
+
+#: components/screens/DirectConversationScreen.tsx:564
+msgid "Jump to date"
+msgstr "Ir a la fecha"
+
+#: components/screens/DeviceSettingsScreen.tsx:101
+msgid "Language"
+msgstr "Idioma"
+
+#: components/screens/DeviceSettingsScreen.tsx:139
+msgid "Light"
+msgstr "Claro"
+
+#: components/screens/ProfileScreen.tsx:198
+msgid "Location"
+msgstr "Ubicación"
+
+#: components/screens/DirectConversationScreen.tsx:662
+msgid "Mark as read"
+msgstr "Marcar como leído"
+
+#: components/screens/ContactScreen.tsx:284
+msgid "Member of contact lists"
+msgstr "Miembros de las listas de contactos"
+
+#: components/screens/ContactListScreen.tsx:187
+msgid "Members"
+msgstr "Miembros"
+
+#: components/screens/SelectAccountScreen.tsx:47
+msgid "ECP"
+msgstr "ECP"
+
+#: components/screens/DirectConversationScreen.tsx:277
+msgid "Modify"
+msgstr "Modificar"
+
+#: components/ui/MessageCompose.tsx:262
+msgid "Modify message"
+msgstr "Modificar mensaje"
+
+#: components/ui/BottomTabNavigation.tsx:49
+msgid "Multimedia"
+msgstr "Contenido multimedia"
+
+#: components/screens/EditArticleScreen.tsx:63
+msgid "New article"
+msgstr "Nuevo artículo"
+
+#: components/ui/MessageCompose.tsx:200
+msgid "New draft"
+msgstr "Nuevo borrador"
+
+#: components/screens/DirectConversationScreen.tsx:691
+#: components/screens/DirectConversationScreen.tsx:776
+msgid "Next occurrence"
+msgstr "Siguiente coincidencia"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:103
+#: components/screens/SelectAccountScreen.tsx:100
+msgid "No accounts on this device"
+msgstr "No hay cuentas en este dispositivo"
+
+#: components/screens/ArticlesScreen.tsx:86
+msgid "No articles"
+msgstr "No hay artículos"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:100
+msgid "No changes yet"
+msgstr "Aún no hay cambios"
+
+#: components/screens/ContactScreen.tsx:258
+msgid "No connected devices"
+msgstr "No hay dispositivos conectados"
+
+#: components/screens/ContactListsScreen.tsx:135
+#: components/screens/ContactScreen.tsx:344
+msgid "No contact lists"
+msgstr "Sin listas de contactos"
+
+#: components/screens/ContactListScreen.tsx:251
+msgid "No contacts"
+msgstr "No contactos"
+
+#: components/screens/DirectConversationScreen.tsx:502
+#: components/screens/DirectMessagesScreen.tsx:218
+#: components/screens/GroupConversationScreen.tsx:103
+#: components/screens/GroupMessagesScreen.tsx:56
+#: components/ui/JumpToDateCalendar.tsx:143
+msgid "No messages"
+msgstr "No hay mensajes"
+
+#: components/screens/ContactListScreen.tsx:251
+#: components/screens/ContactListsScreen.tsx:126
+#: components/screens/ContactScreen.tsx:343
+#: components/screens/DirectMessagesScreen.tsx:214
+msgid "No results found"
+msgstr "No se encontraron resultados"
+
+#: components/screens/ContactScreen.tsx:223
+msgid "Not a valid account id"
+msgstr "ID de cuenta no válido"
+
+#: components/screens/GroupScreen.tsx:150
+msgid "Not a valid group id"
+msgstr "ID de grupo no válido"
+
+#: components/screens/ExportAccountScreen.tsx:102
+msgid "NOTE: every export has it's own password!"
+msgstr "NOTA: ¡cada exportación tiene su propia contraseña!"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:39
+msgid "Open profile"
+msgstr "Abrir perfil"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:55
+msgid "Open with account"
+msgstr "Abrir con cuenta"
+
+#: components/screens/ExportAccountScreen.tsx:88
+msgid "Password"
+msgstr "Contraseña"
+
+#: components/screens/ImportAccountScreen.tsx:117
+msgid "Paste here exported account secret"
+msgstr "Pega aquí el secreto de cuenta exportado"
+
+#: components/screens/ContactScreen.tsx:218
+msgid "Paste the account id your contact shared with you"
+msgstr "Pega el ID de cuenta que tu contacto compartió contigo"
+
+#: components/ui/BottomTabNavigation.tsx:61
+msgid "Places"
+msgstr "Lugares"
+
+#: components/screens/DirectConversationScreen.tsx:627
+#: components/screens/DirectConversationScreen.tsx:750
+msgid "Previous occurrence"
+msgstr "Coincidencia anterior"
+
+#: components/screens/AccountScreen.tsx:263
+#: components/screens/ContactScreen.tsx:371
+#: components/ui/BottomTabNavigation.tsx:71
+msgid "Profile"
+msgstr "Perfil"
+
+#: components/screens/ProfileScreen.tsx:146
+msgid "Profile ID copied to clipboard"
+msgstr "ID de perfil copiado al portapapeles"
+
+#: components/ui/MessageCompose.tsx:86
+msgid "Remove"
+msgstr "Eliminar"
+
+#: components/screens/AccountScreen.tsx:253
+msgid "Remove account from this device"
+msgstr "Eliminar cuenta de este dispositivo"
+
+#: components/screens/ContactListScreen.tsx:235
+msgid "Remove contact from list"
+msgstr "Eliminar contacto de la lista"
+
+#: components/screens/ContactScreen.tsx:329
+msgid "Remove from contact list"
+msgstr "Eliminar de la lista de contactos"
+
+#: components/screens/AccountScreen.tsx:104
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:184
+msgid "Save changes"
+msgstr "Guardar cambios"
+
+#: components/ui/MessageCompose.tsx:221
+msgid "Save draft"
+msgstr "Guardar borrador"
+
+#: components/screens/ContactListsScreen.tsx:79
+#: components/screens/DirectConversationScreen.tsx:604
+#: components/screens/DirectMessagesScreen.tsx:111
+#: components/ui/Select.tsx:146
+msgid "Search"
+msgstr "Buscar"
+
+#: components/screens/ContactListsScreen.tsx:48
+#: components/screens/ContactScreen.tsx:291
+msgid "Search contact lists"
+msgstr "Buscar en las listas de contactos"
+
+#: components/screens/ContactListScreen.tsx:193
+#: components/screens/DirectMessagesScreen.tsx:80
+msgid "Search contacts"
+msgstr "Buscar contactos"
+
+#: components/ui/MessageCompose.tsx:242
+msgid "Send message"
+msgstr "Enviar mensaje"
+
+#: components/screens/SelectAccountScreen.tsx:33
+msgid "Settings"
+msgstr "Ajustes"
+
+#: components/screens/ProfileScreen.tsx:153
+msgid "Share profile"
+msgstr "Compartir perfil"
+
+#: components/ui/CoordsInput.tsx:45
+msgid "Show on map"
+msgstr "Mostrar en el mapa"
+
+#: components/screens/ProfileScreen.tsx:97
+msgid "Show QR code"
+msgstr "Mostrar código QR"
+
+#: components/screens/ContactListsScreen.tsx:67
+#: components/screens/DirectMessagesScreen.tsx:99
+msgid "Stop searching"
+msgstr "Deje de buscar"
+
+#: components/screens/DirectConversationScreen.tsx:255
+msgid "Stop selecting"
+msgstr "Dejar de seleccionar"
+
+#: components/screens/DeviceSettingsScreen.tsx:121
+msgid "System default"
+msgstr "Configuración predeterminada del sistema"
+
+#: components/screens/DeviceSettingsScreen.tsx:116
+msgid "System default ({languageName})"
+msgstr "Predeterminado del sistema ({languageName})"
+
+#: components/screens/DeviceSettingsScreen.tsx:147
+msgid "System default ({themeName})"
+msgstr "Predeterminado del sistema ({themeName})"
+
+#: components/screens/AccountScreen.tsx:138
+msgid "Tap to change"
+msgstr "Toca para cambiar"
+
+#: components/screens/ImportAccountScreen.tsx:102
+msgid "The one you typed in during export"
+msgstr "La que escribiste durante la exportación"
+
+#: components/screens/DeviceSettingsScreen.tsx:126
+msgid "Theme"
+msgstr "Tema"
+
+#: components/screens/ContactScreen.tsx:236
+msgid "This name is only visible to you"
+msgstr "Este nombre solo es visible para ti"
+
+#: components/screens/AccountScreen.tsx:165
+#: components/screens/ImportAccountScreen.tsx:87
+msgid "This name is only visible to you on this device"
+msgstr "Este nombre solo es visible para ti en este dispositivo"
+
+#: components/screens/AccountScreen.tsx:137
+msgid "This will your avatar forever, choose wisely"
+msgstr "Este será tu avatar para siempre, elige con cuidado"
+
+#: components/screens/DirectConversationScreen.tsx:712
+msgid "Unread messages"
+msgstr "Mensajes no leídos"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Update article"
+msgstr "Actualizar artículo"
+
+#: components/screens/AccountScreen.tsx:61
+msgid "Use another account"
+msgstr "Usar otra cuenta"
+
+#: components/screens/ExportAccountScreen.tsx:98
+msgid "Will be needed to import later"
+msgstr "Se necesitará para importar más adelante"
+
+#: components/ui/MessageCompose.tsx:141
+msgid "Write a message"
+msgstr "Escribe un mensaje"
+
+#: components/screens/ExportAccountScreen.tsx:80
+msgid "You can send or store this exported text to import the account on other devices"
+msgstr "Puedes enviar o guardar este texto exportado para importar la cuenta en otros dispositivos"

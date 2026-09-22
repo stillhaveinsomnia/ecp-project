@@ -1,0 +1,660 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-05-05 13:30+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: fa\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: components/screens/AccountScreen.tsx:190
+msgid "Account ID"
+msgstr "شناسه حساب"
+
+#: components/screens/AccountScreen.tsx:158
+#: components/screens/ImportAccountScreen.tsx:80
+msgid "Account name"
+msgstr "نام حساب"
+
+#: components/screens/ProfileScreen.tsx:244
+msgid "Account settings"
+msgstr "تنظیمات حساب"
+
+#: components/screens/ContactListScreen.tsx:234
+msgid "Add contact to list"
+msgstr ""
+
+#: components/screens/ContactScreen.tsx:329
+msgid "Add to contact list"
+msgstr ""
+
+#: components/screens/ContactListsScreen.tsx:39
+msgid "All messages"
+msgstr ""
+
+#: components/screens/ExportAccountScreen.tsx:87
+msgid "Anyone who is able to import the secret will have full access to the account forever!"
+msgstr "هر کسی که بتواند راز را وارد کند برای همیشه دسترسی کامل به حساب خواهد داشت!"
+
+#: components/screens/DeviceSettingsScreen.tsx:82
+msgid "Arabic"
+msgstr "عربی"
+
+#: components/ui/MessageCompose.tsx:107
+msgid "Attach file"
+msgstr "پیوست فایل"
+
+#: components/screens/DeviceSettingsScreen.tsx:31
+#: components/screens/ProfileDeepLinkScreen.tsx:36
+msgid "Back"
+msgstr "بازگشت"
+
+#: components/screens/ExportAccountScreen.tsx:38
+msgid "Back to account screen"
+msgstr "بازگشت به صفحه حساب"
+
+#: components/screens/ImportAccountScreen.tsx:34
+msgid "Back to account selection"
+msgstr "بازگشت به انتخاب حساب"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:36
+msgid "Back to contact"
+msgstr "بازگشت به بخش تماس"
+
+#: components/screens/ContactListScreen.tsx:84
+msgid "Back to contact lists"
+msgstr ""
+
+#: components/screens/ContactScreen.tsx:104
+msgid "Back to direct messages"
+msgstr "بازگشت به پیام‌های مستقیم"
+
+#: components/screens/DeviceSettingsScreen.tsx:60
+msgid "Bengali"
+msgstr "بنگالی"
+
+#: components/screens/ProfileScreen.tsx:206
+msgid "Biography"
+msgstr "بیوگرافی"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:48
+#: components/screens/ContactScreen.tsx:118
+msgid "Changes history"
+msgstr "تاریخ تغییرات"
+
+#: components/ui/DateTimeInput.tsx:97
+msgid "Clear date"
+msgstr "پاک کردن تاریخ"
+
+#: components/screens/ExportAccountScreen.tsx:70
+msgid "Confirm export"
+msgstr "تأیید صادرات"
+
+#: components/screens/ImportAccountScreen.tsx:68
+msgid "Confirm import"
+msgstr "تأیید واردات"
+
+#: components/screens/ContactScreen.tsx:249
+msgid "Connected devices"
+msgstr "دستگاه‌های متصل"
+
+#: components/screens/ContactScreen.tsx:206
+#: components/screens/ProfileDeepLinkScreen.tsx:46
+msgid "Contact account id"
+msgstr "شناسه حساب مخاطب"
+
+#: components/screens/ContactListScreen.tsx:156
+msgid "Contact list name"
+msgstr ""
+
+#: components/screens/DirectMessagesScreen.tsx:125
+msgid "Contact lists"
+msgstr ""
+
+#: components/screens/ContactChangesHistoryScreen.tsx:70
+#: components/screens/ContactScreen.tsx:229
+msgid "Contact name"
+msgstr "نام مخاطب"
+
+#: components/screens/AccountScreen.tsx:203
+msgid "Copy account id to clipboard"
+msgstr "کپی شناسه حساب در کلیپبورد"
+
+#: components/screens/AccountScreen.tsx:234
+msgid "Copy device id to clipboard"
+msgstr "کپی شناسه دستگاه در کلیپبورد"
+
+#: components/screens/AccountScreen.tsx:117
+msgid "Create account"
+msgstr "ایجاد حساب"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Create article"
+msgstr "ایجاد مقاله"
+
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:187
+msgid "Create contact"
+msgstr "ایجاد مخاطب"
+
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactListsScreen.tsx:53
+msgid "Create contact list"
+msgstr ""
+
+#: components/screens/SelectAccountScreen.tsx:56
+msgid "Create new account"
+msgstr "ایجاد حساب جدید"
+
+#: components/screens/ArticlesScreen.tsx:27
+msgid "Create new article"
+msgstr "ایجاد مقاله جدید"
+
+#: components/screens/DirectMessagesScreen.tsx:86
+msgid "Create new contact"
+msgstr "ایجاد مخاطب جدید"
+
+#: components/screens/GroupMessagesScreen.tsx:27
+msgid "Create new group"
+msgstr "ایجاد گروه جدید"
+
+#: components/screens/DeviceSettingsScreen.tsx:134
+msgid "Dark"
+msgstr "تیره"
+
+#: components/ui/MessageCompose.tsx:210
+msgid "Delete"
+msgstr "حذف"
+
+#: components/screens/EditArticleScreen.tsx:83
+msgid "Delete article"
+msgstr "حذف مقاله"
+
+#: components/screens/ContactScreen.tsx:138
+#: components/screens/GroupScreen.tsx:79
+msgid "Delete contact"
+msgstr "حذف مخاطب"
+
+#: components/screens/ContactListScreen.tsx:104
+msgid "Delete contact list"
+msgstr ""
+
+#: components/screens/AccountScreen.tsx:221
+msgid "Device ID"
+msgstr "شناسه دستگاه"
+
+#: components/screens/DeviceSettingsScreen.tsx:34
+msgid "Device Settings"
+msgstr "تنظیمات دستگاه"
+
+#: components/screens/ContactScreen.tsx:355
+#: components/screens/ProfileScreen.tsx:230
+#: components/ui/BottomTabNavigation.tsx:30
+msgid "Direct messages"
+msgstr "پیام‌های مستقیم"
+
+#: components/screens/AccountScreen.tsx:87
+#: components/screens/ContactListScreen.tsx:118
+#: components/screens/ContactScreen.tsx:152
+#: components/screens/EditArticleScreen.tsx:95
+#: components/screens/GroupScreen.tsx:91
+#: components/screens/ProfileScreen.tsx:171
+msgid "Discard changes"
+msgstr "رد کردن تغییرات"
+
+#: components/screens/ArticlesScreen.tsx:57
+msgid "Edit article"
+msgstr "ویرایش مقاله"
+
+#: components/screens/ProfileScreen.tsx:239
+msgid "Edit contact"
+msgstr "ویرایش مخاطب"
+
+#: components/ui/DateTimeInput.tsx:81
+msgid "Edit date"
+msgstr "ویرایش تاریخ"
+
+#: components/ui/DateTimeInput.tsx:89
+msgid "Edit time"
+msgstr "ویرایش زمان"
+
+#: components/screens/DeviceSettingsScreen.tsx:52
+msgid "English"
+msgstr "انگلیسی"
+
+#: components/screens/ContactListScreen.tsx:161
+msgid "Enter a name for this contact list"
+msgstr ""
+
+#: components/screens/EditArticleScreen.tsx:138
+msgid "Event"
+msgstr "رویداد"
+
+#: components/ui/BottomTabNavigation.tsx:48
+msgid "Events"
+msgstr "رویدادها"
+
+#: components/screens/AccountScreen.tsx:246
+#: components/screens/ExportAccountScreen.tsx:49
+msgid "Export account"
+msgstr "صادر کردن حساب"
+
+#: components/screens/ImportAccountScreen.tsx:91
+msgid "Export password"
+msgstr "رمز عبور صادرات"
+
+#: components/screens/ImportAccountScreen.tsx:105
+msgid "Exported account secret"
+msgstr "راز حساب صادر شده"
+
+#: components/screens/ExportAccountScreen.tsx:62
+#: components/screens/ExportAccountScreen.tsx:64
+msgid "Exported account secret copied to clipboard"
+msgstr "راز حساب صادر شده در کلیپبورد کپی شد"
+
+#: components/screens/DeviceSettingsScreen.tsx:78
+msgid "French"
+msgstr "فرانسوی"
+
+#: components/screens/DeviceSettingsScreen.tsx:84
+msgid "German"
+msgstr "آلمانی"
+
+#: components/screens/EditArticleScreen.tsx:55
+msgid "Go to articles"
+msgstr "رفتن به مقاله‌ها"
+
+#: components/screens/GroupScreen.tsx:60
+msgid "Go to conversation"
+msgstr "رفتن به گفتگو"
+
+#: components/screens/DirectConversationScreen.tsx:172
+#: components/screens/GroupConversationScreen.tsx:46
+msgid "Go to messages"
+msgstr "رفتن به پیام‌ها"
+
+#: components/screens/GroupScreen.tsx:135
+msgid "Group id"
+msgstr "شناسه گروه"
+
+#: components/ui/BottomTabNavigation.tsx:36
+msgid "Group messages"
+msgstr "پیام‌های گروهی"
+
+#: components/screens/GroupScreen.tsx:156
+msgid "Group name"
+msgstr "نام گروه"
+
+#: components/screens/DeviceSettingsScreen.tsx:94
+msgid "Gujarati"
+msgstr "گجراتی"
+
+#: components/screens/DeviceSettingsScreen.tsx:96
+msgid "Hausa"
+msgstr "هاوسا"
+
+#: components/screens/DeviceSettingsScreen.tsx:58
+msgid "Hindi"
+msgstr "هندی"
+
+#: components/screens/ImportAccountScreen.tsx:37
+#: components/screens/SelectAccountScreen.tsx:50
+msgid "Import account"
+msgstr "وارد کردن حساب"
+
+#: components/screens/DeviceSettingsScreen.tsx:104
+msgid "Indonesian"
+msgstr "اندونزیایی"
+
+#: components/screens/ImportAccountScreen.tsx:61
+msgid "Invalid account secret or password"
+msgstr "راز حساب یا رمز عبور نامعتبر"
+
+#: components/screens/ContactScreen.tsx:268
+msgid "It takes two. Add each other as contacts to start chatting!"
+msgstr "این کار نیاز به دو نفر دارد. برای شروع گفتگو، یکدیگر را به عنوان مخاطب اضافه کنید!"
+
+#: components/screens/DeviceSettingsScreen.tsx:90
+msgid "Italian"
+msgstr "ایتالیایی"
+
+#: components/screens/DeviceSettingsScreen.tsx:66
+msgid "Japanese"
+msgstr "ژاپنی"
+
+#: components/screens/DeviceSettingsScreen.tsx:88
+msgid "Javanese"
+msgstr "جاوایی"
+
+#: components/screens/DeviceSettingsScreen.tsx:98
+msgid "Kannada"
+msgstr "کانادا"
+
+#: components/screens/DeviceSettingsScreen.tsx:76
+msgid "Korean"
+msgstr "کره‌ای"
+
+#: components/screens/DeviceSettingsScreen.tsx:39
+msgid "Language"
+msgstr "زبان"
+
+#: components/screens/DeviceSettingsScreen.tsx:132
+msgid "Light"
+msgstr "روشن"
+
+#: components/screens/ProfileScreen.tsx:201
+msgid "Location"
+msgstr "مکان"
+
+#: components/screens/DeviceSettingsScreen.tsx:54
+msgid "Mandarin Chinese"
+msgstr "چینی ماندارین"
+
+#: components/screens/DeviceSettingsScreen.tsx:72
+msgid "Marathi"
+msgstr "مراتی"
+
+#: components/screens/DirectConversationScreen.tsx:430
+msgid "Mark as read"
+msgstr "علامت‌گذاری به عنوان خوانده شده"
+
+#: components/screens/ContactScreen.tsx:284
+msgid "Member of contact lists"
+msgstr ""
+
+#: components/screens/ContactListScreen.tsx:186
+msgid "Members"
+msgstr ""
+
+#: components/screens/SelectAccountScreen.tsx:43
+msgid "ECP"
+msgstr "ECP"
+
+#: components/ui/MessageCompose.tsx:194
+msgid "Modify message"
+msgstr "ویرایش پیام"
+
+#: components/screens/EditArticleScreen.tsx:63
+msgid "New article"
+msgstr "مقاله جدید"
+
+#: components/ui/MessageCompose.tsx:140
+msgid "New draft"
+msgstr "پیش‌نویس جدید"
+
+#: components/screens/DirectConversationScreen.tsx:459
+#: components/screens/DirectConversationScreen.tsx:543
+msgid "Next occurrence"
+msgstr "رخداد بعدی"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:104
+#: components/screens/SelectAccountScreen.tsx:95
+msgid "No accounts on this device"
+msgstr "هیچ حسابی در این دستگاه وجود ندارد"
+
+#: components/screens/ArticlesScreen.tsx:86
+msgid "No articles"
+msgstr "هیچ مقاله‌ای وجود ندارد"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:103
+msgid "No changes yet"
+msgstr "هنوز تغییری ایجاد نشده است"
+
+#: components/screens/ContactScreen.tsx:256
+msgid "No connected devices"
+msgstr "دستگاه‌های متصل وجود ندارد"
+
+#: components/screens/ContactListsScreen.tsx:136
+#: components/screens/ContactScreen.tsx:338
+msgid "No contact lists"
+msgstr ""
+
+#: components/screens/ContactListScreen.tsx:250
+msgid "No contacts"
+msgstr ""
+
+#: components/screens/DirectConversationScreen.tsx:351
+#: components/screens/DirectMessagesScreen.tsx:217
+#: components/screens/GroupConversationScreen.tsx:98
+#: components/screens/GroupMessagesScreen.tsx:56
+msgid "No messages"
+msgstr "هیچ پیامی وجود ندارد"
+
+#: components/screens/ContactListScreen.tsx:250
+#: components/screens/ContactListsScreen.tsx:126
+#: components/screens/ContactScreen.tsx:337
+#: components/screens/DirectMessagesScreen.tsx:213
+msgid "No results found"
+msgstr "هیچ نتیجه‌ای یافت نشد"
+
+#: components/screens/ContactScreen.tsx:222
+msgid "Not a valid account id"
+msgstr "شناسه حساب معتبر نیست"
+
+#: components/screens/GroupScreen.tsx:149
+msgid "Not a valid group id"
+msgstr "شناسه گروه معتبر نیست"
+
+#: components/screens/ExportAccountScreen.tsx:105
+msgid "NOTE: every export has it's own password!"
+msgstr "توجه: هر صادرات رمز عبور خود را دارد!"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:39
+msgid "Open profile"
+msgstr "باز کردن پروفایل"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:57
+msgid "Open with account"
+msgstr "باز کردن با حساب"
+
+#: components/screens/ExportAccountScreen.tsx:92
+msgid "Password"
+msgstr "رمز عبور"
+
+#: components/screens/ImportAccountScreen.tsx:114
+msgid "Paste here exported account secret"
+msgstr "راز حساب صادر شده را اینجا بچسبانید"
+
+#: components/screens/ContactScreen.tsx:217
+msgid "Paste the account id your contact shared with you"
+msgstr "شناسه حسابی که مخاطب با شما به اشتراک گذاشته را بچسبانید"
+
+#: components/screens/DeviceSettingsScreen.tsx:100
+msgid "Persian"
+msgstr "فارسی"
+
+#: components/ui/BottomTabNavigation.tsx:54
+msgid "Places"
+msgstr "مکان‌ها"
+
+#: components/screens/DeviceSettingsScreen.tsx:102
+msgid "Polish"
+msgstr "لهستانی"
+
+#: components/screens/DeviceSettingsScreen.tsx:62
+msgid "Portuguese"
+msgstr "پرتغالی"
+
+#: components/screens/DirectConversationScreen.tsx:395
+#: components/screens/DirectConversationScreen.tsx:517
+msgid "Previous occurrence"
+msgstr "رخداد قبلی"
+
+#: components/screens/AccountScreen.tsx:256
+#: components/screens/ContactScreen.tsx:365
+#: components/ui/BottomTabNavigation.tsx:64
+msgid "Profile"
+msgstr "پروفایل"
+
+#: components/screens/ProfileScreen.tsx:149
+msgid "Profile ID copied to clipboard"
+msgstr "شناسه پروفایل در کلیپبورد کپی شد"
+
+#: components/ui/MessageCompose.tsx:70
+msgid "Remove"
+msgstr "حذف"
+
+#: components/screens/AccountScreen.tsx:75
+msgid "Remove account from this device"
+msgstr "حذف حساب از این دستگاه"
+
+#: components/screens/ContactListScreen.tsx:233
+msgid "Remove contact from list"
+msgstr ""
+
+#: components/screens/ContactScreen.tsx:328
+msgid "Remove from contact list"
+msgstr ""
+
+#: components/screens/DeviceSettingsScreen.tsx:64
+msgid "Russian"
+msgstr "روسی"
+
+#: components/screens/AccountScreen.tsx:117
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:187
+msgid "Save changes"
+msgstr "ذخیره تغییرات"
+
+#: components/ui/MessageCompose.tsx:156
+msgid "Save draft"
+msgstr "ذخیره پیش‌نویس"
+
+#: components/screens/ContactListsScreen.tsx:79
+#: components/screens/DirectConversationScreen.tsx:372
+#: components/screens/DirectMessagesScreen.tsx:112
+msgid "Search"
+msgstr "جستجو"
+
+#: components/screens/ContactListsScreen.tsx:47
+#: components/screens/ContactScreen.tsx:290
+msgid "Search contact lists"
+msgstr ""
+
+#: components/screens/ContactListScreen.tsx:191
+#: components/screens/DirectMessagesScreen.tsx:80
+msgid "Search contacts"
+msgstr "جستجو در مخاطبین"
+
+#: components/ui/MessageCompose.tsx:174
+msgid "Send message"
+msgstr "ارسال پیام"
+
+#: components/screens/SelectAccountScreen.tsx:28
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: components/screens/ProfileScreen.tsx:156
+msgid "Share profile"
+msgstr "اشتراک‌گذاری پروفایل"
+
+#: components/ui/CoordsInput.tsx:47
+msgid "Show on map"
+msgstr "نمایش روی نقشه"
+
+#: components/screens/ProfileScreen.tsx:100
+msgid "Show QR code"
+msgstr "نمایش کد QR"
+
+#: components/screens/DeviceSettingsScreen.tsx:56
+msgid "Spanish"
+msgstr "اسپانیایی"
+
+#: components/screens/ContactListsScreen.tsx:66
+#: components/screens/DirectMessagesScreen.tsx:99
+msgid "Stop searching"
+msgstr "متوقف کردن جستجو"
+
+#: components/screens/DeviceSettingsScreen.tsx:106
+msgid "Swahili"
+msgstr "سواحیلی"
+
+#: components/screens/DeviceSettingsScreen.tsx:114
+msgid "System default ({languageName})"
+msgstr "پیش‌فرض سیستم ({languageName})"
+
+#: components/screens/DeviceSettingsScreen.tsx:140
+msgid "System default ({themeName})"
+msgstr "پیش‌فرض سیستم ({themeName})"
+
+#: components/screens/DeviceSettingsScreen.tsx:80
+msgid "Tamil"
+msgstr "تامیل"
+
+#: components/screens/AccountScreen.tsx:151
+msgid "Tap to change"
+msgstr "برای تغییر ضربه بزنید"
+
+#: components/screens/DeviceSettingsScreen.tsx:74
+msgid "Telugu"
+msgstr "تلوگو"
+
+#: components/screens/DeviceSettingsScreen.tsx:92
+msgid "Thai"
+msgstr "تایلندی"
+
+#: components/screens/ImportAccountScreen.tsx:100
+msgid "The one you typed in during export"
+msgstr "آنچه که در هنگام صادرات تایپ کردید"
+
+#: components/screens/DeviceSettingsScreen.tsx:119
+msgid "Theme"
+msgstr "تم"
+
+#: components/screens/ContactScreen.tsx:234
+msgid "This name is only visible to you"
+msgstr "این نام فقط برای شما قابل مشاهده است"
+
+#: components/screens/AccountScreen.tsx:163
+#: components/screens/ImportAccountScreen.tsx:86
+msgid "This name is only visible to you on this device"
+msgstr "این نام فقط برای شما در این دستگاه قابل مشاهده است"
+
+#: components/screens/AccountScreen.tsx:150
+msgid "This will your avatar forever, choose wisely"
+msgstr "این آواتار شما برای همیشه خواهد بود، با دقت انتخاب کنید"
+
+#: components/screens/DeviceSettingsScreen.tsx:70
+msgid "Turkish"
+msgstr "ترکی"
+
+#: components/screens/DirectConversationScreen.tsx:480
+msgid "Unread messages"
+msgstr "پیام‌های خوانده نشده"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Update article"
+msgstr "به‌روزرسانی مقاله"
+
+#: components/screens/DeviceSettingsScreen.tsx:86
+msgid "Urdu"
+msgstr "اردو"
+
+#: components/screens/AccountScreen.tsx:61
+msgid "Use another account"
+msgstr "استفاده از حساب دیگر"
+
+#: components/screens/DeviceSettingsScreen.tsx:68
+msgid "Vietnamese"
+msgstr "ویتنامی"
+
+#: components/screens/ExportAccountScreen.tsx:101
+msgid "Will be needed to import later"
+msgstr "برای واردات بعدی مورد نیاز خواهد بود"
+
+#: components/ui/MessageCompose.tsx:112
+msgid "Write a message"
+msgstr "یک پیام بنویسید"
+
+#: components/screens/ExportAccountScreen.tsx:82
+msgid "You can send or store this exported text to import the account on other devices"
+msgstr "می‌توانید این متن صادر شده را برای وارد کردن حساب در دستگاه‌های دیگر ارسال یا ذخیره کنید"
