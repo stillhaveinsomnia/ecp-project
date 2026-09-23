@@ -7,7 +7,12 @@ import * as z from "zod";
 export const ContentAddressSchema = z.string().brand("ContentAddress");
 export type ContentAddress = z.infer<typeof ContentAddressSchema>;
 
+const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50 MB
+
 export async function storeFile(data: Uint8Array): Promise<ContentAddress> {
+  if (data.byteLength > MAX_FILE_SIZE) {
+    throw new Error(`File is too large (max ${MAX_FILE_SIZE / 1024 / 1024} MB)`);
+  }
   const hash = bytesToHex(blake3(data, { dkLen: 32 }));
   const fileHandle = await (
     await navigator.storage.getDirectory()

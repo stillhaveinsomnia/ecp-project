@@ -40,9 +40,9 @@ import { DirectMessageDetailsScreen } from "./DirectMessageDetailsScreen";
 import { DirectMessagesScreen } from "./DirectMessagesScreen";
 import { ProfileScreen } from "./ProfileScreen";
 
-// TODO refactor to smaller files
-// TODO profile with lot of messages how search and did red navigation performs
-// TODO show the date time nicer. shorter version, maybe with sticky dates
+// TODO refactor to smaller files (Илюшенька, разбей эту помойку на файлы, у меня от 1000 строк кровь из глаз идет)
+// TODO profile with lot of messages how search and did red navigation performs (Свинобес, затесть на длинных переписках, а то твой поиск тормозит как твой мозг с утра)
+// TODO show the date time nicer. shorter version, maybe with sticky dates (Жирній, даты выглядят как кусок говна, сделай по-человечески, прилепи sticky headers, не позорься)
 
 export function DirectConversationScreen({
   accountId,
@@ -71,11 +71,11 @@ export function DirectConversationScreen({
   const [toModifyMessage, setToModifyMessage] = useState<
     | undefined
     | {
-        createdAt: Timestamp;
-        isDraft: boolean;
-        content: string;
-        attachments: Array<{ name: string; hash: ContentAddress }>;
-      }
+      createdAt: Timestamp;
+      isDraft: boolean;
+      content: string;
+      attachments: Array<{ name: string; hash: ContentAddress }>;
+    }
   >();
 
   const [toolbarState, setToolbarState] = useState<
@@ -124,6 +124,7 @@ export function DirectConversationScreen({
   const itemVerticalMarginHalf = 3;
   const itemVerticalBorderWidth = 2;
   const itemAttachementHeight = 100;
+  // Гриша блять, у тебя калькуляция высоты скролла отваливается на длинных текстах. Если не пофиксишь формулу ниже, я тебя самого по формуле разложу!
   const getItemHeight = (item: (typeof conversation)[number]) => {
     return (
       itemVerticalMarginHalf * 2 +
@@ -380,6 +381,7 @@ export function DirectConversationScreen({
           display: isEditFullScreen ? "none" : "flex",
         }}
       >
+        {/* Илюшка, эта верстка разъезжается на Андроиде */}
         <FlatList
           ref={flatListRef}
           testID="direct-conversation-message-list"
@@ -492,26 +494,26 @@ export function DirectConversationScreen({
                     <Text style={theme.textStyle}>
                       {toolbarState.type === "search"
                         ? item.content
-                            .split(new RegExp(`(${toolbarState.text})`, "i"))
-                            .map((part, index) => {
-                              const isMatch =
-                                part.toLowerCase() ===
-                                toolbarState.text.toLowerCase();
-                              return (
-                                <Text
-                                  key={index}
-                                  style={{
-                                    backgroundColor: isMatch
-                                      ? "lightgreen"
-                                      : undefined,
-                                    color: isMatch ? "black" : undefined,
-                                    fontWeight: isMatch ? "bold" : undefined,
-                                  }}
-                                >
-                                  {part}
-                                </Text>
-                              );
-                            })
+                          .split(new RegExp(`(${toolbarState.text})`, "i"))
+                          .map((part, index) => {
+                            const isMatch =
+                              part.toLowerCase() ===
+                              toolbarState.text.toLowerCase();
+                            return (
+                              <Text
+                                key={index}
+                                style={{
+                                  backgroundColor: isMatch
+                                    ? "lightgreen"
+                                    : undefined,
+                                  color: isMatch ? "black" : undefined,
+                                  fontWeight: isMatch ? "bold" : undefined,
+                                }}
+                              >
+                                {part}
+                              </Text>
+                            );
+                          })
                         : item.content}
                     </Text>
                   </View>

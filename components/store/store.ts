@@ -204,7 +204,20 @@ export function createStore<StoreItem>({
   ) => {
     if (recipientAccountId) {
       // E2EE: encrypt the item for the specific recipient account
-      const envelope = await sealMessage(item, recipientAccountId);
+      // Look up the sender's account secret for Sign-then-Encrypt
+      const secrets = await getAccountSecrets();
+      const ownedAccountsByDevice = await getOwnedAccountsByDevice();
+      const senderAccountIds = ownedAccountsByDevice.get(deviceId) ?? [];
+      let senderSecret: AccountSecret | undefined;
+      for (const sId of senderAccountIds) {
+        senderSecret = secrets.get(sId);
+        if (senderSecret) break;
+      }
+      if (!senderSecret) {
+        console.warn("E2EE: No sender account secret found, dropping message");
+        return;
+      }
+      const envelope = await sealMessage(item, recipientAccountId, senderSecret);
       await network.send(deviceId, toDeviceId, {
         type: "encrypted_data",
         receiverId: recipientAccountId,

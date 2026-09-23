@@ -17,6 +17,7 @@ import { DeviceSettingsScreen } from "./DeviceSettingsScreen";
 import { DirectMessagesScreen } from "./DirectMessagesScreen";
 import { ImportAccountScreen } from "./ImportAccountScreen";
 
+// Сракобес, это стартовый экран! Сделай тут нормальные отступы, а то кнопки прилипли друг к другу как пельмени в морозилке.
 export function SelectAccountScreen() {
   const theme = useTheme();
   const { t } = useLingui();
@@ -34,6 +35,7 @@ export function SelectAccountScreen() {
         />
       </View>
       <View style={[{ alignItems: "center", gap: 16, padding: 16 }]}>
+        {/* Илюша, иконка мыльная как твое будущее, закинь SVGшку или хотя бы 3x разрешение! */}
         <Image
           source={require("../../assets/images/icon.png")}
           style={[{ width: 100, height: 100 }]}

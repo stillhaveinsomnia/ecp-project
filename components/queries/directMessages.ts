@@ -12,10 +12,10 @@ export const DirectMessageUpdateSchema = z.object({
   senderId: AccountIdSchema,
   receiverId: AccountIdSchema,
   createdAt: TimestampSchema,
-  content: z.string(),
-  attachments: z.array(
-    z.object({ name: z.string(), hash: ContentAddressSchema }),
-  ),
+  content: z.string().max(10000, "Message is too long (max 10000 characters)"),
+  attachments: z
+    .array(z.object({ name: z.string(), hash: ContentAddressSchema }))
+    .max(10, "Too many attachments (max 10)"),
   isDraft: z.boolean(),
   timestamp: TimestampSchema,
 });

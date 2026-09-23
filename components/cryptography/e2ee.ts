@@ -1,5 +1,5 @@
-import { edwardsToMontgomeryPub, edwardsToMontgomeryPriv } from "@noble/curves/ed25519.js";
-import { x25519 } from "@noble/curves/ed25519.js";
+import { ed25519, x25519 } from "@noble/curves/ed25519.js";
+
 import { hkdf } from "@noble/hashes/hkdf.js";
 import { sha256 } from "@noble/hashes/sha2.js";
 import {
@@ -8,7 +8,13 @@ import {
   hexToBytes,
   randomBytes,
 } from "@noble/hashes/utils.js";
-import { AccountId, AccountSecret } from "./cryptography";
+import { AccountId, AccountSecret, accountIdFromAccountSecret } from "./cryptography";
+import type {
+  PrekeyBundle,
+  X3DHHeader,
+  SignedPrekeyPrivate,
+  OneTimePrekeyPrivate,
+} from "./x3dh";
 
 // ---- Types ------------------------------------------------------------------
 
@@ -27,6 +33,14 @@ export type SealedEnvelope = {
   ciphertext: string;
 };
 
+/** Internal structure of the encrypted data */
+type SignedPayload = {
+  payload: unknown;
+  /** Ed25519 signature of the JSON payload (hex) */
+  signature: string;
+  senderAccountId: AccountId;
+};
+
 // ---- Ed25519 → X25519 conversion -------------------------------------------
 
 /**
@@ -35,7 +49,7 @@ export type SealedEnvelope = {
  */
 export function accountIdToX25519Public(accountId: AccountId): X25519PublicKey {
   const edPub = hexToBytes(accountId);
-  const xPub = edwardsToMontgomeryPub(edPub);
+  const xPub = ed25519.utils.toMontgomery(edPub);
   return bytesToHex(xPub);
 }
 
@@ -47,7 +61,7 @@ export function accountSecretToX25519Private(
   accountSecret: AccountSecret,
 ): X25519PrivateKey {
   const edPriv = hexToBytes(accountSecret);
-  const xPriv = edwardsToMontgomeryPriv(edPriv);
+  const xPriv = ed25519.utils.toMontgomerySecret(edPriv);
   return bytesToHex(xPriv);
 }
 
@@ -61,7 +75,7 @@ export function generateEphemeralKeyPair(): {
   privateKey: X25519PrivateKey;
   publicKey: X25519PublicKey;
 } {
-  const privateKeyBytes = x25519.utils.randomPrivateKey();
+  const privateKeyBytes = x25519.utils.randomSecretKey();
   const publicKeyBytes = x25519.getPublicKey(privateKeyBytes);
   return {
     privateKey: bytesToHex(privateKeyBytes),
@@ -174,6 +188,7 @@ async function aesGcmDecrypt(
 export async function sealMessage(
   payload: unknown,
   recipientAccountId: AccountId,
+  senderAccountSecret: AccountSecret,
 ): Promise<SealedEnvelope> {
   const ephemeral = generateEphemeralKeyPair();
   const recipientX25519Pub = accountIdToX25519Public(recipientAccountId);
@@ -189,7 +204,17 @@ export async function sealMessage(
     recipientX25519Pub,
   );
 
-  const plaintextBytes = new TextEncoder().encode(JSON.stringify(payload));
+  const payloadString = JSON.stringify(payload);
+  const payloadBytes = new TextEncoder().encode(payloadString);
+  const signatureBytes = ed25519.sign(payloadBytes, hexToBytes(senderAccountSecret));
+
+  const signedPayload: SignedPayload = {
+    payload,
+    signature: bytesToHex(signatureBytes),
+    senderAccountId: accountIdFromAccountSecret(senderAccountSecret),
+  };
+
+  const plaintextBytes = new TextEncoder().encode(JSON.stringify(signedPayload));
   const { nonce, ciphertext } = await aesGcmEncrypt(aesKey, plaintextBytes);
 
   return {
@@ -235,5 +260,104 @@ export async function openMessage(
     hexToBytes(envelope.ciphertext),
   );
 
-  return JSON.parse(new TextDecoder().decode(plaintext));
+  const signedPayload: SignedPayload = JSON.parse(new TextDecoder().decode(plaintext));
+  
+  const payloadBytes = new TextEncoder().encode(JSON.stringify(signedPayload.payload));
+  const isValid = ed25519.verify(
+    hexToBytes(signedPayload.signature),
+    payloadBytes,
+    hexToBytes(signedPayload.senderAccountId)
+  );
+
+  if (!isValid) {
+    throw new Error("Invalid Ed25519 signature on message payload");
+  }
+
+  return signedPayload.payload;
+}
+
+// ---- X3DH-based High-level API ---------------------------------------------
+
+/** Envelope for messages established via X3DH key agreement */
+export type X3DHSealedEnvelope = {
+  /** X3DH header (identity key, ephemeral key, OPK id) */
+  x3dhHeader: X3DHHeader;
+  /** AES-GCM nonce/IV (hex, 12 bytes) */
+  nonce: string;
+  /** AES-GCM ciphertext + auth tag (hex) */
+  ciphertext: string;
+};
+
+/**
+ * Seal a message using X3DH-derived shared key.
+ *
+ * The caller must have already performed x3dhInitiate() to obtain
+ * the shared key and header. This function signs + encrypts using
+ * that pre-derived key.
+ */
+export async function sealMessageX3DH(
+  payload: unknown,
+  sharedKey: Uint8Array,
+  header: X3DHHeader,
+  senderAccountSecret: AccountSecret,
+): Promise<X3DHSealedEnvelope> {
+  const payloadString = JSON.stringify(payload);
+  const payloadBytes = new TextEncoder().encode(payloadString);
+  const signatureBytes = ed25519.sign(
+    payloadBytes,
+    hexToBytes(senderAccountSecret),
+  );
+
+  const signedPayload: SignedPayload = {
+    payload,
+    signature: bytesToHex(signatureBytes),
+    senderAccountId: accountIdFromAccountSecret(senderAccountSecret),
+  };
+
+  const plaintextBytes = new TextEncoder().encode(
+    JSON.stringify(signedPayload),
+  );
+  const { nonce, ciphertext } = await aesGcmEncrypt(sharedKey, plaintextBytes);
+
+  return {
+    x3dhHeader: header,
+    nonce: bytesToHex(nonce),
+    ciphertext: bytesToHex(ciphertext),
+  };
+}
+
+/**
+ * Open a message sealed with X3DH.
+ *
+ * The caller must have already performed x3dhRespond() to obtain
+ * the shared key. This function decrypts + verifies the Ed25519 signature.
+ */
+export async function openMessageX3DH(
+  envelope: X3DHSealedEnvelope,
+  sharedKey: Uint8Array,
+): Promise<unknown> {
+  const plaintext = await aesGcmDecrypt(
+    sharedKey,
+    hexToBytes(envelope.nonce),
+    hexToBytes(envelope.ciphertext),
+  );
+
+  const signedPayload: SignedPayload = JSON.parse(
+    new TextDecoder().decode(plaintext),
+  );
+
+  const payloadBytes = new TextEncoder().encode(
+    JSON.stringify(signedPayload.payload),
+  );
+  const isValid = ed25519.verify(
+    hexToBytes(signedPayload.signature),
+    payloadBytes,
+    hexToBytes(signedPayload.senderAccountId),
+  );
+
+  if (!isValid) {
+    throw new Error("X3DH: Invalid Ed25519 signature on message payload");
+  }
+
+  return signedPayload.payload;
 }

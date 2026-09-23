@@ -3,10 +3,10 @@ import { bytesToHex, hexToBytes } from "@noble/hashes/utils.js";
 import * as z from "zod";
 import { memoizeSimple } from "../memoization";
 
-// Device Keys
+// Ключи девайса (Свинобес, это база, братик, не трогай если не шаришь, gg wp)
 
 export const DeviceSecretSchema = z.string().brand("DeviceSecret");
-/** ED25519 Secret key, hex string */
+/** ED25519 Сикрет кей, тупо хекс строка (Илюшенька, тут магия, чисто рампага на сфе) */
 export type DeviceSecret = z.infer<typeof DeviceSecretSchema>;
 
 export function deviceSecretToUint8Array(
@@ -21,7 +21,7 @@ export function generateDeviceSecret(): DeviceSecret {
 }
 
 export const DeviceIdSchema = z.string().brand("DeviceId");
-/** ED25519 Public key, hex string */
+/** ED25519 Паблик кей, хекс строка (изи катка, Гриша блять, не сломай) */
 export type DeviceId = z.infer<typeof DeviceIdSchema>;
 
 export function deviceIdFromUint8Array(uint8Array: Uint8Array): DeviceId {
@@ -46,10 +46,11 @@ export const deviceIdFromDeviceSecret = memoizeSimple(
   },
 );
 
-// Account Keys
+
+// Ключи аккаунта (Пацанские ключики, Сракобес, прикрути сюда крутилку в дизайне, шоб красиво было)
 
 export const AccountSecretSchema = z.string().brand("AccountSecret");
-/** ED25519 Secret key, hex string */
+/** ED25519 Сикрет кей, хекс строка (соляново) */
 export type AccountSecret = z.infer<typeof AccountSecretSchema>;
 
 export function generateAccountSecret(): AccountSecret {
@@ -58,7 +59,7 @@ export function generateAccountSecret(): AccountSecret {
 }
 
 export const AccountIdSchema = z.string().brand("AccountId");
-/** ED25519 Public key, hex string */
+/** ED25519 Паблик кей, хекс (Жирній, нарисуй тут иконку замочка, епт) */
 export type AccountId = z.infer<typeof AccountIdSchema>;
 
 export function accountIdToUint8Array(accountId: AccountId): Uint8Array {
@@ -72,7 +73,7 @@ function accountIdFromUint8Array(uint8Array: Uint8Array): AccountId {
   return AccountIdSchema.parse(bytesToHex(uint8Array));
 }
 
-// TODO memoize since its expensive
+// TODO мемоизировать эту дичь, а то жрет ресы как пудж крипов (Илюшка, тут может подлагивать, ебани лоадер)
 export const accountIdFromAccountSecret = memoizeSimple(
   (accountSecret: AccountSecret): AccountId => {
     const publicKey = ed25519.getPublicKey(hexToBytes(accountSecret));

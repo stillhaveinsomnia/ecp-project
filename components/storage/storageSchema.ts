@@ -20,4 +20,7 @@ export const StoredDeviceSettingsDataSchema = z.object({
   cryptoPrivateKeys: z.record(AccountSecretSchema, DeviceSecretSchema),
   language: LanguageSchema.optional(),
   theme: ThemeSchema.optional(),
+  appLockEnabled: z.boolean().optional(),
+  appLockPinHash: z.string().optional(),
+  appLockSalt: z.string().optional(),
 });

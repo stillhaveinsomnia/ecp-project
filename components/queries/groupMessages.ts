@@ -12,7 +12,7 @@ export const GroupMessageUpdateSchema = z.object({
   senderId: AccountIdSchema,
   groupId: z.string(), // TODO use branded type
   createdAt: TimestampSchema,
-  content: z.string(),
+  content: z.string().max(10000, "Message is too long (max 10000 characters)"),
   timestamp: TimestampSchema,
 });
 

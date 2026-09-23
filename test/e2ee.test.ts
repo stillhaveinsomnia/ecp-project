@@ -2,14 +2,14 @@ import { webcrypto } from "crypto";
 import {
   accountIdFromAccountSecret,
   generateAccountSecret,
-} from "../../components/cryptography/cryptography";
+} from "../components/cryptography/cryptography";
 import {
   accountIdToX25519Public,
   accountSecretToX25519Private,
   generateEphemeralKeyPair,
   openMessage,
   sealMessage,
-} from "../../components/cryptography/e2ee";
+} from "../components/cryptography/e2ee";
 
 // Polyfill crypto.subtle for Node.js test environment
 if (typeof globalThis.crypto === "undefined") {
@@ -21,6 +21,7 @@ describe("E2EE cryptography", () => {
     // Generate a recipient account (Bob)
     const bobSecret = generateAccountSecret();
     const bobId = accountIdFromAccountSecret(bobSecret);
+    const aliceSecret = generateAccountSecret();
 
     // Original payload (simulates a DataItem)
     const originalPayload = {
@@ -32,7 +33,7 @@ describe("E2EE cryptography", () => {
     };
 
     // Alice seals the message for Bob
-    const envelope = await sealMessage(originalPayload, bobId);
+    const envelope = await sealMessage(originalPayload, bobId, aliceSecret);
 
     // Verify envelope structure
     expect(envelope).toHaveProperty("ephemeralPubKey");
@@ -53,8 +54,9 @@ describe("E2EE cryptography", () => {
     const bobSecret = generateAccountSecret();
     const bobId = accountIdFromAccountSecret(bobSecret);
     const eveSecret = generateAccountSecret(); // wrong key
+    const aliceSecret = generateAccountSecret();
 
-    const envelope = await sealMessage({ msg: "secret" }, bobId);
+    const envelope = await sealMessage({ msg: "secret" }, bobId, aliceSecret);
 
     // Eve tries to decrypt — should fail
     await expect(
@@ -65,8 +67,9 @@ describe("E2EE cryptography", () => {
   test("openMessage fails with tampered ciphertext", async () => {
     const bobSecret = generateAccountSecret();
     const bobId = accountIdFromAccountSecret(bobSecret);
+    const aliceSecret = generateAccountSecret();
 
-    const envelope = await sealMessage({ msg: "secret" }, bobId);
+    const envelope = await sealMessage({ msg: "secret" }, bobId, aliceSecret);
 
     // Tamper with the ciphertext
     const tampered = { ...envelope, ciphertext: "00" + envelope.ciphertext.slice(2) };
@@ -79,10 +82,11 @@ describe("E2EE cryptography", () => {
   test("each sealMessage produces a different envelope (unique ephemeral keys)", async () => {
     const bobSecret = generateAccountSecret();
     const bobId = accountIdFromAccountSecret(bobSecret);
+    const aliceSecret = generateAccountSecret();
     const payload = { msg: "same message" };
 
-    const envelope1 = await sealMessage(payload, bobId);
-    const envelope2 = await sealMessage(payload, bobId);
+    const envelope1 = await sealMessage(payload, bobId, aliceSecret);
+    const envelope2 = await sealMessage(payload, bobId, aliceSecret);
 
     // Different ephemeral keys means different envelopes
     expect(envelope1.ephemeralPubKey).not.toEqual(envelope2.ephemeralPubKey);

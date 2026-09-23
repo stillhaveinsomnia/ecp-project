@@ -1,5 +1,5 @@
 import "react-native-get-random-values";
-// polifills first
+// polifills first (Илюшка, полифилы грузим первыми, как саппорты варды ставят в начале катки)
 import { setupI18n } from "@lingui/core";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { useLocalSearchParams } from "expo-router";
@@ -29,6 +29,8 @@ import { hyperswarmNetworkFactory } from "./network/hyperswarmNetwork";
 import { networkDummy } from "./network/netoworkDummy";
 import { bareNetworkFactory } from "./network/networkBare";
 import { websocketNetworkFactory } from "./network/networkWebsocketClient";
+import { bluetoothNetworkFactory } from "./network/bluetoothNetwork";
+import { lanNetworkFactory } from "./network/lanNetwork";
 import { contactList } from "./queries/contacts";
 import {
   directMessagesList,
@@ -42,6 +44,9 @@ import { StorageInterface } from "./storage/StorageInteraface";
 import { createEcpQueryClient } from "./store/dataApi";
 import { FeApiContext } from "./store/feApi";
 import { createStore } from "./store/store";
+import { compactData } from "./store/compaction";
+import { AppLockProvider } from "./store/AppLockProvider";
+import { createMultiNetwork } from "./network/multiNetwork";
 import { useTheme } from "./Theme";
 
 patchFlatListProps();
@@ -65,6 +70,13 @@ export function createApp({ storage }: { storage: StorageInterface }) {
     return bareNetworkFactory;
   })();
 
+  // LAN has highest priority (index 0), then Bluetooth (index 1), then internet fallback (index 2).
+  const factories = Platform.OS === "android"
+    ? [lanNetworkFactory, bluetoothNetworkFactory, networkFactory]
+    : [networkFactory];
+
+  const multiNetworkFactory = createMultiNetwork(factories);
+
   const store = createStore<DataItem>({
     parse: DataItemSchema.parse,
     storage: {
@@ -77,7 +89,7 @@ export function createApp({ storage }: { storage: StorageInterface }) {
           return false;
         }
         await appStorage.write((current) => {
-          return { ...current, data: [...current.data, item] };
+          return { ...current, data: compactData([...current.data, item]) };
         });
         return true;
       },
@@ -85,7 +97,7 @@ export function createApp({ storage }: { storage: StorageInterface }) {
         return (await appStorage.read()).data;
       },
     },
-    networkFactory,
+    networkFactory: multiNetworkFactory,
     async onAdd(item) {
       // TODO make these more efficient and selective and come up with a thing to express that it is a live query at callsite
       await Promise.all([
@@ -131,6 +143,7 @@ export function createApp({ storage }: { storage: StorageInterface }) {
   const i18n = setupI18n();
 
   const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
+    // Илюшенька, тут мы рапиру сейвим (обертка лейаута). Сделай так, чтоб SafeArea не резала челку айфонов, а то будет ГГ!
     const theme = useTheme();
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: theme.backgroundColor }}>
@@ -143,6 +156,7 @@ export function createApp({ storage }: { storage: StorageInterface }) {
   const api = { appStorage, store };
 
   const Main = () => {
+    // Жирній, это главная точка входа, наш трон. Накати тут красивый сплэш или лоадер, шоб юзер не втыкал в пустой экран как рак на миде.
     useEffect(() => {
       void registerForPushNotificationsAsync();
     }, []);
@@ -168,21 +182,25 @@ export function createApp({ storage }: { storage: StorageInterface }) {
         <FeApiContext value={api}>
           <QueryClientProvider client={queryClient}>
             <EcpI18n i18n={i18n}>
-              <LayoutWrapper>
-                <RouterRoot
-                  initial={<SelectAccountScreen />}
-                  overrideScreen={
-                    validContactId && !ignoreOverride ? (
-                      <ProfileDeepLinkScreen
-                        contactId={validContactId}
-                        onDone={() => {
-                          setIgnoreOverride(true);
-                        }}
-                      />
-                    ) : null
-                  }
-                />
-              </LayoutWrapper>
+              <AppLockProvider>
+                <LayoutWrapper>
+                  {/* Свинобес, вот тут роутинг. Если экраны будут моргать при смене - я тебе уши отгрызу (сделай плавный транзишн, чисто стяжка дарксира) */}
+                  <RouterRoot
+                    initial={<SelectAccountScreen />}
+                    overrideScreen={
+                      // Гриша блять, тут диплинк скрин. Если сюда зашли по ссылке - выведи карточку контакта так, шоб прям в душу смотрело!
+                      validContactId && !ignoreOverride ? (
+                        <ProfileDeepLinkScreen
+                          contactId={validContactId}
+                          onDone={() => {
+                            setIgnoreOverride(true);
+                          }}
+                        />
+                      ) : null
+                    }
+                  />
+                </LayoutWrapper>
+              </AppLockProvider>
             </EcpI18n>
           </QueryClientProvider>
         </FeApiContext>
@@ -193,6 +211,7 @@ export function createApp({ storage }: { storage: StorageInterface }) {
 }
 
 function useDisableBack() {
+  // Сракобес, тут мы блочим кнопку "Назад", чтоб юзер случайно не ливнул из катки. Если на вебе или андроиде будет баговать жестом - фикси этот хук.
   useEffect(() => {
     const sub = BackHandler.addEventListener("hardwareBackPress", () => true);
     return () => sub.remove();

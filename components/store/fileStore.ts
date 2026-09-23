@@ -11,7 +11,12 @@ export type ContentAddress = z.infer<typeof ContentAddressSchema>;
 
 // TODO this is naive and sync, will need proper mangment on async writes and reads
 
+const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50 MB
+
 export async function storeFile(data: Uint8Array): Promise<ContentAddress> {
+  if (data.byteLength > MAX_FILE_SIZE) {
+    throw new Error(`File is too large (max ${MAX_FILE_SIZE / 1024 / 1024} MB)`);
+  }
   const hash = bytesToHex(blake3(data, { dkLen: 32 }));
   const file = new File(Paths.document, hash);
   if (!file.exists) file.create();

@@ -6,15 +6,15 @@ fetures to replicate for team messaging: teams, discord, slack, rocket chat, mat
 features from email and email clients
 dont accept future timestamps
 do not replicate deleted stuff? (ponder)
-enforce data size limits (max file size, max number and size of messages, max attachments)
+- [x] enforce data size limits (max file size, max number and size of messages, max attachments)
 add confirm prompt for destructive actions
-add cryptography, account + device signature
+- [x] add cryptography, account + device signature
 add whitelist recipients
 fix when ataching big files now the screen is frozen
 implement @hyperswarm/dht-relay and hyperswarm relayThrough
 implement jami dhtnet (ConnectionManager for trusted peers)
 implement webrtc stun turn ice (libwebrtc)
-implement LAN discovery (simply being on the same network)
+- [x] implement LAN discovery (simply being on the same network)
 implement multipeer on ios
 implement libp2p for desktop (rust library version)
 implement tor connectivity
@@ -29,8 +29,8 @@ create more efficient database
 ensure data is safe in the database if device is stolen
 security audit
 mitigate denial of service
-bug: fix on direct conversation screen, when bigger text and more messages, the messages layout breaks, differently on andoird and electrton
-bug: fix currently selected message by scroll, the layout calcualtion is broken
+bug: fix on direct conversation screen, when bigger text and more messages, the messages layout breaks, differently on andoird and electrton (Илюша, блять, верстальщик от бога, у тебя верстка разъезжается от двух длинных строк, иди флексы учи, криворукий)
+bug: fix currently selected message by scroll, the layout calcualtion is broken (Жирній, ты математику в школе прогуливал? Калькуляция скролла сломана в говно, поправь уже)
 
 refactor so that entities
 Message - for DM, group message, articles, events
@@ -39,16 +39,16 @@ Biography - for Profile and places
 
 # More
 
-- [ ] let the user choose avatr for their contact (it will replace the cryptoavatar, also update info on account creation screen)
-- [ ] while editing a message, dont let user do anything to inadvertently lose chages
+- [ ] let the user choose avatr for their contact (it will replace the cryptoavatar, also update info on account creation screen) (Свинобес, прикрути выбор аватарки, а то у нас юзеры безликие как твоя фантазия)
+- [ ] while editing a message, dont let user do anything to inadvertently lose chages (Илюшенька, сделай так, чтоб юзер случайно не проебал текст при редактировании. Повесь алерт, хоть что-то полезное сделай)
 - [ ] contact presence status (off by default, research carefully bhow to implement)
 - [ ] send invite to download app
-- [ ] app lock pin
+- [x] app lock pin
 - [ ] app lock biometric
-- [ ] backup device data to zip file
-- [ ] backup device data to google drive
-- [ ] backup device data to one drive
-- [ ] settings screen with text search
+- [x] backup device data to zip file
+- [x] recovery key (AES-256-GCM + HKDF-SHA256 encrypted backup)
+- [ ] recovery key restore UI (import from file / QR) (Гриша блять, где экран восстановления из QR кода? Или юзеры должны с экрана фоткать и перепечатывать по одной букве, гений?)
+- [ ] settings screen with text search (Сракобес, на экране настроек нужен поиск, а то там черт ногу сломит, как в твоем коде)
 - [ ] android background exection
 - [ ] ios background exection
 - [ ] macos background exection
@@ -57,12 +57,12 @@ Biography - for Profile and places
 - [ ] must update app mechanism
 - [ ] data quota managment
 - [ ] crash report send
-- [ ] conect over hyperswarm
-- [ ] connect bloetooth
-- [ ] connect wifi direct
+- [x] conect over hyperswarm
+- [x] connect bloetooth
+- [x] connect wifi direct
 - [ ] connect over federated servers
 - [ ] relay connection
-- [ ] accessibility keyboard navigation
+- [ ] accessibility keyboard navigation (Илюшка, прикрути навигацию с клавиатуры для людей с ограниченными возможностями, хотя ты сам походу с ними, раз такую верстку пушишь)
 - [ ] acessibility test with screen reader
 
 # Platform support
