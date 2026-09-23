@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./components/network/bare/dist",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"],
+    "skipLibCheck": true
+  },
+  "include": [
+    "./components/network/bare/**/*.ts",
+    "./components/network/hyperswarm/**/*.ts"
+  ]
+}

@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# P2P-ECP
 
-## Getting Started
+Peer-to-peer приложение для обмена сообщениями и микроблогинга. 
 
-First, run the development server:
+**Введение:** За основу (первоначальный каркас) данного проекта был взят проект **[memita-3](https://github.com/freddi301/memita-3)** от разработчика **[Freddi301](https://github.com/freddi301)**. В ходе развития P2P-ECP кодовая база была существенно переработана и модернизирована с фокусом на максимальную криптографическую безопасность.
+
+## Что было обновлено и заменено (Криптография и Архитектура)
+
+С самого начала разработки оригинальный код был значительно пересмотрен. Основные архитектурные изменения:
+
+* **Отказ от устаревших крипто-примитивов:** 
+  * Полностью убраны уязвимые алгоритмы хэширования (такие как SHA-1) и специфичные режимы шифрования (например, AES-IGE, использовавшийся в раннем MTProto).
+  * Осуществлен переход на строгие индустриальные стандарты: **AES-256-GCM** для симметричного шифрования с аутентификацией (AEAD) и **HKDF-SHA256** для надежной деривации ключей.
+* **End-to-End Encryption (E2EE) и цифровые подписи:** 
+  * Реализован современный обмен ключами (ECDH) на базе кривой **Curve25519 (X25519)** со статическими и эфемерными ключами для обеспечения Forward Secrecy для отправителя.
+  * Внедрен паттерн **Sign-then-Encrypt**. Теперь все E2EE сообщения подписываются цифровой подписью **Ed25519** перед шифрованием. Это гарантирует аутентичность отправителя и защищает от подмены личности (Identity Misbinding).
+* **Визуальная верификация и защита от MitM:**
+  * Разработан криптографический модуль для защиты от атак «человек посередине» (Man-in-the-Middle) на основе схемы Commit-Reveal.
+  * Добавлена генерация криптостойких **36-байтных отпечатков (Fingerprints)** с использованием SHA-256.
+  * Внедрена математика вычисления **4 эмодзи (Identicons)**. Энтропия надежно извлекается из хэша авторизационного и публичного ключей, давая пользователям простой инструмент для голосовой сверки защищенных каналов.
+* **Стабильность и тесты:**
+  * Актуализировано API библиотеки `@noble/curves`.
+  * Интегрировано полное тестовое покрытие (Jest) для проверки математики ключей, верификации и всего цикла E2EE шифрования.
+* **X3DH (Extended Triple Diffie-Hellman):**
+  * Реализован полный протокол X3DH для асинхронного согласования ключей: генерация Signed Prekey (SPK), One-Time Prekey (OPK), построение PrekeyBundle.
+  * Обеспечена **Forward Secrecy** — компрометация долгосрочного ключа не позволяет расшифровать прошлые сессии.
+  * Интегрированы функции `sealMessageX3DH` / `openMessageX3DH` для шифрования на базе сессионного ключа X3DH.
+* **Мульти-транспортный сетевой слой (MultiNetwork):**
+  * Создан агрегирующий слой `MultiNetwork`, реализующий паттерн Composite. Позволяет прозрачно маршрутизировать сообщения через несколько параллельных P2P сетей одновременно.
+  * **Умная маршрутизация:** Сообщения отправляются через наиболее приоритетный доступный транспорт (Bluetooth > LAN > Hyperswarm DHT).
+  * **Дедупликация соединений:** Если устройство подключено через несколько сетей одновременно, Store уведомляется о соединении только один раз.
+* **Bluetooth P2P (Android):**
+  * Реализован адаптер `BluetoothNetwork` на базе RFCOMM (Bluetooth Classic Serial Port Profile) с использованием `react-native-bluetooth-classic`.
+  * Поддерживает: автоматический запрос разрешений, запуск RFCOMM-сервера, обнаружение устройств (Discovery), Handshake-обмен `DeviceId`, буферизированный прием/передачу JSON-сообщений.
+  * Интегрирован в `MultiNetwork` с высоким приоритетом.
+* **Локальная сеть (LAN / Wi-Fi Direct) для Android:**
+  * Реализован `LanNetwork` адаптер с использованием `react-native-tcp-socket` и `react-native-zeroconf` (mDNS/Bonjour).
+  * Автоматическое обнаружение пиров в той же Wi-Fi сети.
+  * Наивысший приоритет маршрутизации (индекс 0 в `MultiNetwork`): устройства обмениваются данными напрямую по TCP, минуя интернет и Bluetooth.
+* **Лимиты и защита от переполнения:**
+  * Текст сообщения: максимум **10 000 символов** (валидация Zod).
+  * Вложения: максимум **10 файлов** на одно сообщение (валидация Zod).
+  * Размер файла: максимум **50 МБ** (`fileStore.ts`).
+  * История чата: автоматическая обрезка до **5000 последних сообщений** на каждый чат (`compaction.ts`).
+* **Резервное копирование (Backup/Restore):**
+  * Экспорт всех данных (сообщения, контакты, ключи, медиафайлы) в единый ZIP-архив с последующим открытием системного меню "Поделиться".
+  * Восстановление (импорт) из ZIP-архива: распаковка, загрузка базы данных и медиафайлов обратно в хранилище.
+  * Реализовано в модуле `backupStore.ts` с использованием `react-native-zip-archive` и `expo-sharing`.
+  * **Recovery Key (флешка):** Поддержка зашифрованных (AES-256-GCM + HKDF-SHA256) бекапов (`.ecp-recovery`) с 256-битным ключом восстановления для хранения на USB-носителях (описано в отдельной спецификации `ECP-RECOVERY-USB-UTILITY-SPEC.md`).
+
+## 🚀 Планы на будущее (Roadmap)
+
+* **Децентрализованное хранение ключей (DHT):** На данный момент криптографическая база X3DH полностью реализована. В будущем планируется интегрировать публикацию и запрос `PrekeyBundle` (связок одноразовых ключей) напрямую через глобальную DHT сеть (Hyperswarm).
+* **Ротация и пополнение Prekey:** Периодическая ротация Signed Prekey и автоматическое пополнение пула One-Time Prekeys.
+
+## Dev (Запуск проекта)
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run android
+npm run ios
+npm run desktop
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

@@ -1,0 +1,20 @@
+{
+  "entry": [
+    "**/*.web.{ts,tsx}",
+    "**/*.android.{ts,tsx}",
+    "**/*.ios.{ts,tsx}",
+    "components/network/bare/index.ts"
+  ],
+  "ignore": [
+    "babel.config.js",
+    "lingui.config.ts",
+    "components/i18n/locales/*/messages.js",
+    "desktop/**",
+    "components/network/hyperswarmNetwork.native.ts"
+  ],
+  "ignoreDependencies": [
+    "@types/streamx",
+    "babel-plugin-dynamic-import-node",
+    "@jest/globals"
+  ]
+}

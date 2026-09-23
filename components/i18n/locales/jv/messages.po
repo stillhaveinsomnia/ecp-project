@@ -1,0 +1,605 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-05-05 13:30+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: jv\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: components/screens/DirectConversationScreen.tsx:257
+msgid "{selectedCount} selected"
+msgstr "{selectedCount} dipilih"
+
+#: components/screens/AccountScreen.tsx:183
+msgid "Account ID"
+msgstr "ID Akun"
+
+#: components/screens/AccountScreen.tsx:145
+#: components/screens/AccountScreen.tsx:151
+#: components/screens/ImportAccountScreen.tsx:80
+msgid "Account name"
+msgstr "Jeneng akun"
+
+#: components/screens/ProfileScreen.tsx:242
+msgid "Account settings"
+msgstr "Setelan akun"
+
+#: components/screens/ContactListScreen.tsx:236
+msgid "Add contact to list"
+msgstr "Tambah kontak menyédh daftar"
+
+#: components/screens/ContactScreen.tsx:330
+msgid "Add to contact list"
+msgstr "Tambah ke daftar kontak"
+
+#: components/screens/ContactListsScreen.tsx:40
+msgid "All messages"
+msgstr "Semua pesan"
+
+#: components/screens/DirectConversationScreen.tsx:309
+msgid "Answer"
+msgstr "Jawaban"
+
+#: components/screens/ExportAccountScreen.tsx:83
+msgid "Anyone who is able to import the secret will have full access to the account forever!"
+msgstr "Sapa wae sing bisa ngimpor rahasia bakal duwe akses penuh menyang akun kanggo selawase!"
+
+#: components/ui/MessageCompose.tsx:125
+msgid "Attach file"
+msgstr "Lampirake file"
+
+#: components/screens/DeviceSettingsScreen.tsx:93
+#: components/screens/ProfileDeepLinkScreen.tsx:36
+msgid "Back"
+msgstr "Bali"
+
+#: components/screens/ExportAccountScreen.tsx:38
+msgid "Back to account screen"
+msgstr "Bali menyang layar akun"
+
+#: components/screens/ImportAccountScreen.tsx:34
+msgid "Back to account selection"
+msgstr "Bali menyang pilihan akun"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:36
+msgid "Back to contact"
+msgstr "Kembali ke kontak"
+
+#: components/screens/ContactListScreen.tsx:84
+msgid "Back to contact lists"
+msgstr "Kembali ke daftar kontak"
+
+#: components/screens/ContactScreen.tsx:104
+msgid "Back to direct messages"
+msgstr "Bali menyang pesan langsung"
+
+#: components/screens/ProfileScreen.tsx:203
+msgid "Biography"
+msgstr "Biografi"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:45
+#: components/screens/ContactScreen.tsx:118
+msgid "Changes history"
+msgstr "Riwayat perubahan"
+
+#: components/ui/DateTimeInput.tsx:96
+msgid "Clear date"
+msgstr "Resiki tanggal"
+
+#: components/ui/MessageCompose.tsx:166
+msgid "Collapse editor"
+msgstr "Lipat editor"
+
+#: components/screens/WorkInProgressScreen.tsx:34
+msgid "Coming soon"
+msgstr "Segera"
+
+#: components/screens/ExportAccountScreen.tsx:68
+msgid "Confirm export"
+msgstr "Konfirmasi ekspor"
+
+#: components/screens/ImportAccountScreen.tsx:68
+msgid "Confirm import"
+msgstr "Konfirmasi impor"
+
+#: components/screens/ContactScreen.tsx:251
+msgid "Connected devices"
+msgstr "Perangkat yang terhubung"
+
+#: components/screens/ContactScreen.tsx:206
+#: components/screens/ProfileDeepLinkScreen.tsx:46
+msgid "Contact account id"
+msgstr "ID akun kontak"
+
+#: components/screens/ContactListScreen.tsx:156
+msgid "Contact list name"
+msgstr "Nama daftar kontak"
+
+#: components/screens/DirectMessagesScreen.tsx:125
+msgid "Contact lists"
+msgstr "Daftar kontak"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:67
+#: components/screens/ContactScreen.tsx:230
+msgid "Contact name"
+msgstr "Jeneng kontak"
+
+#: components/screens/DirectConversationScreen.tsx:288
+msgid "Copied to clipboard"
+msgstr "Disalin ke papan klip"
+
+#: components/screens/AccountScreen.tsx:196
+msgid "Copy account id to clipboard"
+msgstr "Salin ID akun menyang clipboard"
+
+#: components/screens/AccountScreen.tsx:227
+msgid "Copy device id to clipboard"
+msgstr "Salin ID piranti menyang clipboard"
+
+#: components/screens/DirectConversationScreen.tsx:294
+msgid "Copy text"
+msgstr "Salin teks"
+
+#: components/screens/AccountScreen.tsx:104
+msgid "Create account"
+msgstr "Gawe akun"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Create article"
+msgstr "Gawe artikel"
+
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:184
+msgid "Create contact"
+msgstr "Gawe kontak"
+
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactListsScreen.tsx:54
+msgid "Create contact list"
+msgstr "Buat daftar kontak"
+
+#: components/screens/SelectAccountScreen.tsx:60
+msgid "Create new account"
+msgstr "Gawe akun anyar"
+
+#: components/screens/ArticlesScreen.tsx:27
+msgid "Create new article"
+msgstr "Gawe artikel anyar"
+
+#: components/screens/DirectMessagesScreen.tsx:86
+msgid "Create new contact"
+msgstr "Gawe kontak anyar"
+
+#: components/screens/GroupMessagesScreen.tsx:27
+msgid "Create new group"
+msgstr "Gawe grup anyar"
+
+#: components/screens/DeviceSettingsScreen.tsx:141
+msgid "Dark"
+msgstr "Peteng"
+
+#: components/screens/DirectConversationScreen.tsx:329
+#: components/ui/MessageCompose.tsx:278
+msgid "Delete"
+msgstr "Busak"
+
+#: components/screens/EditArticleScreen.tsx:83
+msgid "Delete article"
+msgstr "Busak artikel"
+
+#: components/screens/ContactScreen.tsx:138
+#: components/screens/GroupScreen.tsx:79
+msgid "Delete contact"
+msgstr "Busak kontak"
+
+#: components/screens/ContactListScreen.tsx:104
+msgid "Delete contact list"
+msgstr "Hapus daftar kontak"
+
+#: components/screens/AccountScreen.tsx:214
+msgid "Device ID"
+msgstr "ID Piranti"
+
+#: components/screens/DeviceSettingsScreen.tsx:96
+msgid "Device Settings"
+msgstr "Setelan Piranti"
+
+#: components/screens/ContactScreen.tsx:361
+#: components/screens/ProfileScreen.tsx:228
+#: components/ui/BottomTabNavigation.tsx:31
+msgid "Direct messages"
+msgstr "Pesan langsung"
+
+#: components/screens/AccountScreen.tsx:74
+#: components/screens/ContactListScreen.tsx:118
+#: components/screens/ContactScreen.tsx:152
+#: components/screens/EditArticleScreen.tsx:95
+#: components/screens/GroupScreen.tsx:91
+#: components/screens/ProfileScreen.tsx:168
+#: components/ui/MessageCompose.tsx:178
+msgid "Discard changes"
+msgstr "Buang owahan"
+
+#: components/screens/ArticlesScreen.tsx:57
+msgid "Edit article"
+msgstr "Sunting artikel"
+
+#: components/screens/ProfileScreen.tsx:237
+msgid "Edit contact"
+msgstr "Sunting kontak"
+
+#: components/ui/DateTimeInput.tsx:80
+msgid "Edit date"
+msgstr "Sunting tanggal"
+
+#: components/ui/DateTimeInput.tsx:88
+msgid "Edit time"
+msgstr "Sunting wektu"
+
+#: components/screens/ContactListScreen.tsx:162
+msgid "Enter a name for this contact list"
+msgstr "Masukkan nama untuk daftar kontak ini"
+
+#: components/screens/EditArticleScreen.tsx:138
+msgid "Event"
+msgstr "Acara"
+
+#: components/ui/BottomTabNavigation.tsx:55
+msgid "Events"
+msgstr "Acara-acara"
+
+#: components/ui/MessageCompose.tsx:166
+msgid "Expand editor"
+msgstr "Perluas editor"
+
+#: components/screens/AccountScreen.tsx:239
+#: components/screens/ExportAccountScreen.tsx:47
+msgid "Export account"
+msgstr "Ekspor akun"
+
+#: components/screens/ImportAccountScreen.tsx:92
+msgid "Export password"
+msgstr "Sandi ekspor"
+
+#: components/screens/ImportAccountScreen.tsx:107
+msgid "Exported account secret"
+msgstr "Rahasia akun sing diekspor"
+
+#: components/screens/ExportAccountScreen.tsx:60
+#: components/screens/ExportAccountScreen.tsx:62
+msgid "Exported account secret copied to clipboard"
+msgstr "Rahasia akun sing diekspor disalin menyang clipboard"
+
+#: components/screens/DirectConversationScreen.tsx:302
+msgid "Forward"
+msgstr "Kirim"
+
+#: components/screens/EditArticleScreen.tsx:55
+msgid "Go to articles"
+msgstr "Menyang artikel"
+
+#: components/screens/GroupScreen.tsx:60
+msgid "Go to conversation"
+msgstr "Menyang obrolan"
+
+#: components/screens/DirectConversationScreen.tsx:225
+#: components/screens/GroupConversationScreen.tsx:49
+msgid "Go to messages"
+msgstr "Menyang pesan"
+
+#: components/screens/GroupScreen.tsx:135
+msgid "Group id"
+msgstr "ID grup"
+
+#: components/ui/BottomTabNavigation.tsx:37
+msgid "Group messages"
+msgstr "Pesan grup"
+
+#: components/screens/GroupScreen.tsx:157
+msgid "Group name"
+msgstr "Jeneng grup"
+
+#: components/screens/ImportAccountScreen.tsx:37
+#: components/screens/SelectAccountScreen.tsx:54
+msgid "Import account"
+msgstr "Impor akun"
+
+#: components/screens/ImportAccountScreen.tsx:61
+msgid "Invalid account secret or password"
+msgstr "Rahasia akun utawa sandi ora valid"
+
+#: components/screens/ContactScreen.tsx:268
+msgid "It takes two. Add each other as contacts to start chatting!"
+msgstr "Butuh dua orang. Tambahkan satu sama lain sebagai kontak untuk mulai mengobrol!"
+
+#: components/screens/DirectConversationScreen.tsx:564
+msgid "Jump to date"
+msgstr "Pindah menyandang tanggal"
+
+#: components/screens/DeviceSettingsScreen.tsx:101
+msgid "Language"
+msgstr "Basa"
+
+#: components/screens/DeviceSettingsScreen.tsx:139
+msgid "Light"
+msgstr "Padhang"
+
+#: components/screens/ProfileScreen.tsx:198
+msgid "Location"
+msgstr "Lokasi"
+
+#: components/screens/DirectConversationScreen.tsx:662
+msgid "Mark as read"
+msgstr "Tandai wis diwaca"
+
+#: components/screens/ContactScreen.tsx:284
+msgid "Member of contact lists"
+msgstr "Anggota daftar kontak"
+
+#: components/screens/ContactListScreen.tsx:187
+msgid "Members"
+msgstr "Anggota"
+
+#: components/screens/SelectAccountScreen.tsx:47
+msgid "ECP"
+msgstr "ECP"
+
+#: components/screens/DirectConversationScreen.tsx:277
+msgid "Modify"
+msgstr "Ubah"
+
+#: components/ui/MessageCompose.tsx:262
+msgid "Modify message"
+msgstr "Owahi pesan"
+
+#: components/ui/BottomTabNavigation.tsx:49
+msgid "Multimedia"
+msgstr "Media multi"
+
+#: components/screens/EditArticleScreen.tsx:63
+msgid "New article"
+msgstr "Artikel anyar"
+
+#: components/ui/MessageCompose.tsx:200
+msgid "New draft"
+msgstr "Draf anyar"
+
+#: components/screens/DirectConversationScreen.tsx:691
+#: components/screens/DirectConversationScreen.tsx:776
+msgid "Next occurrence"
+msgstr "Kejadian sabanjure"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:103
+#: components/screens/SelectAccountScreen.tsx:100
+msgid "No accounts on this device"
+msgstr "Ora ana akun ing piranti iki"
+
+#: components/screens/ArticlesScreen.tsx:86
+msgid "No articles"
+msgstr "Ora ana artikel"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:100
+msgid "No changes yet"
+msgstr "Masih belum ada perubahan"
+
+#: components/screens/ContactScreen.tsx:258
+msgid "No connected devices"
+msgstr "Tidak ada perangkat yang terhubung"
+
+#: components/screens/ContactListsScreen.tsx:135
+#: components/screens/ContactScreen.tsx:344
+msgid "No contact lists"
+msgstr "Tidak ada daftar kontak"
+
+#: components/screens/ContactListScreen.tsx:251
+msgid "No contacts"
+msgstr "Tidak ada kontak"
+
+#: components/screens/DirectConversationScreen.tsx:502
+#: components/screens/DirectMessagesScreen.tsx:218
+#: components/screens/GroupConversationScreen.tsx:103
+#: components/screens/GroupMessagesScreen.tsx:56
+#: components/ui/JumpToDateCalendar.tsx:143
+msgid "No messages"
+msgstr "Ora ana pesan"
+
+#: components/screens/ContactListScreen.tsx:251
+#: components/screens/ContactListsScreen.tsx:126
+#: components/screens/ContactScreen.tsx:343
+#: components/screens/DirectMessagesScreen.tsx:214
+msgid "No results found"
+msgstr "Tidak ketemu hasil"
+
+#: components/screens/ContactScreen.tsx:223
+msgid "Not a valid account id"
+msgstr "ID akun ora valid"
+
+#: components/screens/GroupScreen.tsx:150
+msgid "Not a valid group id"
+msgstr "ID grup ora valid"
+
+#: components/screens/ExportAccountScreen.tsx:102
+msgid "NOTE: every export has it's own password!"
+msgstr "CATHETAN: saben ekspor duwe sandine dhewe!"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:39
+msgid "Open profile"
+msgstr "Buka profil"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:55
+msgid "Open with account"
+msgstr "Buka nganggo akun"
+
+#: components/screens/ExportAccountScreen.tsx:88
+msgid "Password"
+msgstr "Sandi"
+
+#: components/screens/ImportAccountScreen.tsx:117
+msgid "Paste here exported account secret"
+msgstr "Tempel ing kene rahasia akun sing diekspor"
+
+#: components/screens/ContactScreen.tsx:218
+msgid "Paste the account id your contact shared with you"
+msgstr "Tempel ID akun sing dikirim kontak marang sampeyan"
+
+#: components/ui/BottomTabNavigation.tsx:61
+msgid "Places"
+msgstr "Panggonan"
+
+#: components/screens/DirectConversationScreen.tsx:627
+#: components/screens/DirectConversationScreen.tsx:750
+msgid "Previous occurrence"
+msgstr "Kejadian sadurunge"
+
+#: components/screens/AccountScreen.tsx:263
+#: components/screens/ContactScreen.tsx:371
+#: components/ui/BottomTabNavigation.tsx:71
+msgid "Profile"
+msgstr "Profil"
+
+#: components/screens/ProfileScreen.tsx:146
+msgid "Profile ID copied to clipboard"
+msgstr "ID profil disalin menyang clipboard"
+
+#: components/ui/MessageCompose.tsx:86
+msgid "Remove"
+msgstr "Copot"
+
+#: components/screens/AccountScreen.tsx:253
+msgid "Remove account from this device"
+msgstr "Copot akun saka piranti iki"
+
+#: components/screens/ContactListScreen.tsx:235
+msgid "Remove contact from list"
+msgstr "Hapus kontak saka daftar"
+
+#: components/screens/ContactScreen.tsx:329
+msgid "Remove from contact list"
+msgstr "Hapus dri daftar kontak"
+
+#: components/screens/AccountScreen.tsx:104
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:184
+msgid "Save changes"
+msgstr "Simpen owahan"
+
+#: components/ui/MessageCompose.tsx:221
+msgid "Save draft"
+msgstr "Simpen draf"
+
+#: components/screens/ContactListsScreen.tsx:79
+#: components/screens/DirectConversationScreen.tsx:604
+#: components/screens/DirectMessagesScreen.tsx:111
+#: components/ui/Select.tsx:146
+msgid "Search"
+msgstr "Goleki"
+
+#: components/screens/ContactListsScreen.tsx:48
+#: components/screens/ContactScreen.tsx:291
+msgid "Search contact lists"
+msgstr "Cari daftar kontak"
+
+#: components/screens/ContactListScreen.tsx:193
+#: components/screens/DirectMessagesScreen.tsx:80
+msgid "Search contacts"
+msgstr "Cari kontak"
+
+#: components/ui/MessageCompose.tsx:242
+msgid "Send message"
+msgstr "Kirim pesan"
+
+#: components/screens/SelectAccountScreen.tsx:33
+msgid "Settings"
+msgstr "Setelan"
+
+#: components/screens/ProfileScreen.tsx:153
+msgid "Share profile"
+msgstr "Barengake profil"
+
+#: components/ui/CoordsInput.tsx:45
+msgid "Show on map"
+msgstr "Tampilake ing peta"
+
+#: components/screens/ProfileScreen.tsx:97
+msgid "Show QR code"
+msgstr "Tampilake kode QR"
+
+#: components/screens/ContactListsScreen.tsx:67
+#: components/screens/DirectMessagesScreen.tsx:99
+msgid "Stop searching"
+msgstr "Berhenti mencari"
+
+#: components/screens/DirectConversationScreen.tsx:255
+msgid "Stop selecting"
+msgstr "Berhenti memilih"
+
+#: components/screens/DeviceSettingsScreen.tsx:121
+msgid "System default"
+msgstr "Pengaturan bawaan sistem"
+
+#: components/screens/DeviceSettingsScreen.tsx:116
+msgid "System default ({languageName})"
+msgstr "Gawan sistem ({languageName})"
+
+#: components/screens/DeviceSettingsScreen.tsx:147
+msgid "System default ({themeName})"
+msgstr "Gawan sistem ({themeName})"
+
+#: components/screens/AccountScreen.tsx:138
+msgid "Tap to change"
+msgstr "Tutul kanggo ngganti"
+
+#: components/screens/ImportAccountScreen.tsx:102
+msgid "The one you typed in during export"
+msgstr "Sing sampeyan ketik nalika ekspor"
+
+#: components/screens/DeviceSettingsScreen.tsx:126
+msgid "Theme"
+msgstr "Tema"
+
+#: components/screens/ContactScreen.tsx:236
+msgid "This name is only visible to you"
+msgstr "Jeneng iki mung katon kanggo sampeyan"
+
+#: components/screens/AccountScreen.tsx:165
+#: components/screens/ImportAccountScreen.tsx:87
+msgid "This name is only visible to you on this device"
+msgstr "Jeneng iki mung katon kanggo sampeyan ing piranti iki"
+
+#: components/screens/AccountScreen.tsx:137
+msgid "This will your avatar forever, choose wisely"
+msgstr "Iki bakal dadi avatar sampeyan selawase, piliha kanthi wicaksana"
+
+#: components/screens/DirectConversationScreen.tsx:712
+msgid "Unread messages"
+msgstr "Pesan durung diwaca"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Update article"
+msgstr "Nganyarke artikel"
+
+#: components/screens/AccountScreen.tsx:61
+msgid "Use another account"
+msgstr "Gunakake akun liyane"
+
+#: components/screens/ExportAccountScreen.tsx:98
+msgid "Will be needed to import later"
+msgstr "Bakal dibutuhake kanggo impor mengko"
+
+#: components/ui/MessageCompose.tsx:141
+msgid "Write a message"
+msgstr "Tulis pesen"
+
+#: components/screens/ExportAccountScreen.tsx:80
+msgid "You can send or store this exported text to import the account on other devices"
+msgstr "Sampeyan bisa ngirim utawa nyimpen teks sing diekspor iki kanggo ngimpor akun ing piranti liyane"

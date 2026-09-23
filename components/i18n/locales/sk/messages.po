@@ -1,0 +1,660 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-05-06 01:10+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: sk\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: components/screens/AccountScreen.tsx:190
+msgid "Account ID"
+msgstr "Identifikátor účtu"
+
+#: components/screens/AccountScreen.tsx:158
+#: components/screens/ImportAccountScreen.tsx:80
+msgid "Account name"
+msgstr "Názov účtu"
+
+#: components/screens/ProfileScreen.tsx:244
+msgid "Account settings"
+msgstr "Nastavenia účtu"
+
+#: components/screens/ContactListScreen.tsx:234
+msgid "Add contact to list"
+msgstr ""
+
+#: components/screens/ContactScreen.tsx:329
+msgid "Add to contact list"
+msgstr ""
+
+#: components/screens/ContactListsScreen.tsx:39
+msgid "All messages"
+msgstr ""
+
+#: components/screens/ExportAccountScreen.tsx:87
+msgid "Anyone who is able to import the secret will have full access to the account forever!"
+msgstr "Každý, kto dokáže importovať tento tajný kľúč, bude mať trvalý a úplný prístup k účtu!"
+
+#: components/screens/DeviceSettingsScreen.tsx:82
+msgid "Arabic"
+msgstr "Arabčina"
+
+#: components/ui/MessageCompose.tsx:107
+msgid "Attach file"
+msgstr "Priložiť súbor"
+
+#: components/screens/DeviceSettingsScreen.tsx:31
+#: components/screens/ProfileDeepLinkScreen.tsx:36
+msgid "Back"
+msgstr "Späť"
+
+#: components/screens/ExportAccountScreen.tsx:38
+msgid "Back to account screen"
+msgstr "Späť na obrazovku účtu"
+
+#: components/screens/ImportAccountScreen.tsx:34
+msgid "Back to account selection"
+msgstr "Späť na výber účtu"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:36
+msgid "Back to contact"
+msgstr "Späť na kontakt"
+
+#: components/screens/ContactListScreen.tsx:84
+msgid "Back to contact lists"
+msgstr ""
+
+#: components/screens/ContactScreen.tsx:104
+msgid "Back to direct messages"
+msgstr "Späť k priamym správam"
+
+#: components/screens/DeviceSettingsScreen.tsx:60
+msgid "Bengali"
+msgstr "Bengálsky jazyk"
+
+#: components/screens/ProfileScreen.tsx:206
+msgid "Biography"
+msgstr "Životopis"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:48
+#: components/screens/ContactScreen.tsx:118
+msgid "Changes history"
+msgstr "História zmien"
+
+#: components/ui/DateTimeInput.tsx:97
+msgid "Clear date"
+msgstr "Vymazať dátum"
+
+#: components/screens/ExportAccountScreen.tsx:70
+msgid "Confirm export"
+msgstr "Potvrdiť export"
+
+#: components/screens/ImportAccountScreen.tsx:68
+msgid "Confirm import"
+msgstr "Potvrdiť import"
+
+#: components/screens/ContactScreen.tsx:249
+msgid "Connected devices"
+msgstr "Pripojené zariadenia"
+
+#: components/screens/ContactScreen.tsx:206
+#: components/screens/ProfileDeepLinkScreen.tsx:46
+msgid "Contact account id"
+msgstr "ID kontaktného účtu"
+
+#: components/screens/ContactListScreen.tsx:156
+msgid "Contact list name"
+msgstr ""
+
+#: components/screens/DirectMessagesScreen.tsx:125
+msgid "Contact lists"
+msgstr ""
+
+#: components/screens/ContactChangesHistoryScreen.tsx:70
+#: components/screens/ContactScreen.tsx:229
+msgid "Contact name"
+msgstr "Meno kontaktnej osoby"
+
+#: components/screens/AccountScreen.tsx:203
+msgid "Copy account id to clipboard"
+msgstr "Skopírovať ID účtu do schránky"
+
+#: components/screens/AccountScreen.tsx:234
+msgid "Copy device id to clipboard"
+msgstr "Skopírovať ID zariadenia do schránky"
+
+#: components/screens/AccountScreen.tsx:117
+msgid "Create account"
+msgstr "Vytvoriť účet"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Create article"
+msgstr "Vytvoriť článok"
+
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:187
+msgid "Create contact"
+msgstr "Vytvoriť kontakt"
+
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactListsScreen.tsx:53
+msgid "Create contact list"
+msgstr ""
+
+#: components/screens/SelectAccountScreen.tsx:56
+msgid "Create new account"
+msgstr "Vytvoriť nový účet"
+
+#: components/screens/ArticlesScreen.tsx:27
+msgid "Create new article"
+msgstr "Vytvoriť nový článok"
+
+#: components/screens/DirectMessagesScreen.tsx:86
+msgid "Create new contact"
+msgstr "Vytvoriť nový kontakt"
+
+#: components/screens/GroupMessagesScreen.tsx:27
+msgid "Create new group"
+msgstr "Vytvoriť novú skupinu"
+
+#: components/screens/DeviceSettingsScreen.tsx:134
+msgid "Dark"
+msgstr "Tmavé"
+
+#: components/ui/MessageCompose.tsx:210
+msgid "Delete"
+msgstr "Zmazať"
+
+#: components/screens/EditArticleScreen.tsx:83
+msgid "Delete article"
+msgstr "Zmazať položku"
+
+#: components/screens/ContactScreen.tsx:138
+#: components/screens/GroupScreen.tsx:79
+msgid "Delete contact"
+msgstr "Zmazať kontakt"
+
+#: components/screens/ContactListScreen.tsx:104
+msgid "Delete contact list"
+msgstr ""
+
+#: components/screens/AccountScreen.tsx:221
+msgid "Device ID"
+msgstr "ID zariadenia"
+
+#: components/screens/DeviceSettingsScreen.tsx:34
+msgid "Device Settings"
+msgstr "Nastavenia zariadenia"
+
+#: components/screens/ContactScreen.tsx:355
+#: components/screens/ProfileScreen.tsx:230
+#: components/ui/BottomTabNavigation.tsx:30
+msgid "Direct messages"
+msgstr "Priame správy"
+
+#: components/screens/AccountScreen.tsx:87
+#: components/screens/ContactListScreen.tsx:118
+#: components/screens/ContactScreen.tsx:152
+#: components/screens/EditArticleScreen.tsx:95
+#: components/screens/GroupScreen.tsx:91
+#: components/screens/ProfileScreen.tsx:171
+msgid "Discard changes"
+msgstr "Zrušiť zmeny"
+
+#: components/screens/ArticlesScreen.tsx:57
+msgid "Edit article"
+msgstr "Upraviť článok"
+
+#: components/screens/ProfileScreen.tsx:239
+msgid "Edit contact"
+msgstr "Upraviť kontakt"
+
+#: components/ui/DateTimeInput.tsx:81
+msgid "Edit date"
+msgstr "Upraviť dátum"
+
+#: components/ui/DateTimeInput.tsx:89
+msgid "Edit time"
+msgstr "Čas úpravy"
+
+#: components/screens/DeviceSettingsScreen.tsx:52
+msgid "English"
+msgstr "{see_more}Zobraziť viac{/see_more}"
+
+#: components/screens/ContactListScreen.tsx:161
+msgid "Enter a name for this contact list"
+msgstr ""
+
+#: components/screens/EditArticleScreen.tsx:138
+msgid "Event"
+msgstr "Udalosť"
+
+#: components/ui/BottomTabNavigation.tsx:48
+msgid "Events"
+msgstr "Podujatia"
+
+#: components/screens/AccountScreen.tsx:246
+#: components/screens/ExportAccountScreen.tsx:49
+msgid "Export account"
+msgstr "Exportovať účet"
+
+#: components/screens/ImportAccountScreen.tsx:91
+msgid "Export password"
+msgstr "Export hesla"
+
+#: components/screens/ImportAccountScreen.tsx:105
+msgid "Exported account secret"
+msgstr "Exportovaný tajný kľúč účtu"
+
+#: components/screens/ExportAccountScreen.tsx:62
+#: components/screens/ExportAccountScreen.tsx:64
+msgid "Exported account secret copied to clipboard"
+msgstr "Exportovaný kľúč účtu bol skopírovaný do schránky"
+
+#: components/screens/DeviceSettingsScreen.tsx:78
+msgid "French"
+msgstr "Francúzština"
+
+#: components/screens/DeviceSettingsScreen.tsx:84
+msgid "German"
+msgstr "Nemecky"
+
+#: components/screens/EditArticleScreen.tsx:55
+msgid "Go to articles"
+msgstr "Prejsť na články"
+
+#: components/screens/GroupScreen.tsx:60
+msgid "Go to conversation"
+msgstr "Prejsť na konverzáciu"
+
+#: components/screens/DirectConversationScreen.tsx:172
+#: components/screens/GroupConversationScreen.tsx:46
+msgid "Go to messages"
+msgstr "Prejsť na správy"
+
+#: components/screens/GroupScreen.tsx:135
+msgid "Group id"
+msgstr "ID skupiny"
+
+#: components/ui/BottomTabNavigation.tsx:36
+msgid "Group messages"
+msgstr "Skupinové správy"
+
+#: components/screens/GroupScreen.tsx:156
+msgid "Group name"
+msgstr "Názov skupiny"
+
+#: components/screens/DeviceSettingsScreen.tsx:94
+msgid "Gujarati"
+msgstr "Gudžarátčina"
+
+#: components/screens/DeviceSettingsScreen.tsx:96
+msgid "Hausa"
+msgstr "Hausa"
+
+#: components/screens/DeviceSettingsScreen.tsx:58
+msgid "Hindi"
+msgstr "Hindi"
+
+#: components/screens/ImportAccountScreen.tsx:37
+#: components/screens/SelectAccountScreen.tsx:50
+msgid "Import account"
+msgstr "Importovať účet"
+
+#: components/screens/DeviceSettingsScreen.tsx:104
+msgid "Indonesian"
+msgstr "Indonézština"
+
+#: components/screens/ImportAccountScreen.tsx:61
+msgid "Invalid account secret or password"
+msgstr "Neplatný tajný kľúč účtu alebo heslo"
+
+#: components/screens/ContactScreen.tsx:268
+msgid "It takes two. Add each other as contacts to start chatting!"
+msgstr "Potrebujete dvoch. Pridajte sa navzájom ako kontakty, aby ste mohli chatovať!"
+
+#: components/screens/DeviceSettingsScreen.tsx:90
+msgid "Italian"
+msgstr "Talianske"
+
+#: components/screens/DeviceSettingsScreen.tsx:66
+msgid "Japanese"
+msgstr "Japonsky"
+
+#: components/screens/DeviceSettingsScreen.tsx:88
+msgid "Javanese"
+msgstr "Javánsky jazyk"
+
+#: components/screens/DeviceSettingsScreen.tsx:98
+msgid "Kannada"
+msgstr "Kannadčina"
+
+#: components/screens/DeviceSettingsScreen.tsx:76
+msgid "Korean"
+msgstr "Kórejčina"
+
+#: components/screens/DeviceSettingsScreen.tsx:39
+msgid "Language"
+msgstr "Jazyk"
+
+#: components/screens/DeviceSettingsScreen.tsx:132
+msgid "Light"
+msgstr "Svetlo"
+
+#: components/screens/ProfileScreen.tsx:201
+msgid "Location"
+msgstr "Poloha"
+
+#: components/screens/DeviceSettingsScreen.tsx:54
+msgid "Mandarin Chinese"
+msgstr "Mandžuská čínština"
+
+#: components/screens/DeviceSettingsScreen.tsx:72
+msgid "Marathi"
+msgstr "Marathi"
+
+#: components/screens/DirectConversationScreen.tsx:430
+msgid "Mark as read"
+msgstr "Označiť ako prečítané"
+
+#: components/screens/ContactScreen.tsx:284
+msgid "Member of contact lists"
+msgstr ""
+
+#: components/screens/ContactListScreen.tsx:186
+msgid "Members"
+msgstr ""
+
+#: components/screens/SelectAccountScreen.tsx:43
+msgid "ECP"
+msgstr "ECP"
+
+#: components/ui/MessageCompose.tsx:194
+msgid "Modify message"
+msgstr "Upraviť správu"
+
+#: components/screens/EditArticleScreen.tsx:63
+msgid "New article"
+msgstr "Nový článok"
+
+#: components/ui/MessageCompose.tsx:140
+msgid "New draft"
+msgstr "Nový návrh"
+
+#: components/screens/DirectConversationScreen.tsx:459
+#: components/screens/DirectConversationScreen.tsx:543
+msgid "Next occurrence"
+msgstr "Ďalší výskyt"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:104
+#: components/screens/SelectAccountScreen.tsx:95
+msgid "No accounts on this device"
+msgstr "Na tomto zariadení nie sú žiadne účty"
+
+#: components/screens/ArticlesScreen.tsx:86
+msgid "No articles"
+msgstr "Žiadne články"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:103
+msgid "No changes yet"
+msgstr "Zatiaľ žiadne zmeny"
+
+#: components/screens/ContactScreen.tsx:256
+msgid "No connected devices"
+msgstr "Žiadne pripojené zariadenia"
+
+#: components/screens/ContactListsScreen.tsx:136
+#: components/screens/ContactScreen.tsx:338
+msgid "No contact lists"
+msgstr ""
+
+#: components/screens/ContactListScreen.tsx:250
+msgid "No contacts"
+msgstr ""
+
+#: components/screens/DirectConversationScreen.tsx:351
+#: components/screens/DirectMessagesScreen.tsx:217
+#: components/screens/GroupConversationScreen.tsx:98
+#: components/screens/GroupMessagesScreen.tsx:56
+msgid "No messages"
+msgstr "Žiadne správy"
+
+#: components/screens/ContactListScreen.tsx:250
+#: components/screens/ContactListsScreen.tsx:126
+#: components/screens/ContactScreen.tsx:337
+#: components/screens/DirectMessagesScreen.tsx:213
+msgid "No results found"
+msgstr "Nenašli sa žiadne výsledky"
+
+#: components/screens/ContactScreen.tsx:222
+msgid "Not a valid account id"
+msgstr "Neplatné ID používateľského účtu"
+
+#: components/screens/GroupScreen.tsx:149
+msgid "Not a valid group id"
+msgstr "Nie je platné ID skupiny"
+
+#: components/screens/ExportAccountScreen.tsx:105
+msgid "NOTE: every export has it's own password!"
+msgstr "POZNÁMKA: Každý export má svoje vlastné heslo!"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:39
+msgid "Open profile"
+msgstr "Zobraziť profil"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:57
+msgid "Open with account"
+msgstr "Otvoriť pomocou účtu"
+
+#: components/screens/ExportAccountScreen.tsx:92
+msgid "Password"
+msgstr "Heslo"
+
+#: components/screens/ImportAccountScreen.tsx:114
+msgid "Paste here exported account secret"
+msgstr "Vložte sem vyexportovaný tajný kľúč účtu"
+
+#: components/screens/ContactScreen.tsx:217
+msgid "Paste the account id your contact shared with you"
+msgstr "Vložte ID účtu, ktoré vám váš kontakt poskytol"
+
+#: components/screens/DeviceSettingsScreen.tsx:100
+msgid "Persian"
+msgstr "Perzština"
+
+#: components/ui/BottomTabNavigation.tsx:54
+msgid "Places"
+msgstr "Miesta"
+
+#: components/screens/DeviceSettingsScreen.tsx:102
+msgid "Polish"
+msgstr "Poľsky"
+
+#: components/screens/DeviceSettingsScreen.tsx:62
+msgid "Portuguese"
+msgstr "Portugalčina"
+
+#: components/screens/DirectConversationScreen.tsx:395
+#: components/screens/DirectConversationScreen.tsx:517
+msgid "Previous occurrence"
+msgstr "Predchádzajúca správa"
+
+#: components/screens/AccountScreen.tsx:256
+#: components/screens/ContactScreen.tsx:365
+#: components/ui/BottomTabNavigation.tsx:64
+msgid "Profile"
+msgstr "Profil"
+
+#: components/screens/ProfileScreen.tsx:149
+msgid "Profile ID copied to clipboard"
+msgstr "ID profilu bol skopírovaný do schránky"
+
+#: components/ui/MessageCompose.tsx:70
+msgid "Remove"
+msgstr "Odstrániť"
+
+#: components/screens/AccountScreen.tsx:75
+msgid "Remove account from this device"
+msgstr "Odstrániť účet z tohto zariadenia"
+
+#: components/screens/ContactListScreen.tsx:233
+msgid "Remove contact from list"
+msgstr ""
+
+#: components/screens/ContactScreen.tsx:328
+msgid "Remove from contact list"
+msgstr ""
+
+#: components/screens/DeviceSettingsScreen.tsx:64
+msgid "Russian"
+msgstr "Ruština"
+
+#: components/screens/AccountScreen.tsx:117
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:187
+msgid "Save changes"
+msgstr "Uložiť zmeny"
+
+#: components/ui/MessageCompose.tsx:156
+msgid "Save draft"
+msgstr "Uložiť návrh"
+
+#: components/screens/ContactListsScreen.tsx:79
+#: components/screens/DirectConversationScreen.tsx:372
+#: components/screens/DirectMessagesScreen.tsx:112
+msgid "Search"
+msgstr "Vyhľadávanie"
+
+#: components/screens/ContactListsScreen.tsx:47
+#: components/screens/ContactScreen.tsx:290
+msgid "Search contact lists"
+msgstr ""
+
+#: components/screens/ContactListScreen.tsx:191
+#: components/screens/DirectMessagesScreen.tsx:80
+msgid "Search contacts"
+msgstr "Vyhľadávať kontakty"
+
+#: components/ui/MessageCompose.tsx:174
+msgid "Send message"
+msgstr "Odoslať správu"
+
+#: components/screens/SelectAccountScreen.tsx:28
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: components/screens/ProfileScreen.tsx:156
+msgid "Share profile"
+msgstr "Zdieľať profil"
+
+#: components/ui/CoordsInput.tsx:47
+msgid "Show on map"
+msgstr "Zobraziť na mape"
+
+#: components/screens/ProfileScreen.tsx:100
+msgid "Show QR code"
+msgstr "Zobraziť QR kód"
+
+#: components/screens/DeviceSettingsScreen.tsx:56
+msgid "Spanish"
+msgstr "Španielčina"
+
+#: components/screens/ContactListsScreen.tsx:66
+#: components/screens/DirectMessagesScreen.tsx:99
+msgid "Stop searching"
+msgstr "Prestať hľadať"
+
+#: components/screens/DeviceSettingsScreen.tsx:106
+msgid "Swahili"
+msgstr "Svahili"
+
+#: components/screens/DeviceSettingsScreen.tsx:114
+msgid "System default ({languageName})"
+msgstr "Systémové nastavenie (predvolené) ({languageName})"
+
+#: components/screens/DeviceSettingsScreen.tsx:140
+msgid "System default ({themeName})"
+msgstr "Systémové nastavenie (témou: {themeName})"
+
+#: components/screens/DeviceSettingsScreen.tsx:80
+msgid "Tamil"
+msgstr "Tamil"
+
+#: components/screens/AccountScreen.tsx:151
+msgid "Tap to change"
+msgstr "Klepnutím zmeňte"
+
+#: components/screens/DeviceSettingsScreen.tsx:74
+msgid "Telugu"
+msgstr "Telugu"
+
+#: components/screens/DeviceSettingsScreen.tsx:92
+msgid "Thai"
+msgstr "Thajsko"
+
+#: components/screens/ImportAccountScreen.tsx:100
+msgid "The one you typed in during export"
+msgstr "Ten, ktorý ste zadali počas exportu"
+
+#: components/screens/DeviceSettingsScreen.tsx:119
+msgid "Theme"
+msgstr "Téma"
+
+#: components/screens/ContactScreen.tsx:234
+msgid "This name is only visible to you"
+msgstr "Toto meno je viditeľné len vám"
+
+#: components/screens/AccountScreen.tsx:163
+#: components/screens/ImportAccountScreen.tsx:86
+msgid "This name is only visible to you on this device"
+msgstr "Toto meno je viditeľné len vám na tomto zariadení"
+
+#: components/screens/AccountScreen.tsx:150
+msgid "This will your avatar forever, choose wisely"
+msgstr "Toto bude váš avatar na vždy, vyberajte starostlivo"
+
+#: components/screens/DeviceSettingsScreen.tsx:70
+msgid "Turkish"
+msgstr "Turecky"
+
+#: components/screens/DirectConversationScreen.tsx:480
+msgid "Unread messages"
+msgstr "Neposlúžnené správy"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Update article"
+msgstr "Aktualizácia článku"
+
+#: components/screens/DeviceSettingsScreen.tsx:86
+msgid "Urdu"
+msgstr "Urdu"
+
+#: components/screens/AccountScreen.tsx:61
+msgid "Use another account"
+msgstr "Použite iný účet"
+
+#: components/screens/DeviceSettingsScreen.tsx:68
+msgid "Vietnamese"
+msgstr "Vietnamské"
+
+#: components/screens/ExportAccountScreen.tsx:101
+msgid "Will be needed to import later"
+msgstr "Bude potrebné importovať neskôr"
+
+#: components/ui/MessageCompose.tsx:112
+msgid "Write a message"
+msgstr "Napísať správu"
+
+#: components/screens/ExportAccountScreen.tsx:82
+msgid "You can send or store this exported text to import the account on other devices"
+msgstr "Môžete poslať alebo uložiť tento exportovaný text, aby ste mohli importovať účet na iných zariadeniach"

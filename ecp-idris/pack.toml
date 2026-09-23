@@ -1,0 +1,10 @@
+[custom.all.ecp-idris]
+type = "local"
+path = "."
+ipkg = "ecp-idris.ipkg"
+test = "test/test.ipkg"
+
+[custom.all.ecp-idris-test]
+type = "local"
+path = "test"
+ipkg = "test.ipkg"

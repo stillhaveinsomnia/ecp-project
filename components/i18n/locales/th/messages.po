@@ -1,0 +1,660 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-05-05 13:30+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: th\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: components/screens/AccountScreen.tsx:190
+msgid "Account ID"
+msgstr "รหัสบัญชี"
+
+#: components/screens/AccountScreen.tsx:158
+#: components/screens/ImportAccountScreen.tsx:80
+msgid "Account name"
+msgstr "ชื่อบัญชี"
+
+#: components/screens/ProfileScreen.tsx:244
+msgid "Account settings"
+msgstr "การตั้งค่าบัญชี"
+
+#: components/screens/ContactListScreen.tsx:234
+msgid "Add contact to list"
+msgstr ""
+
+#: components/screens/ContactScreen.tsx:329
+msgid "Add to contact list"
+msgstr ""
+
+#: components/screens/ContactListsScreen.tsx:39
+msgid "All messages"
+msgstr ""
+
+#: components/screens/ExportAccountScreen.tsx:87
+msgid "Anyone who is able to import the secret will have full access to the account forever!"
+msgstr "ใครก็ตามที่สามารถนำเข้าความลับจะมีสิทธิ์เข้าถึงบัญชีได้อย่างเต็มที่ตลอดไป!"
+
+#: components/screens/DeviceSettingsScreen.tsx:82
+msgid "Arabic"
+msgstr "ภาษาอาหรับ"
+
+#: components/ui/MessageCompose.tsx:107
+msgid "Attach file"
+msgstr "แนบไฟล์"
+
+#: components/screens/DeviceSettingsScreen.tsx:31
+#: components/screens/ProfileDeepLinkScreen.tsx:36
+msgid "Back"
+msgstr "ย้อนกลับ"
+
+#: components/screens/ExportAccountScreen.tsx:38
+msgid "Back to account screen"
+msgstr "กลับไปหน้าบัญชี"
+
+#: components/screens/ImportAccountScreen.tsx:34
+msgid "Back to account selection"
+msgstr "กลับไปเลือกบัญชี"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:36
+msgid "Back to contact"
+msgstr "กลับไปยังหน้าติดต่อ"
+
+#: components/screens/ContactListScreen.tsx:84
+msgid "Back to contact lists"
+msgstr ""
+
+#: components/screens/ContactScreen.tsx:104
+msgid "Back to direct messages"
+msgstr "กลับไปข้อความโดยตรง"
+
+#: components/screens/DeviceSettingsScreen.tsx:60
+msgid "Bengali"
+msgstr "ภาษาเบงกาลี"
+
+#: components/screens/ProfileScreen.tsx:206
+msgid "Biography"
+msgstr "ประวัติ"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:48
+#: components/screens/ContactScreen.tsx:118
+msgid "Changes history"
+msgstr "ประวัติการเปลี่ยนแปลง"
+
+#: components/ui/DateTimeInput.tsx:97
+msgid "Clear date"
+msgstr "ล้างวันที่"
+
+#: components/screens/ExportAccountScreen.tsx:70
+msgid "Confirm export"
+msgstr "ยืนยันการส่งออก"
+
+#: components/screens/ImportAccountScreen.tsx:68
+msgid "Confirm import"
+msgstr "ยืนยันการนำเข้า"
+
+#: components/screens/ContactScreen.tsx:249
+msgid "Connected devices"
+msgstr "อุปกรณ์ที่เชื่อมต่อ"
+
+#: components/screens/ContactScreen.tsx:206
+#: components/screens/ProfileDeepLinkScreen.tsx:46
+msgid "Contact account id"
+msgstr "รหัสบัญชีผู้ติดต่อ"
+
+#: components/screens/ContactListScreen.tsx:156
+msgid "Contact list name"
+msgstr ""
+
+#: components/screens/DirectMessagesScreen.tsx:125
+msgid "Contact lists"
+msgstr ""
+
+#: components/screens/ContactChangesHistoryScreen.tsx:70
+#: components/screens/ContactScreen.tsx:229
+msgid "Contact name"
+msgstr "ชื่อผู้ติดต่อ"
+
+#: components/screens/AccountScreen.tsx:203
+msgid "Copy account id to clipboard"
+msgstr "คัดลอกรหัสบัญชีไปยังคลิปบอร์ด"
+
+#: components/screens/AccountScreen.tsx:234
+msgid "Copy device id to clipboard"
+msgstr "คัดลอกรหัสอุปกรณ์ไปยังคลิปบอร์ด"
+
+#: components/screens/AccountScreen.tsx:117
+msgid "Create account"
+msgstr "สร้างบัญชี"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Create article"
+msgstr "สร้างบทความ"
+
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:187
+msgid "Create contact"
+msgstr "สร้างผู้ติดต่อ"
+
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactListsScreen.tsx:53
+msgid "Create contact list"
+msgstr ""
+
+#: components/screens/SelectAccountScreen.tsx:56
+msgid "Create new account"
+msgstr "สร้างบัญชีใหม่"
+
+#: components/screens/ArticlesScreen.tsx:27
+msgid "Create new article"
+msgstr "สร้างบทความใหม่"
+
+#: components/screens/DirectMessagesScreen.tsx:86
+msgid "Create new contact"
+msgstr "สร้างผู้ติดต่อใหม่"
+
+#: components/screens/GroupMessagesScreen.tsx:27
+msgid "Create new group"
+msgstr "สร้างกลุ่มใหม่"
+
+#: components/screens/DeviceSettingsScreen.tsx:134
+msgid "Dark"
+msgstr "มืด"
+
+#: components/ui/MessageCompose.tsx:210
+msgid "Delete"
+msgstr "ลบ"
+
+#: components/screens/EditArticleScreen.tsx:83
+msgid "Delete article"
+msgstr "ลบบทความ"
+
+#: components/screens/ContactScreen.tsx:138
+#: components/screens/GroupScreen.tsx:79
+msgid "Delete contact"
+msgstr "ลบผู้ติดต่อ"
+
+#: components/screens/ContactListScreen.tsx:104
+msgid "Delete contact list"
+msgstr ""
+
+#: components/screens/AccountScreen.tsx:221
+msgid "Device ID"
+msgstr "รหัสอุปกรณ์"
+
+#: components/screens/DeviceSettingsScreen.tsx:34
+msgid "Device Settings"
+msgstr "การตั้งค่าอุปกรณ์"
+
+#: components/screens/ContactScreen.tsx:355
+#: components/screens/ProfileScreen.tsx:230
+#: components/ui/BottomTabNavigation.tsx:30
+msgid "Direct messages"
+msgstr "ข้อความโดยตรง"
+
+#: components/screens/AccountScreen.tsx:87
+#: components/screens/ContactListScreen.tsx:118
+#: components/screens/ContactScreen.tsx:152
+#: components/screens/EditArticleScreen.tsx:95
+#: components/screens/GroupScreen.tsx:91
+#: components/screens/ProfileScreen.tsx:171
+msgid "Discard changes"
+msgstr "ยกเลิกการเปลี่ยนแปลง"
+
+#: components/screens/ArticlesScreen.tsx:57
+msgid "Edit article"
+msgstr "แก้ไขบทความ"
+
+#: components/screens/ProfileScreen.tsx:239
+msgid "Edit contact"
+msgstr "แก้ไขผู้ติดต่อ"
+
+#: components/ui/DateTimeInput.tsx:81
+msgid "Edit date"
+msgstr "แก้ไขวันที่"
+
+#: components/ui/DateTimeInput.tsx:89
+msgid "Edit time"
+msgstr "แก้ไขเวลา"
+
+#: components/screens/DeviceSettingsScreen.tsx:52
+msgid "English"
+msgstr "ภาษาอังกฤษ"
+
+#: components/screens/ContactListScreen.tsx:161
+msgid "Enter a name for this contact list"
+msgstr ""
+
+#: components/screens/EditArticleScreen.tsx:138
+msgid "Event"
+msgstr "กิจกรรม"
+
+#: components/ui/BottomTabNavigation.tsx:48
+msgid "Events"
+msgstr "กิจกรรม"
+
+#: components/screens/AccountScreen.tsx:246
+#: components/screens/ExportAccountScreen.tsx:49
+msgid "Export account"
+msgstr "ส่งออกบัญชี"
+
+#: components/screens/ImportAccountScreen.tsx:91
+msgid "Export password"
+msgstr "รหัสผ่านส่งออก"
+
+#: components/screens/ImportAccountScreen.tsx:105
+msgid "Exported account secret"
+msgstr "ความลับบัญชีที่ส่งออก"
+
+#: components/screens/ExportAccountScreen.tsx:62
+#: components/screens/ExportAccountScreen.tsx:64
+msgid "Exported account secret copied to clipboard"
+msgstr "คัดลอกความลับบัญชีที่ส่งออกไปยังคลิปบอร์ดแล้ว"
+
+#: components/screens/DeviceSettingsScreen.tsx:78
+msgid "French"
+msgstr "ภาษาฝรั่งเศส"
+
+#: components/screens/DeviceSettingsScreen.tsx:84
+msgid "German"
+msgstr "ภาษาเยอรมัน"
+
+#: components/screens/EditArticleScreen.tsx:55
+msgid "Go to articles"
+msgstr "ไปที่บทความ"
+
+#: components/screens/GroupScreen.tsx:60
+msgid "Go to conversation"
+msgstr "ไปที่การสนทนา"
+
+#: components/screens/DirectConversationScreen.tsx:172
+#: components/screens/GroupConversationScreen.tsx:46
+msgid "Go to messages"
+msgstr "ไปที่ข้อความ"
+
+#: components/screens/GroupScreen.tsx:135
+msgid "Group id"
+msgstr "รหัสกลุ่ม"
+
+#: components/ui/BottomTabNavigation.tsx:36
+msgid "Group messages"
+msgstr "ข้อความกลุ่ม"
+
+#: components/screens/GroupScreen.tsx:156
+msgid "Group name"
+msgstr "ชื่อกลุ่ม"
+
+#: components/screens/DeviceSettingsScreen.tsx:94
+msgid "Gujarati"
+msgstr "ภาษากุจาราตี"
+
+#: components/screens/DeviceSettingsScreen.tsx:96
+msgid "Hausa"
+msgstr "ภาษาเฮาซา"
+
+#: components/screens/DeviceSettingsScreen.tsx:58
+msgid "Hindi"
+msgstr "ภาษาฮินดี"
+
+#: components/screens/ImportAccountScreen.tsx:37
+#: components/screens/SelectAccountScreen.tsx:50
+msgid "Import account"
+msgstr "นำเข้าบัญชี"
+
+#: components/screens/DeviceSettingsScreen.tsx:104
+msgid "Indonesian"
+msgstr "ภาษาอินโดนีเซีย"
+
+#: components/screens/ImportAccountScreen.tsx:61
+msgid "Invalid account secret or password"
+msgstr "ความลับบัญชีหรือรหัสผ่านไม่ถูกต้อง"
+
+#: components/screens/ContactScreen.tsx:268
+msgid "It takes two. Add each other as contacts to start chatting!"
+msgstr "ต้องใช้สองคน เพิ่มกันเป็นเพื่อนเพื่อเริ่มแชท!"
+
+#: components/screens/DeviceSettingsScreen.tsx:90
+msgid "Italian"
+msgstr "ภาษาอิตาลี"
+
+#: components/screens/DeviceSettingsScreen.tsx:66
+msgid "Japanese"
+msgstr "ภาษาญี่ปุ่น"
+
+#: components/screens/DeviceSettingsScreen.tsx:88
+msgid "Javanese"
+msgstr "ภาษาชวา"
+
+#: components/screens/DeviceSettingsScreen.tsx:98
+msgid "Kannada"
+msgstr "ภาษากันนาดา"
+
+#: components/screens/DeviceSettingsScreen.tsx:76
+msgid "Korean"
+msgstr "ภาษาเกาหลี"
+
+#: components/screens/DeviceSettingsScreen.tsx:39
+msgid "Language"
+msgstr "ภาษา"
+
+#: components/screens/DeviceSettingsScreen.tsx:132
+msgid "Light"
+msgstr "สว่าง"
+
+#: components/screens/ProfileScreen.tsx:201
+msgid "Location"
+msgstr "ที่ตั้ง"
+
+#: components/screens/DeviceSettingsScreen.tsx:54
+msgid "Mandarin Chinese"
+msgstr "ภาษาจีนกลาง"
+
+#: components/screens/DeviceSettingsScreen.tsx:72
+msgid "Marathi"
+msgstr "ภาษามราฐี"
+
+#: components/screens/DirectConversationScreen.tsx:430
+msgid "Mark as read"
+msgstr "ทำเครื่องหมายว่าอ่านแล้ว"
+
+#: components/screens/ContactScreen.tsx:284
+msgid "Member of contact lists"
+msgstr ""
+
+#: components/screens/ContactListScreen.tsx:186
+msgid "Members"
+msgstr ""
+
+#: components/screens/SelectAccountScreen.tsx:43
+msgid "ECP"
+msgstr "ECP"
+
+#: components/ui/MessageCompose.tsx:194
+msgid "Modify message"
+msgstr "แก้ไขข้อความ"
+
+#: components/screens/EditArticleScreen.tsx:63
+msgid "New article"
+msgstr "บทความใหม่"
+
+#: components/ui/MessageCompose.tsx:140
+msgid "New draft"
+msgstr "ร่างใหม่"
+
+#: components/screens/DirectConversationScreen.tsx:459
+#: components/screens/DirectConversationScreen.tsx:543
+msgid "Next occurrence"
+msgstr "การเกิดขึ้นครั้งถัดไป"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:104
+#: components/screens/SelectAccountScreen.tsx:95
+msgid "No accounts on this device"
+msgstr "ไม่มีบัญชีในอุปกรณ์นี้"
+
+#: components/screens/ArticlesScreen.tsx:86
+msgid "No articles"
+msgstr "ไม่มีบทความ"
+
+#: components/screens/ContactChangesHistoryScreen.tsx:103
+msgid "No changes yet"
+msgstr "ยังไม่มีการเปลี่ยนแปลง"
+
+#: components/screens/ContactScreen.tsx:256
+msgid "No connected devices"
+msgstr "ไม่มีอุปกรณ์ที่เชื่อมต่อ"
+
+#: components/screens/ContactListsScreen.tsx:136
+#: components/screens/ContactScreen.tsx:338
+msgid "No contact lists"
+msgstr ""
+
+#: components/screens/ContactListScreen.tsx:250
+msgid "No contacts"
+msgstr ""
+
+#: components/screens/DirectConversationScreen.tsx:351
+#: components/screens/DirectMessagesScreen.tsx:217
+#: components/screens/GroupConversationScreen.tsx:98
+#: components/screens/GroupMessagesScreen.tsx:56
+msgid "No messages"
+msgstr "ไม่มีข้อความ"
+
+#: components/screens/ContactListScreen.tsx:250
+#: components/screens/ContactListsScreen.tsx:126
+#: components/screens/ContactScreen.tsx:337
+#: components/screens/DirectMessagesScreen.tsx:213
+msgid "No results found"
+msgstr "ไม่พบผลลัพธ์"
+
+#: components/screens/ContactScreen.tsx:222
+msgid "Not a valid account id"
+msgstr "รหัสบัญชีไม่ถูกต้อง"
+
+#: components/screens/GroupScreen.tsx:149
+msgid "Not a valid group id"
+msgstr "รหัสกลุ่มไม่ถูกต้อง"
+
+#: components/screens/ExportAccountScreen.tsx:105
+msgid "NOTE: every export has it's own password!"
+msgstr "หมายเหตุ: การส่งออกแต่ละครั้งมีรหัสผ่านของตัวเอง!"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:39
+msgid "Open profile"
+msgstr "เปิดโปรไฟล์"
+
+#: components/screens/ProfileDeepLinkScreen.tsx:57
+msgid "Open with account"
+msgstr "เปิดด้วยบัญชี"
+
+#: components/screens/ExportAccountScreen.tsx:92
+msgid "Password"
+msgstr "รหัสผ่าน"
+
+#: components/screens/ImportAccountScreen.tsx:114
+msgid "Paste here exported account secret"
+msgstr "วางความลับบัญชีที่ส่งออกที่นี่"
+
+#: components/screens/ContactScreen.tsx:217
+msgid "Paste the account id your contact shared with you"
+msgstr "วางรหัสบัญชีที่ผู้ติดต่อแบ่งปันกับคุณ"
+
+#: components/screens/DeviceSettingsScreen.tsx:100
+msgid "Persian"
+msgstr "ภาษาเปอร์เซีย"
+
+#: components/ui/BottomTabNavigation.tsx:54
+msgid "Places"
+msgstr "สถานที่"
+
+#: components/screens/DeviceSettingsScreen.tsx:102
+msgid "Polish"
+msgstr "ภาษาโปแลนด์"
+
+#: components/screens/DeviceSettingsScreen.tsx:62
+msgid "Portuguese"
+msgstr "ภาษาโปรตุเกส"
+
+#: components/screens/DirectConversationScreen.tsx:395
+#: components/screens/DirectConversationScreen.tsx:517
+msgid "Previous occurrence"
+msgstr "การเกิดขึ้นครั้งก่อน"
+
+#: components/screens/AccountScreen.tsx:256
+#: components/screens/ContactScreen.tsx:365
+#: components/ui/BottomTabNavigation.tsx:64
+msgid "Profile"
+msgstr "โปรไฟล์"
+
+#: components/screens/ProfileScreen.tsx:149
+msgid "Profile ID copied to clipboard"
+msgstr "คัดลอกรหัสโปรไฟล์ไปยังคลิปบอร์ดแล้ว"
+
+#: components/ui/MessageCompose.tsx:70
+msgid "Remove"
+msgstr "ลบออก"
+
+#: components/screens/AccountScreen.tsx:75
+msgid "Remove account from this device"
+msgstr "ลบบัญชีออกจากอุปกรณ์นี้"
+
+#: components/screens/ContactListScreen.tsx:233
+msgid "Remove contact from list"
+msgstr ""
+
+#: components/screens/ContactScreen.tsx:328
+msgid "Remove from contact list"
+msgstr ""
+
+#: components/screens/DeviceSettingsScreen.tsx:64
+msgid "Russian"
+msgstr "ภาษารัสเซีย"
+
+#: components/screens/AccountScreen.tsx:117
+#: components/screens/ContactListScreen.tsx:152
+#: components/screens/ContactScreen.tsx:187
+#: components/screens/GroupScreen.tsx:123
+#: components/screens/ProfileScreen.tsx:187
+msgid "Save changes"
+msgstr "บันทึกการเปลี่ยนแปลง"
+
+#: components/ui/MessageCompose.tsx:156
+msgid "Save draft"
+msgstr "บันทึกร่าง"
+
+#: components/screens/ContactListsScreen.tsx:79
+#: components/screens/DirectConversationScreen.tsx:372
+#: components/screens/DirectMessagesScreen.tsx:112
+msgid "Search"
+msgstr "ค้นหา"
+
+#: components/screens/ContactListsScreen.tsx:47
+#: components/screens/ContactScreen.tsx:290
+msgid "Search contact lists"
+msgstr ""
+
+#: components/screens/ContactListScreen.tsx:191
+#: components/screens/DirectMessagesScreen.tsx:80
+msgid "Search contacts"
+msgstr "ค้นหาผู้ติดต่อ"
+
+#: components/ui/MessageCompose.tsx:174
+msgid "Send message"
+msgstr "ส่งข้อความ"
+
+#: components/screens/SelectAccountScreen.tsx:28
+msgid "Settings"
+msgstr "การตั้งค่า"
+
+#: components/screens/ProfileScreen.tsx:156
+msgid "Share profile"
+msgstr "แบ่งปันโปรไฟล์"
+
+#: components/ui/CoordsInput.tsx:47
+msgid "Show on map"
+msgstr "แสดงบนแผนที่"
+
+#: components/screens/ProfileScreen.tsx:100
+msgid "Show QR code"
+msgstr "แสดงรหัส QR"
+
+#: components/screens/DeviceSettingsScreen.tsx:56
+msgid "Spanish"
+msgstr "ภาษาสเปน"
+
+#: components/screens/ContactListsScreen.tsx:66
+#: components/screens/DirectMessagesScreen.tsx:99
+msgid "Stop searching"
+msgstr "หยุดค้นหา"
+
+#: components/screens/DeviceSettingsScreen.tsx:106
+msgid "Swahili"
+msgstr "ภาษาสวาฮิลี"
+
+#: components/screens/DeviceSettingsScreen.tsx:114
+msgid "System default ({languageName})"
+msgstr "ค่าเริ่มต้นระบบ ({languageName})"
+
+#: components/screens/DeviceSettingsScreen.tsx:140
+msgid "System default ({themeName})"
+msgstr "ค่าเริ่มต้นระบบ ({themeName})"
+
+#: components/screens/DeviceSettingsScreen.tsx:80
+msgid "Tamil"
+msgstr "ภาษาทมิฬ"
+
+#: components/screens/AccountScreen.tsx:151
+msgid "Tap to change"
+msgstr "แตะเพื่อเปลี่ยน"
+
+#: components/screens/DeviceSettingsScreen.tsx:74
+msgid "Telugu"
+msgstr "ภาษาเตลูกู"
+
+#: components/screens/DeviceSettingsScreen.tsx:92
+msgid "Thai"
+msgstr "ภาษาไทย"
+
+#: components/screens/ImportAccountScreen.tsx:100
+msgid "The one you typed in during export"
+msgstr "ที่คุณพิมพ์ระหว่างการส่งออก"
+
+#: components/screens/DeviceSettingsScreen.tsx:119
+msgid "Theme"
+msgstr "ธีม"
+
+#: components/screens/ContactScreen.tsx:234
+msgid "This name is only visible to you"
+msgstr "ชื่อนี้มองเห็นได้เฉพาะคุณเท่านั้น"
+
+#: components/screens/AccountScreen.tsx:163
+#: components/screens/ImportAccountScreen.tsx:86
+msgid "This name is only visible to you on this device"
+msgstr "ชื่อนี้มองเห็นได้เฉพาะคุณในอุปกรณ์นี้เท่านั้น"
+
+#: components/screens/AccountScreen.tsx:150
+msgid "This will your avatar forever, choose wisely"
+msgstr "นี่จะเป็นอวตารของคุณตลอดไป เลือกอย่างชาญฉลาด"
+
+#: components/screens/DeviceSettingsScreen.tsx:70
+msgid "Turkish"
+msgstr "ภาษาตุรกี"
+
+#: components/screens/DirectConversationScreen.tsx:480
+msgid "Unread messages"
+msgstr "ข้อความที่ยังไม่ได้อ่าน"
+
+#: components/screens/EditArticleScreen.tsx:131
+msgid "Update article"
+msgstr "อัปเดตบทความ"
+
+#: components/screens/DeviceSettingsScreen.tsx:86
+msgid "Urdu"
+msgstr "ภาษาอูรดู"
+
+#: components/screens/AccountScreen.tsx:61
+msgid "Use another account"
+msgstr "ใช้บัญชีอื่น"
+
+#: components/screens/DeviceSettingsScreen.tsx:68
+msgid "Vietnamese"
+msgstr "ภาษาเวียดนาม"
+
+#: components/screens/ExportAccountScreen.tsx:101
+msgid "Will be needed to import later"
+msgstr "จะต้องใช้สำหรับการนำเข้าในภายหลัง"
+
+#: components/ui/MessageCompose.tsx:112
+msgid "Write a message"
+msgstr "เขียนข้อความ"
+
+#: components/screens/ExportAccountScreen.tsx:82
+msgid "You can send or store this exported text to import the account on other devices"
+msgstr "คุณสามารถส่งหรือเก็บข้อความที่ส่งออกนี้เพื่อนำเข้าบัญชีในอุปกรณ์อื่น"

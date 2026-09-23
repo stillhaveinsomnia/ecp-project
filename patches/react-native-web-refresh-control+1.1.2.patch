@@ -1,0 +1,26 @@
+diff --git a/node_modules/react-native-web-refresh-control/src/RefreshControl.web.js b/node_modules/react-native-web-refresh-control/src/RefreshControl.web.js
+index b2351e6..7090ab4 100644
+--- a/node_modules/react-native-web-refresh-control/src/RefreshControl.web.js
++++ b/node_modules/react-native-web-refresh-control/src/RefreshControl.web.js
+@@ -1,6 +1,6 @@
+-import React, { useRef, useEffect, useCallback, useMemo } from 'react'
+-import { View, Text, PanResponder, Animated, ActivityIndicator, findNodeHandle } from 'react-native'
+ import PropTypes from 'prop-types'
++import React, { useCallback, useEffect, useMemo, useRef } from 'react'
++import { ActivityIndicator, Animated, PanResponder, Text, View } from 'react-native'
+ 
+ const arrowIcon =
+   'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfgCQYHLCTylhV1AAAAjklEQVQ4y2P8z0AaYCJRPX4NsyNWM5Ok4R/n+/noWhjx+2F20n8HwcTQv0T7IXUe4wFUWwh6Gl0LEaGEqoWoYEXWQmQ8ILQwEh/TkBBjme3HIESkjn+Mv9/vJjlpkOwkom2AxTmRGhBJhCgNyCmKCA2oCZCgBvT0ykSacgIaZiaiKydoA7pykiKOSE+jAwADZUnJjMWwUQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0wOS0wNlQwNzo0NDozNiswMjowMAZN3oQAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMDktMDZUMDc6NDQ6MzYrMDI6MDB3EGY4AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg=='
+@@ -77,9 +77,9 @@ export default function RefreshControl({
+       onStartShouldSetPanResponderCapture: () => false,
+       onMoveShouldSetPanResponder: (_,gestureState) => {
+         if (!containerRef.current) return false
+-        const containerDOM = findNodeHandle(containerRef.current)
+-        if (!containerDOM) return false
+-        return containerDOM.children[0].scrollTop === 0
++        const scrollContainer = containerRef.current?.firstChild
++        if (!scrollContainer) return false
++        return scrollContainer.scrollTop === 0
+         && (Math.abs(gestureState.dy) > Math.abs(gestureState.dx) * 2 && Math.abs(gestureState.vy) > Math.abs(gestureState.vx) * 2.5)
+       },
+       onMoveShouldSetPanResponderCapture: () => false,
