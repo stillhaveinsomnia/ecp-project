@@ -5,6 +5,7 @@ import { unzipSync } from "fflate";
 import { parse as parseToml } from "smol-toml";
 import * as z from "zod";
 import { memoizeSimple } from "../memoization";
+import { encryptData, decryptData } from "../storage/dbEncryption";
 
 export const ContentAddressSchema = z.string().brand("ContentAddress");
 export type ContentAddress = z.infer<typeof ContentAddressSchema>;
@@ -17,10 +18,15 @@ export async function storeFile(data: Uint8Array): Promise<ContentAddress> {
   if (data.byteLength > MAX_FILE_SIZE) {
     throw new Error(`File is too large (max ${MAX_FILE_SIZE / 1024 / 1024} MB)`);
   }
+  // Hash the PLAINTEXT for content-addressing (before encryption)
   const hash = bytesToHex(blake3(data, { dkLen: 32 }));
   const file = new File(Paths.document, hash);
-  if (!file.exists) file.create();
-  file.write(data);
+  if (!file.exists) {
+    // Encrypt file data before writing to disk
+    const encrypted = await encryptData(data);
+    file.create();
+    file.write(encrypted);
+  }
   return ContentAddressSchema.parse(hash);
 }
 
@@ -34,18 +40,18 @@ export const getFileUri = memoizeSimple(doGetFileUri);
 async function doLoadFileMagicBytes(
   address: ContentAddress,
 ): Promise<Uint8Array> {
-  const file = new File(Paths.document, address);
-  if (!file.exists) throw new Error("File not found: " + address);
-  const handle = file.open();
-  const magicBytes = handle.readBytes(16);
-  return magicBytes;
+  // Must decrypt the entire file to get magic bytes from plaintext
+  const decrypted = await doLoadFile(address);
+  return decrypted.slice(0, 16);
 }
 export const loadFileMagicBytes = memoizeSimple(doLoadFileMagicBytes);
 
 async function doLoadFile(address: ContentAddress): Promise<Uint8Array> {
   const file = new File(Paths.document, address);
   if (!file.exists) throw new Error("File not found: " + address);
-  return file.bytesSync();
+  const encryptedBytes = file.bytesSync();
+  // Decrypt file data after reading from disk
+  return await decryptData(encryptedBytes);
 }
 const loadFile = memoizeSimple(doLoadFile);
 

@@ -1,6 +1,6 @@
 import { createApp } from "../components/Main";
-import { createAsyncLocalStorage } from "../components/storage/AsyncLocalStorage";
+import { createEncryptedAsyncLocalStorage } from "../components/storage/EncryptedAsyncLocalStorage";
 
-const { Main } = createApp({ storage: createAsyncLocalStorage() });
+const { Main } = createApp({ storage: createEncryptedAsyncLocalStorage() });
 
 export default Main;

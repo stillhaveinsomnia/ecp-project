@@ -47,6 +47,7 @@ import { createStore } from "./store/store";
 import { compactData } from "./store/compaction";
 import { AppLockProvider } from "./store/AppLockProvider";
 import { createMultiNetwork } from "./network/multiNetwork";
+import { createLibp2pRustNetwork } from "./network/libp2pRustNetwork";
 import { useTheme } from "./Theme";
 
 patchFlatListProps();
@@ -71,9 +72,13 @@ export function createApp({ storage }: { storage: StorageInterface }) {
   })();
 
   // LAN has highest priority (index 0), then Bluetooth (index 1), then internet fallback (index 2).
-  const factories = Platform.OS === "android"
+  let factories = Platform.OS === "android"
     ? [lanNetworkFactory, bluetoothNetworkFactory, networkFactory]
     : [networkFactory];
+  
+  if (Platform.OS === "web" && navigator.userAgent.includes("Electron")) {
+    factories.push(createLibp2pRustNetwork());
+  }
 
   const multiNetworkFactory = createMultiNetwork(factories);
 

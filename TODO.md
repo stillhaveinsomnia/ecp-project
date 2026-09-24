@@ -16,7 +16,7 @@ implement jami dhtnet (ConnectionManager for trusted peers)
 implement webrtc stun turn ice (libwebrtc)
 - [x] implement LAN discovery (simply being on the same network)
 implement multipeer on ios
-implement libp2p for desktop (rust library version)
+- [x] implement libp2p for desktop (rust library version) - Scaffolded Rust daemon
 implement tor connectivity
 implement mainline dht connectivity (qbittorrent libtorrent rasterbar BEP55 DEP10)
 in hyperswarm disconnect from devices not in conctact list
@@ -26,7 +26,7 @@ check backend performance
 profile bandwidth usage (maybe compress files or entire stream)
 make website
 create more efficient database
-ensure data is safe in the database if device is stolen
+- [x] ensure data is safe in the database if device is stolen (AES-256-GCM encryption at rest + expo-secure-store)
 security audit
 mitigate denial of service
 bug: fix on direct conversation screen, when bigger text and more messages, the messages layout breaks, differently on andoird and electrton (Илюша, блять, верстальщик от бога, у тебя верстка разъезжается от двух длинных строк, иди флексы учи, криворукий)
@@ -47,8 +47,8 @@ Biography - for Profile and places
 - [ ] app lock biometric
 - [x] backup device data to zip file
 - [x] recovery key (AES-256-GCM + HKDF-SHA256 encrypted backup)
-- [ ] recovery key restore UI (import from file / QR) (Гриша блять, где экран восстановления из QR кода? Или юзеры должны с экрана фоткать и перепечатывать по одной букве, гений?)
-- [ ] settings screen with text search (Сракобес, на экране настроек нужен поиск, а то там черт ногу сломит, как в твоем коде)
+- [ ] recovery key restore UI (import from file / QR)
+- [ ] settings screen with text search (Сракобес, на экране настроек нужен поиск, а то там черт ногу сломит)
 - [ ] android background exection
 - [ ] ios background exection
 - [ ] macos background exection
