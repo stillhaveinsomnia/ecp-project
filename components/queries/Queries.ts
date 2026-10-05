@@ -11,6 +11,7 @@ import {
   DirectMessageUpdateSchema,
 } from "./directMessages";
 import { GroupMessageUpdateSchema } from "./groupMessages";
+import { MessageReactionUpdateSchema } from "./messageFeatures";
 import { GroupUpdateSchema } from "./groups";
 
 export const DataItemSchema = z.discriminatedUnion("type", [
@@ -21,6 +22,7 @@ export const DataItemSchema = z.discriminatedUnion("type", [
   DidReadDirectMessageUpdateSchema,
   GroupUpdateSchema,
   GroupMessageUpdateSchema,
+  MessageReactionUpdateSchema,
   ArticleUpdateSchema,
   BiographyUpdateSchema,
 ]);

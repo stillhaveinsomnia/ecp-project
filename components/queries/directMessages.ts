@@ -1,11 +1,17 @@
 import * as z from "zod";
 import { AccountId, AccountIdSchema } from "../cryptography/cryptography";
 import { EcpMutation, EcpQuery } from "../store/feApi";
-import { ContentAddress, ContentAddressSchema } from "../store/fileStore";
 import { contactList } from "./contacts";
 import { groupBy, maxBy, orderBy } from "./helpers";
 import { DataItem } from "./Queries";
 import { nowTimestamp, Timestamp, TimestampSchema } from "./Timestamp";
+import {
+  directReactionTarget,
+  MessageAttachment,
+  MessageAttachmentSchema,
+  MessageMetadataSchema,
+  messageReactions,
+} from "./messageFeatures";
 
 export const DirectMessageUpdateSchema = z.object({
   type: z.literal("DirectMessageUpdate"),
@@ -14,8 +20,9 @@ export const DirectMessageUpdateSchema = z.object({
   createdAt: TimestampSchema,
   content: z.string().max(10000, "Message is too long (max 10000 characters)"),
   attachments: z
-    .array(z.object({ name: z.string(), hash: ContentAddressSchema }))
+    .array(MessageAttachmentSchema)
     .max(10, "Too many attachments (max 10)"),
+  ...MessageMetadataSchema.shape,
   isDraft: z.boolean(),
   timestamp: TimestampSchema,
 });
@@ -27,11 +34,24 @@ export const updateDirectMessage: EcpQuery<
     createdAt: Timestamp;
     isDraft: boolean;
     content: string;
-    attachments: Array<{ name: string; hash: ContentAddress }>;
+    attachments: MessageAttachment[];
+    replyTo?: Array<{ senderId: AccountId; createdAt: Timestamp }>;
+    quotedText?: { text: string; start: number; end: number };
+    forwardedFrom?: { senderId: AccountId; createdAt: Timestamp };
   },
   void
 > =
-  ({ senderId, receiverId, createdAt, isDraft, content, attachments }) =>
+  ({
+    senderId,
+    receiverId,
+    createdAt,
+    isDraft,
+    content,
+    attachments,
+    replyTo,
+    quotedText,
+    forwardedFrom,
+  }) =>
   async ({ store }) => {
     await store.add({
       type: "DirectMessageUpdate",
@@ -41,6 +61,9 @@ export const updateDirectMessage: EcpQuery<
       isDraft,
       content,
       attachments,
+      replyTo,
+      quotedText,
+      forwardedFrom,
       timestamp: nowTimestamp(),
     });
   };
@@ -123,6 +146,16 @@ export function directMessagesList({
         isDraft: messageUpdate.isDraft,
         content: messageUpdate.content,
         attachments: messageUpdate.attachments,
+        replyTo: messageUpdate.replyTo,
+        quotedText: messageUpdate.quotedText,
+        forwardedFrom: messageUpdate.forwardedFrom,
+        reactions: messageReactions(
+          directReactionTarget(
+            messageUpdate.senderId,
+            messageUpdate.receiverId,
+            messageUpdate.createdAt,
+          ),
+        )(all),
         isModified: messageUpdate.isModified,
         didRead: didReadLatest({
           senderId: messageUpdate.senderId,
@@ -142,9 +175,13 @@ export const getDirectMessages: EcpQuery<
     createdAt: Timestamp;
     isDraft: boolean;
     content: string;
-    attachments: Array<{ name: string; hash: ContentAddress }>;
+    attachments: MessageAttachment[];
+    replyTo?: Array<{ senderId: AccountId; createdAt: Timestamp }>;
+    quotedText?: { text: string; start: number; end: number };
+    forwardedFrom?: { senderId: AccountId; createdAt: Timestamp };
     isModified: boolean;
     didRead: boolean;
+    reactions: Array<{ emoji: string; actorIds: AccountId[] }>;
   }>
 > =
   ({ accountId, contactId }) =>
@@ -158,8 +195,11 @@ export const getDirectMessageHistory: EcpQuery<
   { senderId: AccountId; receiverId: AccountId; createdAt: Timestamp },
   Array<{
     content: string;
-    attachments: Array<{ name: string; hash: ContentAddress }>;
+    attachments: MessageAttachment[];
     isDraft: boolean;
+    replyTo?: Array<{ senderId: AccountId; createdAt: Timestamp }>;
+    quotedText?: { text: string; start: number; end: number };
+    forwardedFrom?: { senderId: AccountId; createdAt: Timestamp };
     timestamp: Timestamp;
   }>
 > =
@@ -181,6 +221,9 @@ export const getDirectMessageHistory: EcpQuery<
     ).map((update) => ({
       content: update.content,
       attachments: update.attachments,
+      replyTo: update.replyTo,
+      quotedText: update.quotedText,
+      forwardedFrom: update.forwardedFrom,
       isDraft: update.isDraft,
       timestamp: update.timestamp,
     }));

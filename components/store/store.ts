@@ -171,6 +171,23 @@ export function createStore<StoreItem>({
       return Array.from(accountIds);
     }
 
+    if (
+      candidate.type === "MessageReactionUpdate" &&
+      typeof candidate.target === "object" &&
+      candidate.target !== null
+    ) {
+      const target = candidate.target as Record<string, unknown>;
+      if (target.type === "direct") {
+        if (typeof target.senderId === "string") {
+          accountIds.add(target.senderId as AccountId);
+        }
+        if (typeof target.receiverId === "string") {
+          accountIds.add(target.receiverId as AccountId);
+        }
+      }
+      return Array.from(accountIds);
+    }
+
     // For other types, collect all account-like fields as fallback.
     const possibleKeys = ["accountId", "contactId", "senderId", "receiverId"];
     for (const key of possibleKeys) {

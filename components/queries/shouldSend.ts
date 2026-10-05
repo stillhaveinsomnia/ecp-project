@@ -29,6 +29,15 @@ export function shouldSend({
         return true;
       }
     }
+    if (storeItem.type === "MessageReactionUpdate") {
+      if (
+        storeItem.target.type === "direct" &&
+        (storeItem.target.senderId === thisAccountId ||
+          storeItem.target.receiverId === thisAccountId)
+      ) {
+        return true;
+      }
+    }
   }
 
   if (storeItem.type === "DirectMessageUpdate") {
@@ -42,6 +51,15 @@ export function shouldSend({
         return true;
       }
     }
+  }
+  if (
+    storeItem.type === "MessageReactionUpdate" &&
+    storeItem.target.type === "direct"
+  ) {
+    const target = storeItem.target;
+    const isParticipant = (accountId: AccountId) =>
+      accountId === target.senderId || accountId === target.receiverId;
+    return isParticipant(thisAccountId) && isParticipant(otherAccountId);
   }
   return false;
 }

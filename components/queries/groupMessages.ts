@@ -6,6 +6,13 @@ import { nowTimestamp, Timestamp, TimestampSchema } from "./Timestamp";
 import { contactLatest } from "./contacts";
 import { groupList } from "./groups";
 import { groupBy, maxBy, orderBy } from "./helpers";
+import {
+  groupReactionTarget,
+  MessageAttachment,
+  MessageAttachmentSchema,
+  MessageMetadataSchema,
+  messageReactions,
+} from "./messageFeatures";
 
 export const GroupMessageUpdateSchema = z.object({
   type: z.literal("GroupMessageUpdate"),
@@ -13,6 +20,8 @@ export const GroupMessageUpdateSchema = z.object({
   groupId: z.string(), // TODO use branded type
   createdAt: TimestampSchema,
   content: z.string().max(10000, "Message is too long (max 10000 characters)"),
+  attachments: z.array(MessageAttachmentSchema).max(10).default([]),
+  ...MessageMetadataSchema.shape,
   timestamp: TimestampSchema,
 });
 
@@ -22,10 +31,23 @@ export const updateGroupMessage: EcpQuery<
     groupId: string;
     createdAt: Timestamp;
     content: string;
+    attachments?: MessageAttachment[];
+    replyTo?: Array<{ senderId: AccountId; createdAt: Timestamp }>;
+    quotedText?: { text: string; start: number; end: number };
+    forwardedFrom?: { senderId: AccountId; createdAt: Timestamp };
   },
   void
 > =
-  ({ senderId, groupId, createdAt, content }) =>
+  ({
+    senderId,
+    groupId,
+    createdAt,
+    content,
+    attachments = [],
+    replyTo,
+    quotedText,
+    forwardedFrom,
+  }) =>
   async ({ appStorage }) => {
     await appStorage.write((current) => {
       return {
@@ -38,6 +60,10 @@ export const updateGroupMessage: EcpQuery<
             groupId,
             createdAt,
             content,
+            attachments,
+            replyTo,
+            quotedText,
+            forwardedFrom,
             timestamp: nowTimestamp(),
           },
         ],
@@ -83,7 +109,9 @@ function commonGroupMessagesList({ groupId }: { groupId: string }) {
         .filter((update) => update.groupId === groupId),
       (update) => [update.senderId, update.groupId, update.createdAt],
       (updates) => maxBy(updates, (update) => update.timestamp),
-    ).filter((update) => update.content !== "");
+    ).filter(
+      (update) => update.content !== "" || update.attachments.length > 0,
+    );
   };
 }
 
@@ -94,6 +122,11 @@ export const getGroupMessages: EcpQuery<
     senderName: string | undefined;
     createdAt: Timestamp;
     content: string;
+    attachments: MessageAttachment[];
+    replyTo?: Array<{ senderId: AccountId; createdAt: Timestamp }>;
+    quotedText?: { text: string; start: number; end: number };
+    forwardedFrom?: { senderId: AccountId; createdAt: Timestamp };
+    reactions: Array<{ emoji: string; actorIds: AccountId[] }>;
   }>
 > =
   ({ accountId, groupId }) =>
@@ -114,6 +147,17 @@ export const getGroupMessages: EcpQuery<
         senderName: contactUpdate?.name,
         createdAt: update.createdAt,
         content: update.content,
+        attachments: update.attachments,
+        replyTo: update.replyTo,
+        quotedText: update.quotedText,
+        forwardedFrom: update.forwardedFrom,
+        reactions: messageReactions(
+          groupReactionTarget(
+            update.groupId,
+            update.senderId,
+            update.createdAt,
+          ),
+        )(all),
       };
     });
   };
